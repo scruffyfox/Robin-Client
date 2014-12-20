@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/menu_new_post"
+		android:title="@string/new_post"
+		android:icon="?attr/rbn_action_bar_icon_new_post"
+		android:showAsAction="always"
+	/>
+</menu>

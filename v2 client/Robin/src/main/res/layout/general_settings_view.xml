@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:padding="8dp"
+	>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/general_header"
+			style="?android:attr/listSeparatorTextViewStyle"
+		/>
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/image_provider"
+			android:padding="8dp"
+			android:layout_marginTop="8dp"
+		>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/title"
+				android:text="@string/image_provider"
+				style="?attr/rbn_settings_title"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/title"
+				android:text="@string/image_provider_desc"
+				style="?attr/rbn_settings_description"
+			/>
+		</in.lib.view.SettingContainerView>
+
+		<View style="?attr/rbn_divider" />
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/shake_refresh"
+			android:padding="8dp"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/checkbox"
+				android:clickable="false"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				style="?attr/rbn_settings_checkbox"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/title"
+				android:layout_toLeftOf="@id/checkbox"
+				android:text="@string/shake_refresh"
+				style="?attr/rbn_settings_title"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@id/checkbox"
+				android:layout_below="@id/title"
+				android:text="@string/shake_refresh_desc"
+				style="?attr/rbn_settings_description"
+			/>
+		</in.lib.view.SettingContainerView>
+
+		<View style="?attr/rbn_divider" />
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/quick_post"
+			android:padding="8dp"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/checkbox"
+				android:clickable="false"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				style="?attr/rbn_settings_checkbox"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/title"
+				android:layout_toLeftOf="@id/checkbox"
+				android:text="@string/quick_post"
+				style="?attr/rbn_settings_title"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@id/checkbox"
+				android:layout_below="@id/title"
+				android:text="@string/quick_post_desc"
+				style="?attr/rbn_settings_description"
+			/>
+		</in.lib.view.SettingContainerView>
+
+		<View style="?attr/rbn_divider" />
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/inline_wifi"
+			android:padding="8dp"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/checkbox"
+				android:clickable="false"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				style="?attr/rbn_settings_checkbox"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/title"
+				android:layout_toLeftOf="@id/checkbox"
+				android:text="@string/inline_wifi_title"
+				style="?attr/rbn_settings_title"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@id/checkbox"
+				android:layout_below="@id/title"
+				android:text="@string/inline_wifi_desc"
+				style="?attr/rbn_settings_description"
+			/>
+		</in.lib.view.SettingContainerView>
+
+		<View style="?attr/rbn_divider" />
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/stream_markers"
+			android:padding="8dp"
+		>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/title"
+				android:text="@string/stream_markers"
+				style="?attr/rbn_settings_title"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/title"
+				android:text="@string/stream_markers_desc"
+				style="?attr/rbn_settings_description"
+			/>
+		</in.lib.view.SettingContainerView>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/quiet_header"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp"
+			style="?android:attr/listSeparatorTextViewStyle"
+		/>
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/quite_mode"
+			android:padding="8dp"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/checkbox"
+				android:clickable="false"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				style="?attr/rbn_settings_checkbox"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/title"
+				android:layout_toLeftOf="@id/checkbox"
+				android:text="@string/quiet_mode_title"
+				style="?attr/rbn_settings_title"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@id/checkbox"
+				android:layout_below="@id/title"
+				android:text="@string/quiet_mode_desc"
+				style="?attr/rbn_settings_description"
+			/>
+		</in.lib.view.SettingContainerView>
+
+		<View style="?attr/rbn_divider" />
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/quite_hours"
+			android:padding="8dp"
+		>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/title"
+				android:layout_toLeftOf="@id/checkbox"
+				android:text="@string/quiet_hours_title"
+				style="?attr/rbn_settings_title"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@id/checkbox"
+				android:layout_below="@id/title"
+				android:text="@string/quiet_hours_desc"
+				style="?attr/rbn_settings_description"
+			/>
+		</in.lib.view.SettingContainerView>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/cache_header"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp"
+			style="?android:attr/listSeparatorTextViewStyle"
+		/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:padding="8dp"
+		>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/title"
+				android:text="@string/cache_timeout"
+				style="?attr/rbn_settings_title"
+			/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/ticker"
+				android:gravity="right"
+				android:layout_alignParentRight="true"
+			/>
+
+			<SeekBar
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/cache_expire"
+				android:layout_below="@id/title"
+				android:layout_marginLeft="8dp"
+				android:layout_marginRight="8dp"
+				android:layout_marginTop="6dp"
+				android:max="60"
+			/>
+		</RelativeLayout>
+
+		<View style="?attr/rbn_divider" />
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:padding="8dp"
+		>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/title"
+				android:text="@string/request_timeout"
+				style="?attr/rbn_settings_title"
+			/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/ticker"
+				android:gravity="right"
+				android:layout_alignParentRight="true"
+			/>
+
+			<SeekBar
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/request_timeout"
+				android:layout_below="@id/title"
+				android:layout_marginLeft="8dp"
+				android:layout_marginRight="8dp"
+				android:layout_marginTop="6dp"
+				android:max="60"
+			/>
+		</RelativeLayout>
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,40 @@
+<!--
+  Copyright 2013 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<resources>
+    <dimen name="clock_left_margin">0dp</dimen>
+    <dimen name="clock_side_padding">8dp</dimen>
+    <dimen name="extension_collapsed_vert_padding">4dp</dimen>
+
+    <!-- We use dp units instead of sp since the lock screen is a fixed size area. -->
+    <dimen name="clock_text_size_large">64dp</dimen>
+    <dimen name="clock_text_size_small">42dp</dimen>
+    <dimen name="clock_date_text_size">14dp</dimen>
+    <dimen name="clock_date_top_margin">-10dp</dimen>
+    <dimen name="clock_margin_offset">10dp</dimen>
+    <dimen name="analog_clock_size">74dp</dimen>
+
+    <dimen name="extension_collapsed_text_size_single_line">16dp</dimen>
+    <dimen name="extension_collapsed_text_size_two_line">10dp</dimen>
+
+    <dimen name="extension_expanded_title_text_size">18sp</dimen>
+    <dimen name="extension_expanded_body_text_size">12sp</dimen>
+
+    <dimen name="extension_icon_expanded_size">24dp</dimen>
+    <dimen name="extension_icon_collapsed_size">22dp</dimen>
+
+    <dimen name="daydream_extensions_width">300dp</dimen>
+</resources>

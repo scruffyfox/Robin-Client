@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="@android:color/white"
+>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/title_container"
+	>
+		<in.lib.view.HintedImageButton
+			android:layout_width="@dimen/dialog_ab_ic_width"
+			android:layout_height="@dimen/dialog_ab_ic_height"
+			android:id="@+id/negative_button"
+			android:contentDescription="@string/cancel"
+			style="?attr/rbn_dialog_ic_cancel"
+		/>
+
+		<in.lib.view.HintedImageButton
+			android:layout_width="@dimen/dialog_ab_ic_width"
+			android:layout_height="@dimen/dialog_ab_ic_height"
+			android:id="@+id/positive_button"
+			android:layout_alignParentRight="true"
+			android:contentDescription="@string/delete"
+			style="?attr/rbn_dialog_ic_send"
+		/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/title"
+			android:layout_centerVertical="true"
+			android:layout_toLeftOf="@id/positive_button"
+			android:layout_toRightOf="@id/negative_button"
+			style="?attr/rbn_dialog_title"
+		/>
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_below="@id/title_container"
+		android:padding="10dp"
+	>
+		<in.lib.view.AvatarImageView
+			android:layout_width="@dimen/avatar_width"
+			android:layout_height="@dimen/avatar_height"
+			android:id="@+id/avatar"
+			android:contentDescription="@string/switch_accounts"
+			android:layout_marginRight="10dp"
+		/>
+
+		<include
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/avatar"
+			layout="@layout/post_text_stub"
+		/>
+	</RelativeLayout>
+</RelativeLayout>

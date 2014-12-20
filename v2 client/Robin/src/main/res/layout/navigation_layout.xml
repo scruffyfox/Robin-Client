@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#ff535353"
+>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+	>
+		<in.lib.view.SquareLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:padding="8dp"
+		>
+			<in.lib.view.AvatarImageView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/avatar"
+			/>
+		</in.lib.view.SquareLayout>
+
+		<in.lib.view.HintedImageButton
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/timeline"
+			android:contentDescription="@string/timeline"
+			style="?attr/rbn_nav_ic_timeline"
+		/>
+
+		<in.lib.view.HintedImageButton
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/mentions"
+			android:contentDescription="@string/mentions"
+			style="?attr/rbn_nav_ic_mentions"
+		/>
+
+		<in.lib.view.HintedImageButton
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/channels"
+			android:contentDescription="@string/channels"
+			style="?attr/rbn_nav_ic_channels"
+		/>
+
+		<in.lib.view.HintedImageButton
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/drafts"
+			android:contentDescription="@string/drafts"
+			style="?attr/rbn_nav_ic_drafts"
+		/>
+
+		<in.lib.view.HintedImageButton
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/profile"
+			android:contentDescription="@string/profile"
+			style="?attr/rbn_nav_ic_profile"
+		/>
+
+		<in.lib.view.HintedImageButton
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/starred"
+			android:contentDescription="@string/starred"
+			style="?attr/rbn_nav_ic_starred"
+		/>
+
+		<in.lib.view.HintedImageButton
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/search"
+			android:contentDescription="@string/search"
+			style="?attr/rbn_nav_ic_search"
+		/>
+
+		<in.lib.view.HintedImageButton
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/settings"
+			android:contentDescription="@string/settings"
+			style="?attr/rbn_nav_ic_settings"
+		/>
+
+		<in.lib.view.HintedImageButton
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/about"
+			android:contentDescription="@string/about"
+			style="?attr/rbn_nav_ic_about"
+		/>
+	</LinearLayout>
+</ScrollView>

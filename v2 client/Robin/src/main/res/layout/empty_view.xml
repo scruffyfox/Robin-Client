@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<net.callumtaylor.swipetorefresh.view.RefreshableScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/empty"
+	android:gravity="center"
+	android:weightSum="2"
+>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:gravity="center"
+		android:layout_gravity="center"
+		android:weightSum="2"
+	>
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="0dip"
+			android:layout_weight="1"
+			android:adjustViewBounds="true"
+			android:layout_gravity="center_horizontal"
+			style="?attr/rbn_empty_icon"
+		/>
+
+		<ProgressBar
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:id="@+id/progress"
+			android:layout_marginTop="10dp"
+			android:layout_gravity="center_horizontal"
+			style="@android:style/Widget.Holo.ProgressBar.Large"
+		/>
+	</LinearLayout>
+</net.callumtaylor.swipetorefresh.view.RefreshableScrollView>

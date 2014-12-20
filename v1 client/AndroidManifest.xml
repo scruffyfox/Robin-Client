@@ -1,0 +1,189 @@
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="in.rob.client"
+	android:versionCode="7842"
+	android:versionName="@string/app_version"
+	android:installLocation="auto"
+>
+	<uses-sdk android:minSdkVersion="9" android:targetSdkVersion="19" />
+		
+	<!-- This app has permission to register and receive message -->
+	<permission android:name="in.rob.client.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+	<uses-permission android:name="in.rob.client.permission.C2D_MESSAGE" android:required="false"/>
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" android:required="false"/>
+	
+	<uses-permission android:name="android.permission.CAMERA" android:required="false"/>
+	<uses-feature android:name="android.hardware.camera" android:required="false"/>
+		
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.VIBRATE" android:required="false"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" android:required="false" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" android:required="false" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.NFC" android:required="false" />
+	<uses-feature android:name="android.hardware.nfc" android:required="false" />
+	
+	<application
+		android:label="@string/app_name"
+		android:icon="@drawable/ic_launcher"
+		android:name="in.rob.client.MainApplication"
+		android:allowBackup="false"
+	>
+		<receiver android:name="in.lib.receiver.NotificationReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+			<!-- Receive the actual message -->
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+				<category android:name="in.rob.client" />
+			</intent-filter>
+			<!-- Receive the registration id -->
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+				<category android:name="in.rob.client" />
+			</intent-filter>
+			
+			<intent-filter>
+				<action android:name="notification.delete" />
+				<category android:name="in.rob.client" />
+			</intent-filter>
+		</receiver>
+		
+		<receiver android:name="in.rob.client.widget.ScrollWidgetProvider" android:label="Robin scroll list">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+
+			<meta-data
+				android:name="android.appwidget.provider"
+				android:resource="@xml/scroll_widget_info"
+			/>
+		</receiver>
+		
+		<!-- <receiver android:name="in.rob.client.widget.StaticWidgetProvider" android:label="Static list">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+
+			<meta-data
+				android:name="android.appwidget.provider"
+				android:resource="@xml/static_widget_info"
+			/>
+		</receiver> -->
+		
+		<receiver
+			android:name="in.rob.client.widget.WidgetBroadcastReciever"
+			android:label="WidgetBroadcastReciever"
+			android:exported="false"
+		>
+			<intent-filter >
+				<action android:name="in.rob.client.widget.intent.NEW_POST"/>
+				<action android:name="in.rob.client.widget.intent.OPEN_APP"/>
+				<action android:name="in.rob.client.widget.intent.REFRESH"/>
+				<action android:name="in.rob.client.widget.intent.RELOAD"/>
+			</intent-filter>
+		</receiver>
+		
+		<activity android:name="in.rob.client.widget.ScrollWidgetSettingsActivity" >
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+			</intent-filter>
+		</activity>
+		
+		<service android:name="in.rob.client.widget.ScrollWidgetService" android:permission="android.permission.BIND_REMOTEVIEWS" />
+		
+		<service
+			android:name="in.rob.client.widget.RobinDashClockExtension"
+			android:icon="@drawable/notif"
+			android:label="@string/dash_clock_title"
+			android:permission="com.google.android.apps.dashclock.permission.READ_EXTENSION_DATA"
+		>
+			<intent-filter>
+				<action android:name="com.google.android.apps.dashclock.Extension" />
+			</intent-filter>
+			<meta-data android:name="protocolVersion" android:value="1" />
+			<meta-data android:name="description" android:value="@string/dash_clock_description" />
+			<meta-data android:name="settingsActivity" android:value="in.rob.client.widget.DashClockSettingsActivity" />
+		</service>
+	
+		<activity android:name="in.rob.client.widget.DashClockSettingsActivity" android:exported="true" />
+		
+		<activity android:name="in.lib.manager.UpdateManager" android:theme="@style/DefaultLight.Dialog" />
+		<activity android:name="in.lib.receiver.FollowService" android:theme="@style/DefaultLight.Dialog" />
+		<activity android:name=".SplashActivity" android:theme="@style/SplashTheme" android:noHistory="true">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".MainChoiceActivity" android:theme="@style/Theme.NoTitle" />
+		
+		<activity android:name=".AuthenticateActivity" android:theme="@style/DefaultLight" android:windowSoftInputMode="stateVisible">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:host="auth.robinapp.net" android:scheme="http" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MainActivity" android:theme="@style/DefaultLight" android:exported="true" />
+		<activity android:name=".ThreadActivity" android:theme="@style/DefaultLight" android:permission="android.permission.NFC">
+			<intent-filter>
+				<action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:mimeType="application/vnd.in.rob.client.threadactivity"/>
+			</intent-filter>
+		</activity>
+		<activity android:name=".SettingsActivity" android:theme="@style/DefaultLight" />
+		<activity android:name=".ProfileActivity" android:theme="@style/DefaultLight">
+			<intent-filter>
+				<action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:mimeType="application/vnd.in.rob.client.profileactivity"/>
+			</intent-filter>
+		</activity>
+		<activity android:name=".MutedActivity" android:theme="@style/DefaultLight" />
+		<activity android:name=".StarredActivity" android:theme="@style/DefaultLight" />
+		<activity android:name=".SearchActivity" android:theme="@style/DefaultLight" />
+		<activity android:name=".SearchResultsActivity" android:theme="@style/DefaultLight" />
+		<activity android:name=".PostUserListActivity" android:theme="@style/DefaultLight" />
+		<activity android:name=".ChannelsActivity" android:theme="@style/DefaultLight" />
+		<activity android:name=".MessagesActivity" android:theme="@style/DefaultLight" />
+		<activity android:name=".DraftsActivity" android:theme="@style/DefaultLight" />
+		<activity android:name=".Licences" android:theme="@style/DefaultLight" />
+		
+		<activity android:name=".dialog.NewPostDialog" android:theme="@style/DefaultLight.Dialog" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize">
+			<intent-filter>
+				<action android:name="android.intent.action.SEND" />
+				<category android:name="android.intent.category.DEFAULT"/> 
+				<data android:mimeType="text/plain" />
+				<data android:mimeType="image/*" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".dialog.PopupProfileDialog" android:theme="@style/DefaultLight.Dialog" />
+		<activity android:name=".dialog.WebLightboxDialog" android:theme="@style/DefaultLight.Dialog" android:configChanges="keyboardHidden|orientation|screenSize" />
+		<activity android:name=".dialog.ImageLightboxDialog" android:theme="@style/DefaultLight.Dialog" android:configChanges="keyboardHidden|orientation|screenSize" />
+		<activity android:name=".dialog.AboutDialog" android:theme="@style/DefaultLight.Dialog" android:configChanges="keyboardHidden|orientation|screenSize"/>
+		<activity android:name=".dialog.RepostDialog" android:theme="@style/DefaultLight.Dialog" android:configChanges="keyboardHidden|orientation|screenSize"/>
+		<activity android:name=".dialog.ReplyPostDialog" android:theme="@style/DefaultLight.Dialog" android:configChanges="keyboardHidden|orientation|screenSize"/>
+		<activity android:name=".dialog.PostDetailsDialog" android:theme="@style/DefaultLight.Dialog" android:configChanges="keyboardHidden|orientation|screenSize"/>
+		<activity android:name=".dialog.DeletePostDialog" android:theme="@style/DefaultLight.Dialog" android:configChanges="keyboardHidden|orientation|screenSize"/>
+		<activity android:name=".dialog.NewMessageDialog" android:theme="@style/DefaultLight.Dialog" android:configChanges="keyboardHidden|orientation|screenSize"/>
+		<activity android:name=".dialog.ReplyMessageDialog" android:theme="@style/DefaultLight.Dialog" android:configChanges="keyboardHidden|orientation|screenSize"/>
+		<activity android:name=".dialog.DeleteMessageDialog" android:theme="@style/DefaultLight.Dialog" android:configChanges="keyboardHidden|orientation|screenSize"/>
+		<activity android:name=".dialog.NewChannelDialog" android:theme="@style/DefaultLight.Dialog" android:configChanges="keyboardHidden|orientation|screenSize"/>
+						
+		<activity android:name="in.lib.URLMatcher" android:noHistory="true" android:theme="@android:style/Theme.NoDisplay">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:host="alpha.app.net" android:scheme="https" />
+				<data android:host="posts.app.net" android:scheme="https" />
+				<data android:host="omega.app.net" android:scheme="https" />
+				<data android:host="patter-app.net" android:scheme="http" />
+			</intent-filter>
+		</activity>
+	</application>
+</manifest>

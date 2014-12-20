@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="default_title_indicator_text_size">11dp</dimen>
+	<dimen name="notification_large_icon_width">70dp</dimen>
+	<dimen name="notification_large_icon_height">70dp</dimen>
+	
+	<dimen name="abs_icon_width">56dp</dimen>
+	<dimen name="dialog_icon_width">48dp</dimen>
+	<dimen name="dialog_icon_height">48dp</dimen>
+	<dimen name="widget_padding">8dp</dimen>
+	<dimen name="widget_icon_width">30dp</dimen>
+	<dimen name="widget_icon_height">30dp</dimen>
+</resources>

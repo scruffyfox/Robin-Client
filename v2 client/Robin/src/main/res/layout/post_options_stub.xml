@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/options_container_height"
+	android:id="@+id/options_container"
+	android:orientation="horizontal"
+	android:layout_marginTop="4dp"
+	android:visibility="gone"
+>
+	<in.lib.view.HintedImageButton
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/reply"
+		android:layout_weight="1.0"
+		android:contentDescription="@string/reply"
+		style="?attr/rbn_post_ic_reply"
+	/>
+
+	<in.lib.view.HintedImageButton
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/reply_all"
+		android:layout_weight="1.0"
+		android:contentDescription="@string/reply_post"
+		style="?attr/rbn_post_ic_reply_all"
+	/>
+
+	<in.lib.view.HintedImageButton
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/repost"
+		android:layout_weight="1.0"
+		android:contentDescription="@string/repost_post"
+		style="?attr/rbn_post_ic_repost"
+	/>
+
+	<in.lib.view.HintedImageButton
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/star"
+		android:layout_weight="1.0"
+		android:contentDescription="@string/star_post"
+		style="?attr/rbn_post_ic_star"
+	/>
+
+	<in.lib.view.HintedImageButton
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/share"
+		android:layout_weight="1.0"
+		android:contentDescription="@string/share_post"
+		style="?attr/rbn_post_ic_share"
+	/>
+
+	<in.lib.view.HintedImageButton
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/more"
+		android:layout_weight="1.0"
+		android:contentDescription="@string/more"
+		style="?attr/rbn_post_ic_more"
+	/>
+</LinearLayout>

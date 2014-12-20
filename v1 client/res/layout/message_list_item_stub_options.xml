@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+>
+	<in.lib.view.HintedImageView
+		android:id="@+id/reply"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1.0"
+		android:adjustViewBounds="true"
+		android:background="?attr/rbn_select_background_drawable"
+		android:duplicateParentState="false"
+		android:focusable="false"
+		android:focusableInTouchMode="false"
+		android:scaleType="centerInside"	
+		android:contentDescription="@string/reply"
+		android:src="?attr/rbn_icon_reply"
+	/>
+	
+	<in.lib.view.HintedImageView
+		android:id="@+id/reply_all"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1.0"
+		android:adjustViewBounds="true"
+		android:background="?attr/rbn_select_background_drawable"
+		android:duplicateParentState="false"
+		android:focusable="false"
+		android:focusableInTouchMode="false"
+		android:scaleType="centerInside"
+		android:contentDescription="@string/reply_post"
+		android:src="?attr/rbn_icon_reply_all"
+	/>
+
+	<in.lib.view.HintedImageView
+		android:id="@+id/share"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1.0"
+		android:adjustViewBounds="true"
+		android:background="?attr/rbn_select_background_drawable"
+		android:duplicateParentState="false"
+		android:focusable="false"
+		android:focusableInTouchMode="false"
+		android:scaleType="centerInside"
+		android:contentDescription="@string/share_post"
+		android:src="?attr/rbn_icon_share"
+	/>
+
+	<in.lib.view.HintedImageView
+		android:id="@+id/delete"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1.0"
+		android:adjustViewBounds="true"
+		android:background="?attr/rbn_select_background_drawable"
+		android:duplicateParentState="false"
+		android:focusable="false"
+		android:focusableInTouchMode="false"
+		android:scaleType="centerInside"
+		android:contentDescription="@string/delete"
+		android:src="?attr/rbn_icon_delete"
+		android:visibility="gone"
+	/>
+
+	<in.lib.view.HintedImageView
+		android:id="@+id/more"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1.0"
+		android:adjustViewBounds="true"
+		android:background="?attr/rbn_select_background_drawable"
+		android:duplicateParentState="false"
+		android:focusable="false"
+		android:focusableInTouchMode="false"
+		android:scaleType="centerInside"
+		android:visibility="gone"
+		android:contentDescription="@string/more"
+		android:src="?attr/rbn_icon_more"
+	/>
+</merge>

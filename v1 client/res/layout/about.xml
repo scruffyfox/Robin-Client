@@ -1,0 +1,106 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="?attr/rbn_dialog_bg_color"
+	android:orientation="vertical"
+>
+	<ImageButton
+		android:id="@+id/cancel"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:src="?attr/rbn_icon_cancel"
+		android:background="?attr/rbn_select_background_drawable"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+	/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="20dp"
+			android:paddingRight="20dp"
+			android:paddingBottom="20dp"
+			android:orientation="vertical"
+		>
+			<ImageView
+				android:id="@+id/logo"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:adjustViewBounds="true"
+				android:layout_gravity="center_horizontal"
+				android:src="@drawable/logo_xlarge"
+				android:layout_alignParentTop="true"
+			/>
+		
+			<TextView
+				android:id="@+id/about_copy"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="10dp"
+				android:paddingRight="10dp"
+				android:layout_marginTop="20dp"
+				android:text="@string/about_copy"
+				android:textColor="?attr/rbn_dialog_post_text_color"
+				android:layout_below="@id/logo"
+				android:gravity="center"
+			/>
+			
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="10dp"
+				android:paddingRight="10dp"
+				android:layout_marginTop="10dp"
+				android:text="@string/translators"
+				android:textColor="?attr/rbn_dialog_post_text_color"
+				android:layout_below="@id/logo"
+				android:gravity="center"
+			/>
+		
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:layout_below="@id/about_copy"
+				android:layout_marginTop="20dp"
+			>
+				<Button
+					android:id="@+id/about_donate"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="?attr/rbn_btn_text"
+					android:background="?attr/rbn_red_button"
+					android:text="@string/donate"
+					android:layout_weight="1"
+				/>
+		
+				<Button
+					android:id="@+id/feedback"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="?attr/rbn_btn_text"
+					android:background="?attr/rbn_red_button"
+					android:text="@string/feedback"
+					android:layout_weight="1"
+					android:layout_marginLeft="5dp"
+					android:layout_marginRight="5dp"
+				/>
+		
+				<Button
+					android:id="@+id/rate"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="?attr/rbn_btn_text"
+					android:background="?attr/rbn_red_button"
+					android:text="@string/rate_app"
+					android:layout_weight="1"
+				/>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

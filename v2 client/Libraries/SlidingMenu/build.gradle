@@ -1,0 +1,36 @@
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath 'com.android.tools.build:gradle:0.9.+'
+	}
+}
+
+apply plugin: 'android-library'
+
+repositories {
+	mavenCentral()
+}
+
+android {
+	compileSdkVersion 19
+	buildToolsVersion "19.0.0"
+
+	defaultConfig {
+		minSdkVersion 5
+		targetSdkVersion 19
+	}
+
+	sourceSets {
+		main {
+			manifest.srcFile 'library/AndroidManifest.xml'
+			java.srcDirs = ['library/src']
+			res.srcDirs = ['library/res']
+		}
+	}
+}
+
+dependencies {
+	compile "com.android.support:support-v4:19.0.+"
+}

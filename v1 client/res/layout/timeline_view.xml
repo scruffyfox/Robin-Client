@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/layout_root"
+	android:background="@null"
+>
+	<net.callumtaylor.swipetorefresh.view.RefreshableScrollView
+		android:id="@android:id/empty"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		android:weightSum="2"
+	>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:weightSum="2"
+		>
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="0dip"
+				android:src="?attr/rbn_empty_list"
+				android:layout_weight="1"
+				android:adjustViewBounds="true"
+			/>
+	
+			<ProgressBar
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:id="@+id/progress_loader"
+				android:layout_marginTop="10dp"
+				style="@android:style/Widget.Holo.ProgressBar.Large"
+			/>
+		</LinearLayout>
+	</net.callumtaylor.swipetorefresh.view.RefreshableScrollView>
+
+	<in.lib.view.HeadedListView
+		android:id="@android:id/list"
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:divider="@null"
+		android:showDividers="none"
+		android:fadingEdge="none"
+		android:fadingEdgeLength="0px"
+		android:scrollingCache="false"
+		android:cacheColorHint="#00000000"
+	/>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textColor="#ffffffff"
+		android:shadowColor="#ff000000"
+		android:shadowDx="1"
+		android:shadowDy="1"
+		android:shadowRadius="1"
+		android:textStyle="bold"
+		android:textSize="14dp"
+		android:padding="10dp"
+		android:background="#D093c763"
+		android:gravity="center"
+		android:id="@+id/new_posts_ticker"
+		android:visibility="gone"
+		android:layout_gravity="center_horizontal|top"
+	/>
+</FrameLayout>

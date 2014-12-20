@@ -1,0 +1,146 @@
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+> 
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+	>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/options_container"
+			android:orientation="vertical"
+			android:layout_gravity="bottom"
+			android:gravity="bottom"
+			android:layout_alignParentBottom="true"
+		>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="2dp"
+				android:id="@+id/progress_indicator"
+				android:orientation="horizontal"
+				android:layout_weight="100"
+			>
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:background="#ffff0000"
+					android:layout_weight="100"
+				/>
+				
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:background="#ff666666"
+					android:layout_weight="0"
+				/>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:background="#C0000000"
+				android:weightSum="5"
+			>
+				<in.lib.view.HintedImageButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/icon_back"
+					android:src="@drawable/ic_launcher"
+					android:layout_weight="1"
+					android:paddingTop="8dp"
+					android:paddingBottom="8dp"
+					android:contentDescription="@string/back"
+				/>
+
+				<in.lib.view.HintedImageButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/icon_forward"
+					android:src="@drawable/ic_launcher"
+					android:layout_weight="1"
+					android:paddingTop="8dp"
+					android:paddingBottom="8dp"
+					android:contentDescription="@string/forward"
+				/>
+
+				<in.lib.view.HintedImageButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/icon_web"
+					android:src="@drawable/ic_launcher"
+					android:layout_weight="1"
+					android:paddingTop="8dp"
+					android:paddingBottom="8dp"
+					android:contentDescription="@string/open_url"
+				/>
+
+				<!-- <in.lib.view.HintedImageButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@drawable/lightbox_icon_copy"
+					android:layout_weight="1"
+					android:background="?attr/rbn_select_background_drawable"
+					android:paddingTop="8dp"
+					android:paddingBottom="8dp"
+					android:id="@+id/icon_copy"
+					android:contentDescription="@string/copy_url"
+				/> -->
+
+				<in.lib.view.HintedImageButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/icon_share"
+					android:src="@drawable/ic_launcher"
+					android:layout_weight="1"
+					android:paddingTop="8dp"
+					android:paddingBottom="8dp"
+					android:contentDescription="@string/share_url"
+				/>
+				
+				<in.lib.view.HintedImageButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/icon_close"
+					android:src="@drawable/ic_launcher"
+					android:layout_weight="1"
+					android:paddingTop="8dp"
+					android:paddingBottom="8dp"
+					android:contentDescription="@string/close"
+				/>
+			</LinearLayout>
+		</LinearLayout>
+		
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/image_box"
+			android:layout_above="@id/options_container"
+		>
+			<ProgressBar
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/progress"
+				android:layout_gravity="center"
+				style="?android:attr/progressBarStyleLarge"
+			/>
+			
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/web_holder"
+			>
+				<WebView 
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:id="@+id/fullscreen_web"
+					android:layout_gravity="center"
+					android:background="@android:color/transparent"
+				/>
+			</FrameLayout>
+		</FrameLayout>
+	</RelativeLayout>
+</LinearLayout>

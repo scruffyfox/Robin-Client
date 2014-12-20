@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/in.rob.client"
+>
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="?attr/rbn_post_break_bottom_drawable"
+	/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		android:background="?attr/rbn_missing_posts_bg_drawable"
+	>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/load_missing_posts"
+			android:layout_centerInParent="true"
+			android:id="@+id/load_text"
+			android:fontFamily="sans-serif-light"
+			android:textColor="?attr/rbn_title_color"
+			android:textSize="18dp"
+		/>
+
+		<ProgressBar
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			style="@android:style/Widget.Holo.Light.ProgressBar.Small"
+			android:id="@+id/progress"
+			android:visibility="gone"
+		/>
+	</RelativeLayout>
+</merge>

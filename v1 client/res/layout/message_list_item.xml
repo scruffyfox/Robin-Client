@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="?attr/rbn_post_item_bg_drawable"
+	android:descendantFocusability="blocksDescendants"
+	android:orientation="vertical"
+>
+	<RelativeLayout
+		android:id="@+id/post_container"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+	>
+		<in.lib.view.AvatarView
+			android:id="@+id/avatar"
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:scaleType="fitXY"
+			android:layout_alignParentLeft="true"
+			android:layout_marginRight="10dp"
+			android:background="?attr/rbn_profile_avatar_bg"
+		/>
+
+		<include
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/avatar"
+			layout="@layout/post_list_item_stub_text"
+		/>
+	</RelativeLayout>
+
+	<include layout="@layout/post_list_item_stub_media"/>
+
+	<LinearLayout
+		android:id="@+id/options_container"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:orientation="horizontal"
+		android:visibility="gone"
+		android:background="?attr/rbn_quick_options_bg_color"
+	>
+<!-- 		<ImageView -->
+<!-- 			android:layout_width="match_parent" -->
+<!-- 			android:layout_height="1px" -->
+<!-- 			android:background="@color/list_divider_bg_color" -->
+<!-- 		/> -->
+
+		<include layout="@layout/message_list_item_stub_options"/>
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:background="?attr/rbn_list_divider_bg_color"
+	/>
+</LinearLayout>

@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:robin="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fadingEdge="none"
+	android:fadingEdgeLength="0px"
+>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:padding="10dp"
+	>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="?attr/rbn_header_text"
+			android:text="@string/theme_header"
+		/>
+		
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:id="@+id/theme_container"
+			android:background="?attr/rbn_select_background_drawable"
+		>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"	
+				android:layout_centerVertical="true"
+			>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textStyle="bold"
+					android:text="@string/theme"
+					android:textColor="?attr/rbn_post_text_color"
+				/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/theme_desc"
+					android:layout_marginTop="5dp"
+					android:textColor="?attr/rbn_description_title"
+				/>
+			</LinearLayout>
+		</in.lib.view.SettingContainerView>
+		
+		<ImageView android:layout_width="match_parent" android:layout_height="1px" android:background="?attr/rbn_divider_color"/>
+		
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:id="@+id/locale_container"
+			android:background="?attr/rbn_select_background_drawable"
+		>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"	
+				android:layout_centerVertical="true"
+			>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textStyle="bold"
+					android:text="@string/locale"
+					android:textColor="?attr/rbn_post_text_color"
+				/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/locale_desc"
+					android:layout_marginTop="5dp"
+					android:textColor="?attr/rbn_description_title"
+				/>
+			</LinearLayout>
+		</in.lib.view.SettingContainerView>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="?attr/rbn_header_text"
+			android:text="@string/stream_header"
+			android:layout_marginTop="10dp"
+		/>
+				
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:background="?attr/rbn_select_background_drawable"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				android:id="@+id/a_directed_msgs"
+				android:checked="true"
+				android:padding="0dp"
+				android:layout_marginLeft="10dp"
+				android:clickable="false"
+			/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:layout_toLeftOf="@id/a_directed_msgs"
+				android:layout_centerVertical="true"
+			>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textStyle="bold"
+					android:text="@string/show_non_following"
+					android:textColor="?attr/rbn_post_text_color"
+				/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/show_non_following_desc"
+					android:layout_marginTop="5dp"
+					android:textColor="?attr/rbn_description_title"
+				/>
+			</LinearLayout>
+		</in.lib.view.SettingContainerView>
+
+		<ImageView android:layout_width="match_parent" android:layout_height="1px" android:background="?attr/rbn_divider_color"/>
+		
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:background="?attr/rbn_select_background_drawable"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				android:id="@+id/mention_directed_msgs"
+				android:checked="true"
+				android:padding="0dp"
+				android:layout_marginLeft="10dp"
+				android:clickable="false"
+			/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:layout_toLeftOf="@id/mention_directed_msgs"
+				android:layout_centerVertical="true"
+			>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textStyle="bold"
+					android:text="@string/show_non_following_mentions"
+					android:textColor="?attr/rbn_post_text_color"
+				/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/show_non_following_mentions_desc"
+					android:layout_marginTop="5dp"
+					android:textColor="?attr/rbn_description_title"
+				/>
+			</LinearLayout>
+		</in.lib.view.SettingContainerView>
+
+		<ImageView android:layout_width="match_parent" android:layout_height="1px" android:background="?attr/rbn_divider_color"/>
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:background="?attr/rbn_select_background_drawable"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				android:id="@+id/unified_stream"
+				android:checked="true"
+				android:padding="0dp"
+				android:layout_marginLeft="10dp"
+				android:clickable="false"
+			/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:layout_toLeftOf="@id/unified_stream"
+				android:layout_centerVertical="true"
+			>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:text="@string/use_unified"
+					android:textColor="?attr/rbn_post_text_color"
+					android:textStyle="bold"
+				/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/unified_desc"
+					android:layout_marginTop="5dp"
+					android:textColor="?attr/rbn_description_title"
+				/>
+			</LinearLayout>
+		</in.lib.view.SettingContainerView>
+
+		<ImageView android:layout_width="match_parent" android:layout_height="1px" android:background="?attr/rbn_divider_color"/>
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:background="?attr/rbn_select_background_drawable"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				android:id="@+id/timeline_break"
+				android:checked="true"
+				android:padding="0dp"
+				android:layout_marginLeft="10dp"
+				android:clickable="false"
+			/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:layout_toLeftOf="@id/timeline_break"
+				android:layout_centerVertical="true"
+			>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:text="@string/timeline_break"
+					android:textColor="?attr/rbn_post_text_color"
+					android:textStyle="bold"
+				/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/timeline_break_desc"
+					android:layout_marginTop="5dp"
+					android:textColor="?attr/rbn_description_title"
+				/>
+			</LinearLayout>
+		</in.lib.view.SettingContainerView>
+		
+		<ImageView android:layout_width="match_parent" android:layout_height="1px" android:background="?attr/rbn_divider_color"/>
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:background="?attr/rbn_select_background_drawable"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				android:id="@+id/invert_post_checkbox"
+				android:checked="true"
+				android:padding="0dp"
+				android:layout_marginLeft="10dp"
+				android:clickable="false"
+			/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:layout_toLeftOf="@id/invert_post_checkbox"
+				android:layout_centerVertical="true"
+			>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:text="@string/invert_post_click_title"
+					android:textColor="?attr/rbn_post_text_color"
+					android:textStyle="bold"
+				/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/invert_post_click_desc"
+					android:layout_marginTop="5dp"
+					android:textColor="?attr/rbn_description_title"
+				/>
+			</LinearLayout>
+		</in.lib.view.SettingContainerView>
+		
+		<ImageView android:layout_width="match_parent" android:layout_height="1px" android:background="?attr/rbn_divider_color"/>
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:background="?attr/rbn_select_background_drawable"
+			android:id="@+id/single_click_link"
+		>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:layout_centerVertical="true"
+			>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:text="@string/single_click_link_title"
+					android:textColor="?attr/rbn_post_text_color"
+					android:textStyle="bold"
+				/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/single_click_link_desc"
+					android:layout_marginTop="5dp"
+					android:textColor="?attr/rbn_description_title"
+				/>
+			</LinearLayout>
+		</in.lib.view.SettingContainerView>
+		
+		<ImageView android:layout_width="match_parent" android:layout_height="1px" android:background="?attr/rbn_divider_color"/>
+		
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:background="?attr/rbn_select_background_drawable"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				android:id="@+id/lightbox_checkbox"
+				android:checked="true"
+				android:padding="0dp"
+				android:layout_marginLeft="10dp"
+				android:clickable="false"
+			/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:layout_toLeftOf="@id/lightbox_checkbox"
+				android:layout_centerVertical="true"
+			>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:text="@string/browser_title"
+					android:textColor="?attr/rbn_post_text_color"
+					android:textStyle="bold"
+				/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/browser_desc"
+					android:layout_marginTop="5dp"
+					android:textColor="?attr/rbn_description_title"
+				/>
+			</LinearLayout>
+		</in.lib.view.SettingContainerView>
+		
+		<ImageView android:layout_width="match_parent" android:layout_height="1px" android:background="?attr/rbn_divider_color"/>
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:background="?attr/rbn_select_background_drawable"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				android:id="@+id/image_viewer_checkbox"
+				android:checked="true"
+				android:padding="0dp"
+				android:layout_marginLeft="10dp"
+				android:clickable="false"
+			/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:layout_toLeftOf="@id/image_viewer_checkbox"
+				android:layout_centerVertical="true"
+			>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:text="@string/in_app_image_title"
+					android:textColor="?attr/rbn_post_text_color"
+					android:textStyle="bold"
+				/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/in_app_image_desc"
+					android:layout_marginTop="5dp"
+					android:textColor="?attr/rbn_description_title"
+				/>
+			</LinearLayout>
+		</in.lib.view.SettingContainerView>
+		
+		<ImageView android:layout_width="match_parent" android:layout_height="1px" android:background="?attr/rbn_divider_color"/>
+		
+		<ImageView android:layout_width="match_parent" android:layout_height="1px" android:background="?attr/rbn_divider_color"/>
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:background="?attr/rbn_select_background_drawable"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				android:id="@+id/web_readability"
+				android:checked="true"
+				android:padding="0dp"
+				android:layout_marginLeft="10dp"
+				android:clickable="false"
+			/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:layout_toLeftOf="@id/web_readability"
+				android:layout_centerVertical="true"
+			>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:text="@string/web_readability_title"
+					android:textColor="?attr/rbn_post_text_color"
+					android:textStyle="bold"
+				/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/web_readability_desc"
+					android:layout_marginTop="5dp"
+					android:textColor="?attr/rbn_description_title"
+				/>
+			</LinearLayout>
+		</in.lib.view.SettingContainerView>
+		
+		<ImageView android:layout_width="match_parent" android:layout_height="1px" android:background="?attr/rbn_divider_color"/>
+		
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:background="?attr/rbn_select_background_drawable"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				android:id="@+id/global_page"
+				android:checked="true"
+				android:padding="0dp"
+				android:layout_marginLeft="10dp"
+				android:clickable="false"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toLeftOf="@id/global_page"
+				android:text="@string/global_enabled"
+				android:textColor="?attr/rbn_post_text_color"
+				android:textStyle="bold"
+			/>
+		</in.lib.view.SettingContainerView>
+				
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="?attr/rbn_header_text"
+			android:text="@string/post_appearance_header"
+			android:layout_marginTop="10dp"
+		/>
+		
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:background="?attr/rbn_select_background_drawable"
+			android:id="@+id/animation_options"
+		>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+			>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/animation_options_title"
+					android:textColor="?attr/rbn_post_text_color"
+					android:textStyle="bold"
+				/>
+				
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/animation_options_desc"
+					android:textColor="?attr/rbn_description_title"
+					android:layout_marginTop="5dp"
+				/>
+			</LinearLayout>
+		</in.lib.view.SettingContainerView>
+
+		<ImageView android:layout_width="match_parent" android:layout_height="1px" android:background="?attr/rbn_divider_color"/>
+		
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:background="?attr/rbn_select_background_drawable"
+			android:id="@+id/emphasis_options"
+		>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+			>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/emphasis_options_title"
+					android:textColor="?attr/rbn_post_text_color"
+					android:textStyle="bold"
+				/>
+				
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/emphasis_options_desc"
+					android:textColor="?attr/rbn_description_title"
+					android:layout_marginTop="5dp"
+				/>
+			</LinearLayout>
+		</in.lib.view.SettingContainerView>
+
+		<ImageView android:layout_width="match_parent" android:layout_height="1px" android:background="?attr/rbn_divider_color"/>
+		
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:background="?attr/rbn_select_background_drawable"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				android:id="@+id/post_times"
+				android:checked="true"
+				android:padding="0dp"
+				android:layout_marginLeft="10dp"
+				android:clickable="false"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toLeftOf="@id/post_times"
+				android:text="@string/show_long_dates"
+				android:textColor="?attr/rbn_post_text_color"
+				android:textStyle="bold"
+			/>
+		</in.lib.view.SettingContainerView>
+
+		<ImageView android:layout_width="match_parent" android:layout_height="1px" android:background="?attr/rbn_divider_color"/>
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:background="?attr/rbn_select_background_drawable"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				android:id="@+id/inline_images"
+				android:checked="true"
+				android:padding="0dp"
+				android:layout_marginLeft="10dp"
+				android:clickable="false"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toLeftOf="@id/inline_images"
+				android:text="@string/inline_images"
+				android:textColor="?attr/rbn_post_text_color"
+				android:textStyle="bold"
+			/>
+		</in.lib.view.SettingContainerView>
+
+		<ImageView android:layout_width="match_parent" android:layout_height="1px" android:background="?attr/rbn_divider_color"/>
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:background="?attr/rbn_select_background_drawable"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				android:id="@+id/avatar_images"
+				android:checked="true"
+				android:padding="0dp"
+				android:layout_marginLeft="10dp"
+				android:clickable="false"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toLeftOf="@id/avatar_images"
+				android:text="@string/show_avatar_images"
+				android:textColor="?attr/rbn_post_text_color"
+				android:textStyle="bold"
+			/>
+		</in.lib.view.SettingContainerView>
+
+		<ImageView android:layout_width="match_parent" android:layout_height="1px" android:background="?attr/rbn_divider_color"/>
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:background="?attr/rbn_select_background_drawable"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				android:id="@+id/timeline_cover"
+				android:checked="true"
+				android:padding="0dp"
+				android:layout_marginLeft="10dp"
+				android:clickable="false"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toLeftOf="@id/timeline_cover"
+				android:text="@string/show_timeline_cover"
+				android:textColor="?attr/rbn_post_text_color"
+				android:textStyle="bold"
+			/>
+		</in.lib.view.SettingContainerView>
+		
+		<ImageView android:layout_width="match_parent" android:layout_height="1px" android:background="?attr/rbn_divider_color"/>
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:background="?attr/rbn_select_background_drawable"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				android:id="@+id/custom_fonts"
+				android:checked="true"
+				android:padding="0dp"
+				android:layout_marginLeft="10dp"
+				android:clickable="false"
+			/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@id/custom_fonts"
+				android:layout_centerVertical="true"
+				android:orientation="vertical"
+			>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/custom_fonts_title"
+					android:textColor="?attr/rbn_post_text_color"
+					android:textStyle="bold"
+				/>
+				
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/custom_fonts_desc"
+					android:layout_marginTop="5dp"
+					android:textColor="?attr/rbn_description_title"
+				/>
+			</LinearLayout>
+		</in.lib.view.SettingContainerView>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="?attr/rbn_header_text"
+			android:text="@string/misc_header"
+		/>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:orientation="horizontal"
+			android:gravity="center_vertical"
+			android:id="@+id/name_order_container"
+			android:background="?attr/rbn_select_background_drawable"
+		>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/custom_name_order"
+				android:textColor="?attr/rbn_post_text_color"
+				android:layout_weight="0.7"
+				android:textStyle="bold"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/name_order"
+				android:padding="0dp"
+				android:singleLine="false"
+				android:gravity="right"
+				android:layout_weight="0.3"
+				android:textColor="?attr/rbn_description_title"
+			/>
+		</LinearLayout>
+
+		<ImageView android:layout_width="match_parent" android:layout_height="1px" android:background="?attr/rbn_divider_color"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:orientation="vertical"
+		>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+			>
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:text="@string/font_size"
+					android:layout_weight="1"
+					android:textColor="?attr/rbn_post_text_color"
+					android:textStyle="bold"
+				/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:text="normal"
+					android:id="@+id/font_size_text"
+					android:layout_weight="1"
+					android:gravity="right"
+					android:textColor="?attr/rbn_post_link_color"
+					android:layout_marginRight="10dp"
+				/>
+			</LinearLayout>
+
+			<SeekBar
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/font_size"
+				android:max="69"
+				android:layout_marginTop="5dp"
+			/>
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

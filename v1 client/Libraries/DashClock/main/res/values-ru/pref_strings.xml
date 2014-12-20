@@ -1,0 +1,80 @@
+<!--
+  Copyright 2012 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<resources>
+    <!-- Advanced widget preferences -->
+    <string name="pref_clock_shortcut_title">Ярлык для часов</string>
+    <string name="pref_homescreen_background_opacity_title">Фон виджета</string>
+    <string-array name="pref_homescreen_background_opacity_display_names">
+        <item>Полностью прозрачный</item>
+        <item>25%</item>
+        <item>50%</item>
+        <item>75%</item>
+        <item>100%</item>
+    </string-array>
+    <string name="pref_aggressive_centering_title">Всегда по центру</string>
+    <string name="pref_aggressive_centering_description">Может спровоцировать смещение часов для разных состояний виджета</string>
+    <string name="pref_hide_settings_title">Скрыть кнопку настроек</string>
+    <string name="pref_hide_settings_description">Скрыть кнопку настроек когда виджет вертикально развёрнут (в качестве альтернативы доступен виджет настроек DashClock)</string>
+
+    <!-- Universal settings preferences -->
+    <string name="pref_shortcut_title">Ярлык</string>
+    <string name="pref_shortcut_default">(По умолчанию)</string>
+
+    <!-- Weather -->
+    <string name="pref_weather_units_title">Единицы измерения</string>
+    <string-array name="pref_weather_units_display_names">
+        <item>°F</item>
+        <item>°C</item>
+    </string-array>
+
+    <!-- Gmail -->
+    <string name="pref_gmail_label_title">Показывать количество непрочитанных сообщений для папки</string>
+    <string-array name="pref_gmail_label_display_names">
+        <item>Входящие</item>
+        <item>Приоритетные</item>
+    </string-array>
+
+    <string name="pref_gmail_accounts_title">Показывать количество непрочитанных сообщений для аккаунтов</string>
+    <plurals name="pref_gmail_accounts_summary_template">
+        <item quantity="one">%1$d из %2$d аккаунта выбрано</item>
+        <item quantity="other">%1$d из %2$d аккаунтов выбрано</item>
+    </plurals>
+
+    <!-- Calendar -->
+    <string name="pref_calendar_look_ahead_hours_title">Предпросмотр события</string>
+    <string-array name="pref_calendar_look_ahead_hours_display_names">
+        <item>3 часа</item>
+        <item>6 часов</item>
+        <item>12 часов</item>
+        <item>24 часа</item>
+        <item>2 дня</item>
+        <item>неделя</item>
+    </string-array>
+    <string name="pref_calendar_selected_title">Выбрать календари для отображения</string>
+    <plurals name="pref_calendar_selected_summary_template">
+        <item quantity="one">%1$d из %2$d календаря выбрано</item>
+        <item quantity="other">%1$d из %2$d календарей выбрано</item>
+    </plurals>
+    <string name="pref_calendar_custom_visibility_title">Отображать выбранные календари</string>
+    <string name="pref_calendar_custom_visibility_description">Если флажок снят, будут показаны события из всех видимые календари в Календарь</string>
+    <string name="pref_calendar_show_all_day_title">Отображать события на весь день</string>
+    <string name="pref_calendar_show_all_day_description">Включить события, проходящие в течение всего дня, такие как день рожденья</string>
+
+    <!-- Daydream preferences -->
+    <!--<string name="pref_daydream_color_title">Foreground color</string>-->
+    <!--<string name="pref_daydream_system_settings_title">System Daydream settings</string>-->
+</resources>

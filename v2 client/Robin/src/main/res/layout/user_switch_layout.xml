@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/switch_container"
+		android:layout_alignParentBottom="true"
+	>
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/followers_button"
+			android:layout_weight="1"
+			android:text="Followers"
+			android:gravity="center"
+			android:padding="15dp"
+			android:clickable="true"
+		/>
+
+		<View
+			android:layout_width="0.5dp"
+			android:layout_height="match_parent"
+			android:background="#ffaaaaaa"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp"
+		/>
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/following_button"
+			android:layout_weight="1"
+			android:text="Following"
+			android:gravity="center"
+			android:padding="15dp"
+			android:textColor="#ffaaaaaa"
+			android:clickable="true"
+		/>
+	</LinearLayout>
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/fragment_holder"
+		android:layout_above="@id/switch_container"
+	/>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:background="#ffaaaaaa"
+		android:layout_below="@id/fragment_holder"
+	/>
+</RelativeLayout>

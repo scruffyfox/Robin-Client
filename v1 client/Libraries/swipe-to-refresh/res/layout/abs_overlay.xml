@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/action_bar_default_height"
+	android:id="@+id/refresh_view"
+	android:visibility="gone"	
+>
+	<TextView
+		android:text="@string/ptr_pull"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:singleLine="true"
+		android:ellipsize="end"
+		android:textSize="20sp"
+		android:textStyle="bold"
+		android:layout_centerInParent="true"
+		android:gravity="center"
+		android:layout_gravity="center"
+		android:id="@+id/refresh_text"
+		style="?attr/ptr_text_style"
+	/>
+	
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	>
+		<ProgressBar
+			android:id="@+id/refresh_progress"
+			android:layout_height="3dp"
+			android:layout_width="match_parent"
+			style="@style/RefreshProgressThemeLight"
+		/>
+	</FrameLayout>
+</RelativeLayout>

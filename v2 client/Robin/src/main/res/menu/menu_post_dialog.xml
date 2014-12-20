@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/menu_at"
+		android:title="@string/add_at"
+	/>
+
+	<item
+		android:id="@+id/menu_hash"
+		android:title="@string/add_hash"
+	/>
+</menu>

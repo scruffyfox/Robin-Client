@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:scrollbars="none"
+	style="?attr/rbn_login_bg"
+>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:padding="16dp"
+	>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			style="?attr/rbn_login_form"
+		>
+			<EditText
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/login_username"
+				android:id="@+id/username"
+				style="?attr/rbn_login_form_input"
+			/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				style="?attr/rbn_login_form_border"
+			/>
+
+			<EditText
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/password"
+				android:hint="@string/login_password"
+				style="?attr/rbn_login_form_input_password"
+			/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/cd_key_container"
+				android:orientation="vertical"
+				android:visibility="gone"
+			>
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					style="?attr/rbn_login_form_border"
+				/>
+
+				<EditText
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/cd_key"
+					android:hint="xxxxx-xxxxx-xxxxx-xxxxx"
+					android:inputType="textNoSuggestions"
+					android:background="#00000000"
+					android:padding="13dp"
+					android:paddingTop="16dp"
+					android:singleLine="true"
+					android:paddingBottom="16dp"
+					android:imeOptions="actionGo"
+					android:textCursorDrawable="@null"
+					android:maxLength="23"
+				/>
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:weightSum="5"
+			android:orientation="horizontal"
+			android:gravity="right"
+		>
+			<Button
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:id="@+id/info"
+				android:text="Info"
+				android:layout_weight="2"
+				android:layout_marginRight="8dp"
+			/>
+
+			<Button
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:id="@+id/login"
+				android:text="@string/login_button"
+				android:layout_weight="3"
+			/>
+		</LinearLayout>
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/adn_login"
+			android:text="@string/adn_login_button"
+			android:layout_marginTop="8dp"
+		/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/beta_container"
+			android:layout_marginTop="30dp"
+		>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/beta_build"
+				android:gravity="center"
+			/>
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

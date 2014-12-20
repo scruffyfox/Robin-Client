@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/image_box"
+	android:layout_above="@id/options_container"
+>
+	<ProgressBar
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		style="?android:attr/progressBarStyleLarge"
+		android:layout_gravity="center"
+		android:id="@+id/progress"
+	/>
+	
+	<in.lib.view.TouchImageView 
+		android:id="@+id/fullscreen_image"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_gravity="center"	
+		android:scaleType="centerInside"
+	/>
+	
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:id="@+id/fail_message"
+		android:text="@string/image_fail_message"
+		android:visibility="gone"
+		android:gravity="center"
+		android:textColor="#ffffffff"
+		android:textSize="14dp"
+	/>
+</FrameLayout>

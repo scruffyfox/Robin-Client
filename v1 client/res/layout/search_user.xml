@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/layout_root"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@android:color/transparent"
+>
+	<in.lib.view.UserSuggestView
+		android:id="@+id/search_user"
+		android:hint="Start typing \@user"
+		android:singleLine="true"
+		android:gravity="top"
+		android:padding="10dp"
+		android:background="@android:color/transparent"
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:scrollbars="vertical"
+		android:textColor="?attr/rbn_post_text_color"
+		android:imeOptions="actionDone"
+		android:dropDownAnchor="@id/layout_root"
+	/>
+</LinearLayout>

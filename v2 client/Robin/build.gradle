@@ -1,0 +1,137 @@
+import java.util.regex.Pattern
+
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+
+	dependencies {
+		classpath 'com.android.tools.build:gradle:0.9.+'
+	}
+}
+
+apply plugin: 'android'
+
+repositories {
+	mavenCentral()
+}
+
+android {
+	compileSdkVersion 19
+	buildToolsVersion "19"
+
+	defaultConfig {
+		minSdkVersion 14
+		targetSdkVersion 19
+
+		testPackageName "in.rob.client.test"
+		testInstrumentationRunner "in.rob.client.test.Runner"
+		testHandleProfiling true
+		testFunctionalTest true
+	}
+
+	signingConfigs {
+		release {
+			if (project.getGradle().startParameter.taskNames.size() > 0)
+			{
+				def taskName = project.getGradle().startParameter.taskNames.get(0);
+				def console = System.console();
+				if (console != null)// && taskName.contains("Release"))
+				{
+					storeFile file("")
+					storePassword console.readLine("Enter keystore password: ").trim()
+					keyAlias console.readLine("Enter key alias: ").trim()
+					keyPassword console.readLine("Enter key password: ").trim()
+				}
+			}
+		}
+	}
+
+	lintOptions {
+		checkReleaseBuilds false
+		abortOnError false
+	}
+
+	buildTypes {
+		debug {
+			packageNameSuffix ".alpha"
+		}
+		alpha {
+			packageNameSuffix ".alpha"
+			signingConfig signingConfigs.release
+		}
+	}
+
+	packagingOptions {
+		exclude 'META-INF/DEPENDENCIES.txt'
+		exclude 'META-INF/LICENSE.txt'
+		exclude 'META-INF/NOTICE.txt'
+		exclude 'META-INF/NOTICE'
+		exclude 'META-INF/LICENSE'
+		exclude 'META-INF/DEPENDENCIES'
+		exclude 'META-INF/notice.txt'
+		exclude 'META-INF/license.txt'
+		exclude 'META-INF/dependencies.txt'
+		exclude 'META-INF/LGPL2.1'
+	}
+}
+
+dependencies {
+	compile "com.android.support:support-v13:19.0.+"
+	compile 'org.projectlombok:lombok:1.12.+'
+	compile 'com.google.code.gson:gson:2.1'
+	compile 'com.squareup:otto:1.3.+'
+	compile 'com.nostra13.universalimageloader:universal-image-loader:1.8.+'
+	compile project(':Libraries:AsyncHttpClient')
+	compile project(':Libraries:SwipeToRefresh')
+	compile project(':Libraries:SlidingMenu')
+	compile project(':Libraries:GridListView')
+	compile files('libs/gcm.jar', 'libs/libGoogleAnalyticsV2.jar', 'libs/tagsoup-1.2.1.jar')
+}
+
+task('increaseVersionCode') << {
+	if (project.getGradle().startParameter.taskNames.size() > 0)
+	{
+		def taskName = project.getGradle().startParameter.taskNames.get(0);
+
+		def f = new File("buildnumber")
+		f.createNewFile()
+		def buildNumberFile = file(f)
+		int versionCode = 0
+
+		if (buildNumberFile.exists())
+		{
+			def versionText = buildNumberFile.getText()
+			versionCode = Integer.parseInt(versionText) + 1
+		}
+
+		if (taskName.contains("Debug"))
+		{
+			buildNumberFile.write(String.valueOf(versionCode))
+		}
+		else if (taskName.contains("Release") || taskName.contains("Alpha"))
+		{
+			def oldVersionCode = getVersionCode()
+			def manifestFile = file("src/main/AndroidManifest.xml")
+			def pattern = Pattern.compile("versionCode=\"(\\d+)\"")
+			def manifestText = manifestFile.getText()
+			def matcher = pattern.matcher(manifestText)
+			def manifestContent = matcher.replaceAll("versionCode=\"" + (oldVersionCode + versionCode) + "\"")
+			manifestFile.write(manifestContent)
+
+			buildNumberFile.write("0")
+		}
+	}
+}
+
+def getVersionCode() {
+	def manifestFile = file("src/main/AndroidManifest.xml")
+	def pattern = Pattern.compile("versionCode=\"(\\d+)\"")
+	def manifestText = manifestFile.getText()
+	def matcher = pattern.matcher(manifestText)
+	matcher.find()
+	def oldVersionCode = Integer.parseInt(matcher.group(1))
+	return oldVersionCode
+}
+
+tasks.preBuild.dependsOn increaseVersionCode

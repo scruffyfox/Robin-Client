@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Robin</string>
+	<string name="patter_message">Patter Message</string>
+	<string name="thread_show_denested">Show as thread</string>
+
+	<string-array name="image_choice">
+		<item>@string/using_camera</item>
+		<item>@string/from_gallery</item>
+		<item>@string/from_app_net</item>
+		<item>@string/last_taken_pic</item>
+	</string-array>
+
+	<string-array name="single_click_options">
+		<item>@string/single_click_hashtag</item>
+		<item>@string/single_click_mention</item>
+		<item>@string/single_click_url</item>
+	</string-array>
+
+	<string-array name="show_hide_element_options">
+		<item>@string/show_hide_avatar</item>
+		<item>@string/show_hide_inline_images</item>
+		<item>@string/show_hide_timeline_covert</item>
+	</string-array>
+
+	<string-array name="in_app_viewer_options">
+		<item>@string/in_app_viewer_browser</item>
+		<item>@string/in_app_viewer_image</item>
+		<item>@string/in_app_viewer_youtube</item>
+	</string-array>
+
+	<string-array name="emphasis_options">
+		<item>@string/emphasis_italic</item>
+		<item>@string/emphasis_bold</item>
+		<item>@string/emphasis_underline</item>
+	</string-array>
+</resources>

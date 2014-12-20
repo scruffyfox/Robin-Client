@@ -1,0 +1,6 @@
+include ':Robin'
+
+include ':Libraries:AsyncHttpClient'
+include ':Libraries:SwipeToRefresh'
+include ':Libraries:SlidingMenu'
+include ':Libraries:GridListView'

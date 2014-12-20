@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<style name="AppTheme" parent="android:Theme.Holo.Light">
+		<item name="android:editTextBackground">@drawable/edit_text_holo_light</item>
+		<item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewAppTheme</item>
+		<item name="android:listChoiceIndicatorMultiple">@drawable/btn_check_holo_light</item>
+		<item name="android:listChoiceIndicatorSingle">@drawable/btn_radio_holo_light</item>
+		<item name="android:seekBarStyle">@style/SeekBarAppTheme</item>
+		<item name="android:fastScrollThumbDrawable">@drawable/fastscroll_thumb_holo</item>
+	</style>
+	
+	<style name="Theme.Default.Dialog" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+		<item name="android:windowNoTitle">true</item>
+	</style>
+	
+	<style name="Theme.DefaultDark.Dialog" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+		<item name="android:windowNoTitle">true</item>
+	</style>
+	
+	<style name="Theme.Default.Dialog.Widget" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+		<item name="android:windowNoTitle">true</item>
+	</style>
+	
+	<style name="Theme.DefaultDark.Dialog.Widget" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+		<item name="android:windowNoTitle">true</item>
+	</style>
+</resources>

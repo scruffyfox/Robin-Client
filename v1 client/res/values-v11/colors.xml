@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<item name="post_bg_color" type="color">#f6f6f6</item>
+	<item name="post_bg_selected_color" type="color">#e6e6e6</item>
+	<item name="post_mention_bg_color" type="color">#e6e6e6</item>
+	<item name="post_mention_bg_selected_color" type="color">#d2d2d2</item>
+	<item name="quick_options_bg_color" type="color">#e1e1e1</item>
+	<item name="list_divider_bg_color" type="color">#cfcfcf</item>
+	<item name="post_text_color" type="color">#333333</item>
+	<item name="post_link_color" type="color">#cc0000</item>
+	
+	<!-- Action bar -->
+	<item name="action_bar_text_color" type="color">#cc0000</item>
+	<item name="action_bar_line_color" type="color">#959595</item>
+	<item name="action_bar_color" type="color">#d2d2d2</item>
+	<item name="action_bar_tab_underline" type="color">#cc0000</item>
+	
+	<!-- Dialogs -->
+	<item name="dialog_bg_color" type="color">#ffffff</item>
+	<item name="dialog_title_color" type="color">#cc0000</item>
+	<item name="dialog_text_color" type="color">#858585</item>
+	<item name="dialog_text_color_alert" type="color">#cc0000</item>
+	<item name="dialog_about_bg" type="color">#f6f6f6</item>
+	<item name="dialog_about_text" type="color">#858585</item>
+	
+	<item name="navigation_bg_color" type="color">#666666</item>
+	
+	<!-- Login screen -->	
+	<item name="login_bg_color" type="color">#f6f6f6</item>
+	<item name="login_input_border" type="color">#dfdfdf</item>
+	<item name="login_input_bg" type="color">#ffffff</item>
+	<item name="login_text" type="color">#757575</item>
+	<item name="login_hint" type="color">#aaaaaa</item>
+	<item name="login_hint_error" type="color">#bb0000</item>
+	<item name="login_text_error" type="color">#aa0000</item>
+	
+	<!-- Button -->
+	<item name="btn_bg" type="color">#cc0c0c</item>
+	<item name="btn_bg_pressed" type="color">#992d2d</item>
+	<item name="btn_bg_focused" type="color">#850404</item>
+	<item name="btn_text" type="color">#ffffff</item>
+	
+	<item name="btn_bg_grey" type="color">#666666</item>
+	<item name="btn_bg_grey_pressed" type="color">#505050</item>
+	<item name="btn_bg_grey_focused" type="color">#5f5f5f</item>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:descendantFocusability="blocksDescendants"
+	android:padding="8dp"
+>
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/icon"
+		android:layout_marginRight="8dp"
+		android:layout_gravity="center_vertical"
+		android:gravity="center"
+		android:adjustViewBounds="true"
+		android:src="@drawable/ic_follower_light"
+	/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+	>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/title"
+			android:singleLine="true"
+			android:text="New Followers:"
+			android:layout_marginBottom="8dp"
+			android:visibility="gone"
+			style="?attr/rbn_post_user_title"
+		/>
+
+		<in.lib.view.TextChronometer
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/date"
+			android:layout_alignParentRight="true"
+			android:layout_marginLeft="4dp"
+			style="?attr/rbn_post_date"
+		/>
+
+		<in.lib.view.FlowLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/user_container"
+			android:orientation="horizontal"
+			android:layout_toLeftOf="@id/date"
+			android:layout_below="@id/title"
+			app:horizontalSpacing="4dp"
+			app:verticalSpacing="4dp"
+		/>
+	</RelativeLayout>
+</LinearLayout>

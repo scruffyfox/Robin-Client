@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:padding="@dimen/widget_padding"
+>
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:paddingTop="10dp"
+	>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="15dp"
+			android:layout_marginRight="15dp"
+			android:orientation="vertical"
+			android:background="@drawable/light_list_item_background"
+		>
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="3dp"
+				android:background="@color/light_action_bar_color"
+			/>
+			
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:layout_marginTop="10dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+			>
+				<ImageView
+					android:id="@+id/avatar"
+					android:layout_width="60dp"
+					android:layout_height="60dp"
+					android:background="@drawable/light_avatar_shadow"
+					android:layout_marginRight="10dp"
+					android:src="@drawable/default_avatar"
+				/>
+			
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:layout_toRightOf="@id/avatar"
+				>
+					<RelativeLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+					>
+						<TextView
+							android:id="@+id/time"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentRight="true"
+							android:layout_marginLeft="10dp"
+							android:gravity="right"
+							android:text="1m"
+							android:textSize="14sp"
+							android:fontFamily="sans-serif-light"
+						/>
+				
+						<ImageView
+							android:id="@+id/is_convo"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="10dp"
+							android:layout_marginTop="3dp"
+							android:layout_toLeftOf="@id/time"
+							android:visibility="gone"
+						/>
+				
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_toLeftOf="@+id/is_convo"
+							android:orientation="horizontal"
+						>
+							<TextView
+								android:id="@+id/title"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:singleLine="true"
+								android:text="\@scruffyfox"
+								android:textSize="14dp"
+								android:textColor="@color/black"
+							/>
+				
+							<TextView
+								android:id="@+id/sub_title"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="5dp"
+								android:ellipsize="end"
+								android:singleLine="true"
+								android:text="Callum Taylor"
+								android:textSize="10dp"
+								android:textColor="@color/dark_grey"
+							/>
+						</LinearLayout>
+					</RelativeLayout>
+				
+					<TextView
+						android:id="@+id/text"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="5dp"
+						android:textSize="14dp"
+						android:fontFamily="sans-serif"
+						android:textColor="@color/light_dialog_post_text_color"
+					/>
+					<!-- 662350BF18802DE5EF452DFFCF68C94AD3CE85C41E90CBD4E0F04C131BAE3209662350BF18802DE5EF452DFFCF68C94AD3CE85C41E90CBD4E0F04C131BAE3209662350BF18802DE5EF452DFFCF68C94AD3CE85C41E90CBD4E0F04C131BAE3209662350BF18802DE5EF452DFFCF68C94AD3CE85C41E90CBD4E0F04C131BAE3209 -->
+				</LinearLayout>
+			</RelativeLayout>
+		</LinearLayout>
+	</FrameLayout>
+	
+	<ImageView
+		android:id="@+id/widget_logo"
+		android:layout_width="@dimen/widget_icon_width"
+		android:layout_height="@dimen/widget_icon_height"
+		android:scaleType="centerInside"
+		android:src="@drawable/ic_launcher"
+	/>
+</FrameLayout>

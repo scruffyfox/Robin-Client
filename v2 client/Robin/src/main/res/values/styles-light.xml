@@ -1,0 +1,213 @@
+<resources>
+	<style name="SwipeToRefresh.Light" />
+
+	<style name="SwipeToRefresh.Light.RefreshProgressText">
+		<item name="android:textColor">@color/rbn_light_red</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:ellipsize">end</item>
+		<item name="android:textSize">20sp</item>
+		<item name="android:fontFamily">sans-serif</item>
+	</style>
+
+	<style name="SwipeToRefresh.Light.RefreshProgressIndeterminateThemeLight" parent="android:Widget.ProgressBar.Horizontal">
+		<item name="android:indeterminateDrawable">@drawable/progress_indeterminate_horizontal_holo_light</item>
+		<item name="android:minHeight">2.5dip</item>
+		<item name="android:maxHeight">2.5dip</item>
+		<item name="android:indeterminateOnly">true</item>
+	</style>
+
+	<style name="SwipeToRefresh.Light.RefreshProgressThemeLight" parent="android:Widget.Holo.ProgressBar.Horizontal">
+		<item name="android:indeterminateOnly">false</item>
+		<item name="android:layout_height">2.5dip</item>
+		<item name="android:progressDrawable">@drawable/overscroll_progress_center_light</item>
+	</style>
+
+	<!-- Action bar styles -->
+	<style name="ActionBar.Light" />
+
+	<style name="ActionBar.Light.ActionBar" parent="android:Widget.Holo.Light.ActionBar.Solid">
+		<item name="android:displayOptions">showHome|useLogo|homeAsUp|showCustom</item>
+		<item name="android:customNavigationLayout">@layout/action_bar</item>
+		<item name="android:background">@drawable/actionbar_background_light</item>
+	</style>
+
+	<style name="ActionBar.Light.Title">
+		<item name="android:singleLine">true</item>
+		<item name="android:ellipsize">end</item>
+		<item name="android:textSize">20sp</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:fontFamily">sans-serif</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:textColor">@color/rbn_light_red</item>
+	</style>
+
+	<style name="ActionBar.Light.Indicator">
+		<item name="android:background">@color/rbn_light_action_bar_line</item>
+	</style>
+
+	<style name="ActionBar.Light.Indicator.Tab">
+		<item name="android:background">@color/rbn_light_red</item>
+	</style>
+
+	<style name="DropDownListView.Light" parent="@android:style/Widget.Holo.Light.ListView.DropDown">
+		<item name="android:listSelector">@drawable/selectable_background_light</item>
+	</style>
+
+	<style name="DropDownNav.Light" parent="@android:style/Widget.Holo.Light.Spinner">
+		<item name="android:dropDownSelector">@drawable/selectable_background_light</item>
+	</style>
+
+	<!-- Dialog styles -->
+	<style name="Dialog.Light" />
+
+	<style name="Dialog.Light.Title" parent="ActionBar.Light.Title">
+		<item name="android:textSize">18sp</item>
+		<item name="android:gravity">center</item>
+	</style>
+
+	<style name="Dialog.Light.Counter">
+		<item name="android:textColor">@color/dialog_counter_light</item>
+		<item name="android:textSize">20dp</item>
+		<item name="android:padding">5dp</item>
+	</style>
+
+	<style name="Dialog.Light.Input">
+		<item name="android:gravity">top</item>
+		<item name="android:textColor">#ff666666</item>
+		<item name="android:autoLink">none</item>
+		<item name="android:textColorLink">@color/rbn_light_red</item>
+		<item name="android:background">@null</item>
+		<item name="android:hint">Enter your post</item>
+	</style>
+
+	<!-- Post styles -->
+	<style name="Post.Light" />
+
+	<style name="Post.Light.UserTitle">
+		<item name="android:textColor">#ff000000</item>
+		<item name="android:textSize">16dp</item>
+		<item name="android:fontFamily">sans-serif</item>
+	</style>
+
+	<style name="Post.Light.UserSubTitle">
+		<item name="android:textColor">#ff666666</item>
+		<item name="android:textSize">12dp</item>
+		<item name="android:fontFamily">sans-serif</item>
+	</style>
+
+	<style name="Post.Light.Date">
+		<item name="android:textColor">#ff000000</item>
+		<item name="android:textSize">14dp</item>
+		<item name="android:fontFamily">sans-serif-light</item>
+	</style>
+
+	<style name="Post.Light.Text">
+		<item name="android:textSize">14dp</item>
+		<item name="android:autoLink">none</item>
+		<item name="android:textColorHighlight">#7fF13D4D</item>
+		<item name="android:textColor">#ff000000</item>
+		<item name="android:textColorLink">@color/rbn_light_red</item>
+		<item name="android:fontFamily">sans-serif</item>
+	</style>
+
+	<style name="Post.Light.Text.Thread">
+		<item name="android:textSize">18dp</item>
+		<item name="android:paddingTop">16dp</item>
+		<item name="android:paddingLeft">8dp</item>
+		<item name="android:paddingRight">8dp</item>
+		<item name="android:paddingBottom">8dp</item>
+		<item name="android:background">@drawable/light_post_big_text_bg</item>
+		<item name="android:layout_marginLeft">8dp</item>
+		<item name="android:layout_marginRight">8dp</item>
+	</style>
+
+	<style name="Post.Light.Text.Post">
+		<item name="android:layout_marginTop">4dp</item>
+	</style>
+
+	<style name="Post.Light.ConvoIndicator">
+		<item name="android:src">@drawable/post_ic_conversation_light</item>
+		<item name="android:layout_centerVertical">true</item>
+		<item name="android:layout_marginRight">2dp</item>
+		<item name="android:layout_marginLeft">2dp</item>
+	</style>
+
+	<style name="Post.Light.EmptyIcon">
+		<item name="android:src">@drawable/loading_icon_light</item>
+	</style>
+
+	<!-- Login screen -->
+	<style name="Post.Light.Login">
+		<item name="android:background">#f6f6f6</item>
+	</style>
+
+	<style name="Post.Light.Login.Form">
+		<item name="android:background">@drawable/bordered_block_light</item>
+	</style>
+
+	<style name="Post.Light.Login.Border">
+		<item name="android:background">#ffdfdfdf</item>
+	</style>
+
+	<style name="Post.Light.Login.Input">
+		<item name="android:background">#00000000</item>
+		<item name="android:padding">13dp</item>
+		<item name="android:paddingTop">16dp</item>
+		<item name="android:paddingBottom">16dp</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:textCursorDrawable">@null</item>
+	</style>
+
+	<style name="Post.Light.Login.Input.Password">
+		<item name="android:inputType">textPassword</item>
+		<item name="android:textCursorDrawable">@null</item>
+		<item name="android:imeOptions">actionGo</item>
+	</style>
+
+	<style name="Divider.Light">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">0.5dp</item>
+		<item name="android:background">#ffCCCCCC</item>
+		<item name="android:layout_marginTop">8dp</item>
+		<item name="android:layout_marginBottom">8dp</item>
+	</style>
+
+	<!-- Settings -->
+	<style name="Settings.Title">
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="Settings.Description">
+		<item name="android:layout_marginTop">4dp</item>
+	</style>
+
+	<style name="Settings.Checkbox">
+		<item name="android:layout_marginLeft">8dp</item>
+	</style>
+
+	<!-- Channels -->
+	<style name="Channel.Light" />
+
+	<style name="Channel.Light.Title">
+		<item name="android:textSize">18dp</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:ellipsize">end</item>
+		<item name="android:fontFamily">sans-serif-light</item>
+	</style>
+
+	<style name="Channel.Light.Date">
+		<item name="android:textSize">14dp</item>
+		<item name="android:fontFamily">sans-serif-light</item>
+	</style>
+
+	<style name="Channel.Light.Text">
+		<item name="android:textSize">14dp</item>
+		<item name="android:autoLink">none</item>
+		<item name="android:textColorHighlight">#00ffffff</item>
+		<item name="android:textColor">#ff000000</item>
+		<item name="android:textColorLink">@color/rbn_light_red</item>
+		<item name="android:fontFamily">sans-serif</item>
+		<item name="android:maxLines">4</item>
+		<item name="android:ellipsize">end</item>
+	</style>
+</resources>

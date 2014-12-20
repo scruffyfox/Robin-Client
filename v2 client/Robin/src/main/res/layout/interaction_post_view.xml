@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:descendantFocusability="blocksDescendants"
+	android:padding="8dp"
+>
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/icon"
+		android:layout_gravity="center_vertical"
+		android:gravity="center"
+		android:adjustViewBounds="true"
+		android:src="@drawable/ic_unstar_light"
+	/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginLeft="8dp"
+	>
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+		>
+			<in.lib.view.TextChronometer
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/date"
+				android:layout_alignParentRight="true"
+				android:layout_marginLeft="4dp"
+				style="?attr/rbn_post_date"
+			/>
+
+			<in.lib.view.LinkedTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/post_text"
+				android:layout_marginTop="0dp"
+				android:layout_toLeftOf="@id/date"
+				style="?attr/rbn_post_text"
+			/>
+		</RelativeLayout>
+
+		<in.lib.view.FlowLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/user_container"
+			android:orientation="horizontal"
+			android:layout_marginTop="12dp"
+			android:layout_toRightOf="@id/icon"
+			app:horizontalSpacing="4dp"
+			app:verticalSpacing="4dp"
+		/>
+	</LinearLayout>
+</LinearLayout>

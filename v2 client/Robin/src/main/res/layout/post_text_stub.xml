@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/title_container"
+	>
+		<in.lib.view.TextChronometer
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/date"
+			android:layout_alignParentRight="true"
+			android:layout_marginLeft="4dp"
+			style="?attr/rbn_post_date"
+		/>
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/conversation_indicator"
+			android:layout_toLeftOf="@id/date"
+			android:visibility="gone"
+			style="?attr/rbn_post_convo"
+		/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/username_title"
+			android:singleLine="true"
+			style="?attr/rbn_post_user_title"
+		/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/username_subtitle"
+			android:singleLine="true"
+			android:layout_toRightOf="@id/username_title"
+			android:layout_toLeftOf="@id/conversation_indicator"
+			android:layout_marginLeft="6dp"
+			android:layout_alignBaseline="@id/username_title"
+			style="?attr/rbn_post_user_sub_title"
+		/>
+	</RelativeLayout>
+
+	<in.lib.view.LinkedTextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/post_text"
+		style="?attr/rbn_post_text"
+	/>
+
+	<include layout="@layout/post_meta_stub" />
+</LinearLayout>

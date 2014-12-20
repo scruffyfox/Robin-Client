@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:padding="@dimen/widget_padding"
+>
+	<RelativeLayout
+		android:id="@+id/widget_header"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/abc_action_bar_default_height"
+		android:background="@drawable/dark_actionbar_bg"
+	>
+		<ImageView
+			android:id="@+id/widget_logo"
+			android:layout_width="@dimen/widget_icon_width"
+			android:layout_height="@dimen/widget_icon_height"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="10dp"
+			android:contentDescription="@string/app_name"
+			android:scaleType="centerInside"
+			android:src="@drawable/ic_launcher"
+		/>
+
+		<TextView
+			android:id="@+id/title"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_toLeftOf="@+id/widget_new_post"
+			android:layout_toRightOf="@+id/widget_logo"
+			android:gravity="center_vertical"
+			android:paddingLeft="10dp"
+			android:textColor="@color/dark_dialog_title_color"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textStyle="bold"
+		/>
+		
+		<ImageButton
+			android:id="@+id/widget_refresh"
+			android:layout_width="@dimen/abc_action_bar_default_height"
+			android:layout_height="match_parent"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentTop="true"
+			android:layout_toLeftOf="@+id/widget_new_post"
+			android:clickable="true"
+			android:layout_centerVertical="true"
+			android:background="@drawable/dark_ab_item_background"
+			android:contentDescription="@string/refresh"
+			android:scaleType="center"
+			android:src="@drawable/dark_ic_refresh"
+		/>
+
+		<ImageButton
+			android:id="@+id/widget_new_post"
+			android:layout_width="@dimen/abc_action_bar_default_height"
+			android:layout_height="match_parent"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentTop="true"
+			android:clickable="true"
+			android:layout_centerVertical="true"
+			android:background="@drawable/dark_ab_item_background"
+			android:contentDescription="@string/new_post"
+			android:scaleType="center"
+			android:src="@drawable/dark_ic_plus"
+		/>
+	</RelativeLayout>
+
+	<ListView
+		android:id="@+id/widget_post_feed_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/dark_dialog_bg_color"
+		android:divider="@color/dark_list_divider_bg_color"
+	>
+	</ListView>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/reposted_by"
+		android:textStyle="italic"
+		android:drawableLeft="?attr/rbn_post_reposted_by"
+		android:layout_marginTop="8dp"
+		android:drawablePadding="8dp"
+		android:ellipsize="end"
+		android:singleLine="true"
+		android:textSize="12dp"
+		android:visibility="gone"
+	/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/crosspost"
+		android:textStyle="italic"
+		android:drawableLeft="?attr/rbn_post_crosspost"
+		android:layout_marginTop="8dp"
+		android:drawablePadding="8dp"
+		android:ellipsize="end"
+		android:singleLine="true"
+		android:textSize="12dp"
+		android:visibility="gone"
+	/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/checkin"
+		android:textStyle="italic"
+		android:drawableLeft="?attr/rbn_post_checkin"
+		android:layout_marginTop="8dp"
+		android:drawablePadding="8dp"
+		android:ellipsize="end"
+		android:singleLine="true"
+		android:textSize="12dp"
+		android:visibility="gone"
+	/>
+</LinearLayout>

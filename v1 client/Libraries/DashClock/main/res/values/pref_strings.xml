@@ -1,0 +1,103 @@
+<!--
+  Copyright 2012 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<resources>
+    <!-- Advanced widget preferences -->
+    <string name="pref_clock_shortcut_title">Clock shortcut</string>
+    <string name="pref_homescreen_background_opacity_title">Home screen widget background</string>
+    <string-array name="pref_homescreen_background_opacity_display_names">
+        <item>Fully transparent</item>
+        <item>25% black</item>
+        <item>50% black</item>
+        <item>75% black</item>
+        <item>100% black</item>
+    </string-array>
+    <string-array name="pref_homescreen_background_opacity_values" translatable="false">
+        <item>0</item>
+        <item>25</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+    </string-array>
+    <string name="pref_aggressive_centering_title">Always center</string>
+    <string name="pref_aggressive_centering_description">Can result in the clock jumping around for different widget states</string>
+    <string name="pref_hide_settings_title">Hide settings button</string>
+    <string name="pref_hide_settings_description">Hide the configuration button when the widget is vertically expanded (a \"DashClock Settings\" home screen shortcut is available as an alternative)</string>
+
+    <!-- Universal settings preferences -->
+    <string name="pref_shortcut_title">Shortcut</string>
+    <string name="pref_shortcut_default">(Default)</string>
+
+    <!-- Weather -->
+    <string name="pref_weather_units_title">Weather units</string>
+    <string-array name="pref_weather_units_display_names">
+        <item>°F</item>
+        <item>°C</item>
+    </string-array>
+    <string-array name="pref_weather_units_values" translatable="false">
+        <item>f</item>
+        <item>c</item>
+    </string-array>
+
+    <!-- Gmail -->
+    <string name="pref_gmail_label_title">Show unread count for label</string>
+    <string-array name="pref_gmail_label_display_names">
+        <item>Inbox</item>
+        <item>Priority Inbox</item>
+    </string-array>
+    <string-array name="pref_gmail_label_inbox_values" translatable="false">
+        <item>i</item>
+        <item>p</item>
+    </string-array>
+
+    <string name="pref_gmail_accounts_title">Show unread count for accounts</string>
+    <plurals name="pref_gmail_accounts_summary_template">
+        <item quantity="one">%1$d of %2$d account selected</item>
+        <item quantity="other">%1$d of %2$d accounts selected</item>
+    </plurals>
+
+    <!-- Calendar -->
+    <string name="pref_calendar_look_ahead_hours_title">Show appointments in the next</string>
+    <string-array name="pref_calendar_look_ahead_hours_display_names">
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>12 hours</item>
+        <item>24 hours</item>
+        <item>2 days</item>
+        <item>week</item>
+    </string-array>
+    <string-array name="pref_calendar_look_ahead_hours_values" translatable="false">
+        <item>3</item>
+        <item>6</item>
+        <item>12</item>
+        <item>24</item>
+        <item>48</item>
+        <item>168</item>
+    </string-array>
+    <string name="pref_calendar_selected_title">Select calendars to display</string>
+    <plurals name="pref_calendar_selected_summary_template">
+        <item quantity="one">%1$d of %2$d calendar selected</item>
+        <item quantity="other">%1$d of %2$d calendars selected</item>
+    </plurals>
+    <string name="pref_calendar_custom_visibility_title">Custom calendar visibility</string>
+    <string name="pref_calendar_custom_visibility_description">If unchecked, show all visible calendars in the Calendar app</string>
+    <string name="pref_calendar_show_all_day_title">Show all-day events</string>
+    <string name="pref_calendar_show_all_day_description">Include all-day events such as birthdays</string>
+
+    <!-- Daydream preferences -->
+    <string name="pref_daydream_color_title">Foreground color</string>
+    <string name="pref_daydream_system_settings_title">System Daydream settings</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="action_bar_default_height">38dip</dimen>
+	<dimen name="timeline_header_height">90dp</dimen>
+	<dimen name="inline_media_height">100dp</dimen>
+</resources>

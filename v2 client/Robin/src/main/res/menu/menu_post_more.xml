@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/menu_details"
+		android:title="@string/details"
+	/>
+
+	<item
+		android:id="@+id/menu_copy_text"
+		android:title="@string/copy_text"
+	/>
+
+	<item
+		android:id="@+id/menu_translate"
+		android:title="@string/translate_post"
+	/>
+
+	<item
+		android:id="@+id/menu_mute"
+		android:title="@string/mute_thread"
+		android:visible="false"
+	/>
+
+	<item
+		android:id="@+id/menu_collapse"
+		android:title="Collapse thread"
+		android:visible="false"
+	/>
+
+	<item
+		android:id="@+id/menu_delete"
+		android:title="@string/delete"
+		android:visible="false"
+	/>
+
+	<item
+		android:id="@+id/menu_report"
+		android:title="@string/report"
+	/>
+</menu>

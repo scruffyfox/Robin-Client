@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="?attr/rbn_post_item_bg_drawable"
+	android:descendantFocusability="blocksDescendants"
+>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal"
+		android:padding="10dp"
+	>
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/action_container"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:orientation="horizontal"
+			android:layout_marginLeft="10dp"
+		>
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/mute_button"
+				android:text="@string/unmute"
+				android:focusable="false"
+				android:background="?attr/rbn_red_button"
+				android:textColor="?attr/rbn_btn_text"
+			/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/follow_button"
+				android:text="@string/follow"
+				android:focusable="false"
+				android:background="?attr/rbn_red_button"
+				android:textColor="?attr/rbn_btn_text"
+				android:visibility="gone"
+			/>
+		</LinearLayout>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_toLeftOf="@id/action_container"
+		>
+			<in.lib.view.AvatarView
+				android:id="@+id/avatar"
+				android:layout_width="60dp"
+				android:layout_height="60dp"
+				android:scaleType="fitXY"
+				android:layout_marginRight="10dp"
+				android:background="?attr/rbn_profile_avatar_bg"
+			/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:paddingRight="10dp"
+				android:layout_toRightOf="@id/avatar"
+				android:layout_centerVertical="true"
+			>
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/title"
+					android:textStyle="bold"
+					android:textColor="?attr/rbn_title_color"
+					android:textSize="16sp"
+				/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/text"
+					android:textColor="?attr/rbn_sub_title"
+					android:textSize="14sp"
+				/>
+			</LinearLayout>
+		</RelativeLayout>
+	</RelativeLayout>
+
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="?attr/rbn_list_divider_bg_color"
+	/>
+</LinearLayout>

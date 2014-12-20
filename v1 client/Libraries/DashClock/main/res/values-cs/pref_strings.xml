@@ -1,0 +1,81 @@
+<!--
+  Copyright 2013 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<resources>
+    <!-- Advanced widget preferences -->
+    <string name="pref_clock_shortcut_title">Zástupce hodin</string>
+    <string name="pref_homescreen_background_opacity_title">Pozadí widgetu</string>
+    <string-array name="pref_homescreen_background_opacity_display_names">
+        <item>Úplně průhledné</item>
+        <item>25% černé</item>
+        <item>50% černé</item>
+        <item>75% černé</item>
+        <item>100% černé</item>
+    </string-array>
+    <string name="pref_aggressive_centering_title">Vždy uprostřed</string>
+    <string name="pref_aggressive_centering_description">Může způsobit poskakování pro některé hodnoty widgetu</string>
+    <string name="pref_hide_settings_title">Schovat tlačítko nastavení</string>
+    <string name="pref_hide_settings_description">Schovat tlačítko nastavení, pokud je widget vertikálně roztažený (Zástupce "Nastavení DashClock Widgetu" je dostupná alternativa)</string>
+
+    <!-- Universal settings preferences -->
+    <string name="pref_shortcut_title">Zástupce</string>
+    <string name="pref_shortcut_default">(Výchozí)</string>
+
+    <!-- Weather -->
+    <string name="pref_weather_units_title">Jednotky teploty</string>
+    <string-array name="pref_weather_units_display_names">
+        <item>°F</item>
+        <item>°C</item>
+    </string-array>
+
+    <!-- Gmail -->
+    <string name="pref_gmail_label_title">Zobrazit počet nepřečtených v popisku</string>
+    <string-array name="pref_gmail_label_display_names">
+        <item>Pošta</item>
+        <item>Prioritní pošta</item>
+    </string-array>
+
+    <string name="pref_gmail_accounts_title">Zobrazit počet nepřečtených na účtech</string>
+    <plurals name="pref_gmail_accounts_summary_template">
+        <item quantity="one">%1$d z %2$d účtů vybrán</item>
+        <item quantity="few">%1$d z %2$d účtů vybrány</item>
+        <item quantity="other">%1$d z %2$d účtů vybráno</item>
+    </plurals>
+
+    <!-- Calendar -->
+    <string name="pref_calendar_look_ahead_hours_title">Čas do další schůzky</string>
+    <string-array name="pref_calendar_look_ahead_hours_display_names">
+        <item>3 hodiny</item>
+        <item>6 hodin</item>
+        <item>12 hodin</item>
+        <item>24 hodin</item>
+        <item>2 dny</item>
+        <item>1 týden</item>
+    </string-array>
+    <string name="pref_calendar_selected_title">Zvolit kalendáře k zobrazení</string>
+    <plurals name="pref_calendar_selected_summary_template">
+        <item quantity="one">Vybrán kalendář %1$d z %2$d</item>
+        <item quantity="other">Vybrány %1$d z %2$d kalendářů</item>
+    </plurals>
+    <string name="pref_calendar_custom_visibility_title">Zvolte viditelnost kalendáře</string>
+    <string name="pref_calendar_custom_visibility_description">Když není zaškrtnuto, ukázat všechny viditelné kalendáře z aplikace Kalendář</string>
+    <string name="pref_calendar_show_all_day_title">Zobrazit celodenní události</string>
+    <string name="pref_calendar_show_all_day_description">Zahrnout celodenní události, narozeniny apod.</string>
+
+    <!-- Daydream preferences -->
+    <!--<string name="pref_daydream_color_title">Foreground color</string>-->
+    <!--<string name="pref_daydream_system_settings_title">System Daydream settings</string>-->
+</resources>

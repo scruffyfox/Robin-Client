@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="in.rob.client"
+	android:versionCode="9546"
+	android:versionName="3.0"
+>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+	<uses-sdk
+		android:minSdkVersion="14"
+		android:targetSdkVersion="19"
+	/>
+
+	<application
+		android:allowBackup="true"
+		android:icon="@drawable/ic_launcher"
+		android:label="@string/app_name"
+		android:name=".MainApplication"
+	>
+		<meta-data android:name="com.sec.android.support.multiwindow" android:value="true" />
+
+		<activity
+			android:name=".SplashActivity"
+			android:label="@string/app_name"
+			android:noHistory="true"
+		>
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+				<category android:name="android.intent.category.MULTIWINDOW_LAUNCHER"/>
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".MainChoiceActivity" android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name=".AuthenticationActivity" android:theme="@style/Theme.Light" />
+		<activity android:name=".MainActivity" android:theme="@style/Theme.Light.Main" android:launchMode="singleTop" />
+		<activity android:name=".ProfileActivity" android:theme="@style/Theme.Light" android:parentActivityName=".MainActivity">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="in.rob.client.MainActivity"
+			/>
+		</activity>
+		<activity android:name=".ThreadActivity" android:theme="@style/Theme.Light" android:parentActivityName=".MainActivity">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="in.rob.client.MainActivity"
+			/>
+		</activity>
+		<activity android:name=".ChannelsActivity" android:theme="@style/Theme.Light" android:parentActivityName=".MainActivity">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="in.rob.client.MainActivity"
+			/>
+		</activity>
+		<activity android:name=".StarredActivity" android:theme="@style/Theme.Light" android:parentActivityName=".MainActivity">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="in.rob.client.MainActivity"
+			/>
+		</activity>
+		<activity android:name=".SearchActivity" android:theme="@style/Theme.Light" android:parentActivityName=".MainActivity">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="in.rob.client.MainActivity"
+			/>
+		</activity>
+		<activity android:name=".SearchResultsActivity" android:theme="@style/Theme.Light" android:parentActivityName=".MainActivity">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="in.rob.client.MainActivity"
+				/>
+		</activity>
+		<activity android:name=".ChannelMessagesActivity" android:theme="@style/Theme.Light" android:parentActivityName=".MainActivity">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="in.rob.client.MainActivity"
+			/>
+		</activity>
+		<activity android:name=".StorageBrowserActivity" android:theme="@style/Theme.Light" android:parentActivityName=".MainActivity">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="in.rob.client.MainActivity"
+			/>
+		</activity>
+		<activity android:name=".DraftsActivity" android:theme="@style/Theme.Light" android:parentActivityName=".MainActivity" android:launchMode="singleTask">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="in.rob.client.MainActivity"
+			/>
+		</activity>
+		<activity android:name=".SettingsActivity" android:theme="@style/Theme.Light" android:parentActivityName=".MainActivity">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="in.rob.client.MainActivity"
+			/>
+		</activity>
+
+		<activity
+			android:name=".dialog.NewPostDialog"
+			android:theme="@style/Theme.Light.Dialog"
+			android:excludeFromRecents="true"
+		>
+			<intent-filter>
+				<action android:name="android.intent.action.SEND" />
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:mimeType="text/plain" />
+				<data android:mimeType="image/*" />
+			</intent-filter>
+
+			<intent-filter>
+				<action android:name="android.intent.action.SEND_MULTIPLE" />
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:mimeType="text/plain" />
+				<data android:mimeType="image/*" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".dialog.DeletePostDialog" android:theme="@style/Theme.Light.Dialog" android:configChanges="keyboardHidden|orientation|screenSize" />
+		<activity android:name=".dialog.ReplyPostDialog" android:theme="@style/Theme.Light.Dialog" android:configChanges="keyboardHidden|orientation|screenSize" />
+		<activity android:name=".dialog.NewMessageDialog" android:theme="@style/Theme.Light.Dialog" android:configChanges="keyboardHidden|orientation|screenSize" />
+		<activity android:name=".dialog.QuotePostDialog" android:theme="@style/Theme.Light.Dialog" android:configChanges="keyboardHidden|orientation|screenSize" />
+		<activity android:name=".dialog.PopupProfileDialog" android:theme="@style/Theme.Light.Dialog" android:configChanges="keyboardHidden|orientation|screenSize" />
+
+		<activity android:name=".WebBrowserDialog" android:theme="@style/Theme.Light.Dialog" android:configChanges="keyboardHidden|orientation|screenSize" />
+
+		<activity android:name=".URLMatcher" android:noHistory="true" android:theme="@android:style/Theme.NoDisplay">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:host="alpha.app.net" android:scheme="https" />
+				<data android:host="posts.app.net" android:scheme="https" />
+				<data android:host="omega.app.net" android:scheme="https" />
+				<data android:host="patter-app.net" android:scheme="http" />
+			</intent-filter>
+		</activity>
+
+		<!-- WIDGETS -->
+		<receiver
+			android:name="in.rob.client.widget.WidgetBroadcastReceiver"
+			android:label="WidgetBroadcastReceiver"
+			android:exported="false"
+		>
+			<intent-filter >
+				<action android:name="in.rob.client.widget.intent.NEW_POST"/>
+				<action android:name="in.rob.client.widget.intent.OPEN_APP"/>
+				<action android:name="in.rob.client.widget.intent.REFRESH"/>
+				<action android:name="in.rob.client.widget.intent.RELOAD"/>
+			</intent-filter>
+		</receiver>
+
+		<service android:name=".widget.ScrollWidgetService" android:permission="android.permission.BIND_REMOTEVIEWS" />
+		<service android:name=".widget.UpdateWidgetService" />
+		<receiver android:name=".widget.ScrollWidgetProvider">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider" android:resource="@xml/scroll_widget_info" />
+		</receiver>
+	</application>
+</manifest>

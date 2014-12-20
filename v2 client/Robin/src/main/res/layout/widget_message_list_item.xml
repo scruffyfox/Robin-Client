@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:id="@+id/root_view"
+	android:orientation="vertical"
+>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:padding="4dp"
+	>
+		<ImageView
+			android:layout_width="@dimen/avatar_width"
+			android:layout_height="@dimen/avatar_height"
+			android:id="@+id/avatar"
+			android:layout_marginRight="8dp"
+			android:src="@drawable/default_avatar"
+		/>
+	
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_toRightOf="@id/avatar"
+		>
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+			>
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/time"
+					android:layout_alignParentRight="true"
+					android:layout_marginLeft="8dp"
+					android:gravity="right"
+					style="@style/Post.Light.Date"
+				/>
+		
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/is_convo"
+					android:layout_marginLeft="4dp"
+					android:layout_marginTop="4dp"
+					android:layout_toLeftOf="@id/time"
+					android:visibility="gone"
+				/>
+		
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_toLeftOf="@+id/is_convo"
+					android:orientation="horizontal"
+				>
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/title"
+						android:singleLine="true"
+						style="@style/Post.Light.UserTitle"
+					/>
+		
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/sub_title"
+						android:ellipsize="end"
+						android:singleLine="true"
+						android:layout_marginLeft="4dp"
+						style="@style/Post.Light.UserSubTitle"
+					/>
+				</LinearLayout>
+			</RelativeLayout>
+		
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/text"
+				android:layout_marginTop="8dp"
+				android:textSize="14sp"
+				style="@style/Post.Light.Text"
+			/>
+		</LinearLayout>
+	</RelativeLayout>
+	
+	<ImageView android:layout_width="match_parent" android:layout_height="0.5dp" android:background="#cccccc" />
+</LinearLayout>

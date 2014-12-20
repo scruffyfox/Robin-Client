@@ -1,0 +1,122 @@
+<resources>
+	<style name="IconButton.Light">
+		<item name="android:background">?android:actionBarItemBackground</item>
+	</style>
+
+	<!-- POST ICONS -->
+	<style name="IconButton.Light.PostReply">
+		<item name="android:src">@drawable/ic_reply_post_light</item>
+	</style>
+
+	<style name="IconButton.Light.PostReplyAll">
+		<item name="android:src">@drawable/ic_reply_all_post_light</item>
+	</style>
+
+	<style name="IconButton.Light.PostRepost">
+		<item name="android:src">@drawable/ic_repost_light</item>
+	</style>
+
+	<style name="IconButton.Light.PostStar">
+		<item name="android:src">@drawable/ic_star_light</item>
+	</style>
+
+	<style name="IconButton.Light.PostUnstar">
+		<item name="android:src">@drawable/ic_unstar_light</item>
+	</style>
+
+	<style name="IconButton.Light.PostShare">
+		<item name="android:src">@drawable/ic_share_light</item>
+	</style>
+
+	<style name="IconButton.Light.PostMore">
+		<item name="android:src">@drawable/ic_more_light</item>
+	</style>
+
+	<style name="IconButton.Light.PostSend">
+		<item name="android:src">@drawable/ic_send_post_light</item>
+	</style>
+
+	<style name="IconButton.Light.PostEdit">
+		<item name="android:src">@drawable/ic_edit_post_light</item>
+	</style>
+
+	<style name="IconButton.Light.PostDuplicate">
+		<item name="android:src">@drawable/ic_duplicate_post_light</item>
+	</style>
+
+	<style name="IconButton.Light.PostDelete">
+		<item name="android:src">@drawable/ic_delete_light</item>
+	</style>
+
+	<!-- DIALOG ICONS -->
+	<style name="IconButton.Light.Dialog">
+		<item name="android:padding">8dp</item>
+	</style>
+
+	<style name="IconButton.Light.Dialog.Cancel">
+		<item name="android:src">@drawable/dialog_ic_cancel_light</item>
+	</style>
+
+	<style name="IconButton.Light.Dialog.Send">
+		<item name="android:src">@drawable/dialog_ic_send_light</item>
+	</style>
+
+	<style name="IconButton.Light.Dialog.Account" />
+
+	<style name="IconButton.Light.Dialog.Photo">
+		<item name="android:src">@drawable/dialog_ic_photo_light</item>
+	</style>
+
+	<style name="IconButton.Light.Dialog.Link">
+		<item name="android:src">@drawable/dialog_ic_link_light</item>
+	</style>
+
+	<style name="IconButton.Light.Dialog.Location">
+		<item name="android:src">@drawable/dialog_ic_location_light</item>
+	</style>
+
+	<style name="IconButton.Light.Dialog.More">
+		<item name="android:src">@drawable/ic_more_light</item>
+	</style>
+
+	<!-- NAVIGATION ICONS -->
+	<style name="IconButton.Light.Navigation">
+		<item name="android:padding">4dp</item>
+	</style>
+
+	<style name="IconButton.Light.Navigation.Timeline">
+		<item name="android:src">@drawable/nav_ic_timeline_light</item>
+	</style>
+
+	<style name="IconButton.Light.Navigation.Mentions">
+		<item name="android:src">@drawable/nav_ic_mentions_light</item>
+	</style>
+
+	<style name="IconButton.Light.Navigation.Channels">
+		<item name="android:src">@drawable/nav_ic_channels_light</item>
+	</style>
+
+	<style name="IconButton.Light.Navigation.Drafts">
+		<item name="android:src">@drawable/nav_ic_drafts_light</item>
+	</style>
+
+	<style name="IconButton.Light.Navigation.Profile">
+		<item name="android:src">@drawable/nav_ic_profile_light</item>
+	</style>
+
+	<style name="IconButton.Light.Navigation.Starred">
+		<item name="android:src">@drawable/nav_ic_starred_light</item>
+	</style>
+
+	<style name="IconButton.Light.Navigation.Search">
+		<item name="android:src">@drawable/nav_ic_search_light</item>
+	</style>
+
+	<style name="IconButton.Light.Navigation.Settings">
+		<item name="android:src">@drawable/nav_ic_settings_light</item>
+	</style>
+
+	<style name="IconButton.Light.Navigation.About">
+		<item name="android:src">@drawable/nav_ic_about_light</item>
+	</style>
+</resources>

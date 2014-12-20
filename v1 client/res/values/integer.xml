@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<integer name="post_max_chars">256</integer>
+	
+	<!--	32	16	8	4	2	1 -->
+	<!--	str	rep	fol	pat	pm	men-->
+	<integer-array name="notification_setting_choice_mask">
+		<item>1</item>
+		<item>2</item>
+		<item>4</item>
+		<item>8</item>
+		<!-- <item>16</item> -->
+		<!-- <item>32</item> -->
+	</integer-array>
+	
+	<integer-array name="animation_setting_choice_mask">
+		<item>1</item>
+		<item>2</item>
+		<item>4</item>
+		<item>8</item>
+	</integer-array>
+	
+	<integer-array name="emphasis_setting_choice_mask">
+		<item>1</item>
+		<item>2</item>
+		<item>4</item>
+	</integer-array>
+	
+	<integer-array name="single_click_setting_choice_mask">
+		<item>1</item>
+		<item>2</item>
+		<item>4</item>
+	</integer-array>
+	
+	<integer-array name="stream_marker_choice_mask">
+		<item>1</item>
+		<item>2</item>
+	</integer-array>
+</resources>

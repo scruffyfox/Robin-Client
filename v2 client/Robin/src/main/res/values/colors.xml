@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="rbn_light_action_red">#C1454A</color>
+	<color name="rbn_light_action_bar_color" type="color">#d2d2d2</color>
+	<color name="rbn_light_red">#ccCC0000</color>
+	<color name="rbn_light_action_bar_line">#ff959595</color>
+</resources>

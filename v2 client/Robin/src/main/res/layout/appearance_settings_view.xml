@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:padding="8dp"
+	>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/theme_header"
+			android:layout_marginBottom="8dp"
+			style="?android:attr/listSeparatorTextViewStyle"
+		/>
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/theme"
+			android:padding="8dp"
+		>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/title"
+				android:text="@string/theme_title"
+				style="?attr/rbn_settings_title"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/title"
+				android:text="@string/theme_desc"
+				style="?attr/rbn_settings_description"
+			/>
+		</in.lib.view.SettingContainerView>
+
+		<View style="?attr/rbn_divider" />
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/locale"
+			android:padding="8dp"
+		>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/title"
+				android:text="@string/locale_title"
+				style="?attr/rbn_settings_title"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/title"
+				android:text="@string/locale_desc"
+				style="?attr/rbn_settings_description"
+			/>
+		</in.lib.view.SettingContainerView>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/stream_header"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp"
+			style="?android:attr/listSeparatorTextViewStyle"
+		/>
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/non_following"
+			android:padding="8dp"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/checkbox"
+				android:clickable="false"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				style="?attr/rbn_settings_checkbox"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/title"
+				android:text="@string/show_non_following_title"
+				android:layout_toLeftOf="@id/checkbox"
+				style="?attr/rbn_settings_title"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/title"
+				android:layout_toLeftOf="@id/checkbox"
+				android:text="@string/show_non_following_desc"
+				style="?attr/rbn_settings_description"
+			/>
+		</in.lib.view.SettingContainerView>
+
+		<View style="?attr/rbn_divider" />
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/unified"
+			android:padding="8dp"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/checkbox"
+				android:clickable="false"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				style="?attr/rbn_settings_checkbox"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/title"
+				android:text="@string/use_unified_title"
+				android:layout_toLeftOf="@id/checkbox"
+				style="?attr/rbn_settings_title"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/title"
+				android:text="@string/use_unified_desc"
+				android:layout_toLeftOf="@id/checkbox"
+				style="?attr/rbn_settings_description"
+			/>
+		</in.lib.view.SettingContainerView>
+
+		<View style="?attr/rbn_divider" />
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/invert_click"
+			android:padding="8dp"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/checkbox"
+				android:clickable="false"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				style="?attr/rbn_settings_checkbox"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/title"
+				android:layout_toLeftOf="@id/checkbox"
+				android:text="@string/invert_post_click_title"
+				style="?attr/rbn_settings_title"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@id/checkbox"
+				android:layout_below="@id/title"
+				android:text="@string/invert_post_click_desc"
+				style="?attr/rbn_settings_description"
+			/>
+		</in.lib.view.SettingContainerView>
+
+		<View style="?attr/rbn_divider" />
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/single_click_links"
+			android:padding="8dp"
+		>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/title"
+				android:layout_toLeftOf="@id/checkbox"
+				android:text="@string/single_click_link_title"
+				style="?attr/rbn_settings_title"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@id/checkbox"
+				android:layout_below="@id/title"
+				android:text="@string/single_click_link_desc"
+				style="?attr/rbn_settings_description"
+			/>
+		</in.lib.view.SettingContainerView>
+
+		<View style="?attr/rbn_divider" />
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/in_app_viewer"
+			android:padding="8dp"
+		>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/title"
+				android:text="@string/in_app_viewer_title"
+				style="?attr/rbn_settings_title"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/title"
+				android:text="@string/in_app_viewer_desc"
+				style="?attr/rbn_settings_description"
+			/>
+		</in.lib.view.SettingContainerView>
+
+		<View style="?attr/rbn_divider" />
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/web_readability_mode"
+			android:padding="8dp"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/checkbox"
+				android:clickable="false"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				style="?attr/rbn_settings_checkbox"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/title"
+				android:text="@string/web_readability_title"
+				android:layout_toLeftOf="@id/checkbox"
+				style="?attr/rbn_settings_title"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/title"
+				android:text="@string/web_readability_desc"
+				android:layout_toLeftOf="@id/checkbox"
+				style="?attr/rbn_settings_description"
+			/>
+		</in.lib.view.SettingContainerView>
+
+		<View style="?attr/rbn_divider" />
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/global_stream"
+			android:padding="8dp"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/checkbox"
+				android:clickable="false"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				style="?attr/rbn_settings_checkbox"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/title"
+				android:text="@string/global_stream_title"
+				android:layout_centerVertical="true"
+				android:layout_toLeftOf="@id/checkbox"
+				style="?attr/rbn_settings_title"
+			/>
+		</in.lib.view.SettingContainerView>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/post_appearance_header"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp"
+			style="?android:attr/listSeparatorTextViewStyle"
+		/>
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/animations"
+			android:padding="8dp"
+		>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/title"
+				android:text="@string/animation_options_title"
+				style="?attr/rbn_settings_title"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/title"
+				android:text="@string/animation_options_desc"
+				style="?attr/rbn_settings_description"
+			/>
+		</in.lib.view.SettingContainerView>
+
+		<View style="?attr/rbn_divider" />
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/post_emphasis"
+			android:padding="8dp"
+		>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/title"
+				android:text="@string/emphasis_options_title"
+				style="?attr/rbn_settings_title"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/title"
+				android:text="@string/emphasis_options_desc"
+				style="?attr/rbn_settings_description"
+			/>
+		</in.lib.view.SettingContainerView>
+
+		<View style="?attr/rbn_divider" />
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/post_date"
+			android:padding="8dp"
+		>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/title"
+				android:text="@string/post_dates_title"
+				style="?attr/rbn_settings_title"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/title"
+				android:text="@string/post_dates_desc"
+				style="?attr/rbn_settings_description"
+			/>
+		</in.lib.view.SettingContainerView>
+
+		<View style="?attr/rbn_divider" />
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/show_elements"
+			android:padding="8dp"
+		>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/title"
+				android:text="@string/show_elements_title"
+				style="?attr/rbn_settings_title"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/title"
+				android:text="@string/show_elements_desc"
+				style="?attr/rbn_settings_description"
+			/>
+		</in.lib.view.SettingContainerView>
+
+		<View style="?attr/rbn_divider" />
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/custom_fonts"
+			android:padding="8dp"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/checkbox"
+				android:clickable="false"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				style="?attr/rbn_settings_checkbox"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/title"
+				android:text="@string/custom_fonts_title"
+				android:layout_toLeftOf="@id/checkbox"
+				style="?attr/rbn_settings_title"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/title"
+				android:text="@string/custom_fonts_desc"
+				android:layout_toLeftOf="@id/checkbox"
+				style="?attr/rbn_settings_description"
+			/>
+		</in.lib.view.SettingContainerView>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/misc_header"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp"
+			style="?android:attr/listSeparatorTextViewStyle"
+		/>
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/custom_usernames"
+			android:padding="8dp"
+		>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/custom_username_desc"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				style="?attr/rbn_settings_description"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/title"
+				android:text="@string/username_settings_title"
+				android:layout_centerVertical="true"
+				android:layout_toLeftOf="@id/checkbox"
+				style="?attr/rbn_settings_title"
+			/>
+		</in.lib.view.SettingContainerView>
+
+		<View style="?attr/rbn_divider" />
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:padding="8dp"
+		>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/title"
+				android:text="@string/font_size"
+				style="?attr/rbn_settings_title"
+			/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/ticker"
+				android:gravity="right"
+				android:layout_alignParentRight="true"
+			/>
+
+			<SeekBar
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/font_size"
+				android:layout_below="@id/title"
+				android:layout_marginLeft="8dp"
+				android:layout_marginRight="8dp"
+				android:layout_marginTop="6dp"
+				android:max="100"
+			/>
+		</RelativeLayout>
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<attr name="ptr_text_style" format="reference"/>
+	<attr name="ptr_progress_style" format="reference"/>
+	<attr name="ptr_progress_inderteminate_style" format="reference"/>
+</resources>

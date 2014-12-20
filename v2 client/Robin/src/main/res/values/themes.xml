@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="Theme"></style>
+
+	<style name="Theme.Light.Main">
+		<item name="android:homeAsUpIndicator">@drawable/ab_ic_menu_light</item>
+	</style>
+
+	<style name="Theme.Light" parent="android:Theme.Holo.Light">
+		<item name="android:actionBarStyle">@style/ActionBar.Light.ActionBar</item>
+		<item name="android:actionBarItemBackground">@drawable/selectable_background_light</item>
+		<item name="android:actionDropDownStyle">@style/DropDownNav.Light</item>
+		<item name="android:dropDownListViewStyle">@style/DropDownListView.Light</item>
+		<item name="rbn_action_bar_indicator">@style/ActionBar.Light.Indicator</item>
+		<item name="rbn_action_bar_indicator_tab">@style/ActionBar.Light.Indicator.Tab</item>
+		<item name="rbn_action_bar_title">@style/ActionBar.Light.Title</item>
+		<item name="rbn_action_bar_icon_new_message">@drawable/ab_ic_new_message_light</item>
+		<item name="rbn_action_bar_icon_new_post">@drawable/ab_ic_new_post_light</item>
+		<item name="rbn_action_bar_icon_search">@drawable/ab_ic_search_light</item>
+
+		<item name="ptr_text_style">@style/SwipeToRefresh.Light.RefreshProgressText</item>
+		<item name="ptr_progress_style">@style/SwipeToRefresh.Light.RefreshProgressThemeLight</item>
+		<item name="ptr_progress_indeterminate_style">@style/SwipeToRefresh.Light.RefreshProgressIndeterminateThemeLight</item>
+
+		<item name="rbn_post_ic_reply">@style/IconButton.Light.PostReply</item>
+		<item name="rbn_post_ic_reply_all">@style/IconButton.Light.PostReplyAll</item>
+		<item name="rbn_post_ic_repost">@style/IconButton.Light.PostRepost</item>
+		<item name="rbn_post_ic_star">@style/IconButton.Light.PostStar</item>
+		<item name="rbn_post_ic_unstar">@style/IconButton.Light.PostUnstar</item>
+		<item name="rbn_post_ic_share">@style/IconButton.Light.PostShare</item>
+		<item name="rbn_post_ic_more">@style/IconButton.Light.PostMore</item>
+		<item name="rbn_post_ic_send">@style/IconButton.Light.PostSend</item>
+		<item name="rbn_post_ic_edit">@style/IconButton.Light.PostEdit</item>
+		<item name="rbn_post_ic_duplicate">@style/IconButton.Light.PostDuplicate</item>
+		<item name="rbn_post_ic_delete">@style/IconButton.Light.PostDelete</item>
+
+		<item name="rbn_nav_ic_timeline">@style/IconButton.Light.Navigation.Timeline</item>
+		<item name="rbn_nav_ic_mentions">@style/IconButton.Light.Navigation.Mentions</item>
+		<item name="rbn_nav_ic_channels">@style/IconButton.Light.Navigation.Channels</item>
+		<item name="rbn_nav_ic_drafts">@style/IconButton.Light.Navigation.Drafts</item>
+		<item name="rbn_nav_ic_profile">@style/IconButton.Light.Navigation.Profile</item>
+		<item name="rbn_nav_ic_starred">@style/IconButton.Light.Navigation.Starred</item>
+		<item name="rbn_nav_ic_search">@style/IconButton.Light.Navigation.Search</item>
+		<item name="rbn_nav_ic_settings">@style/IconButton.Light.Navigation.Settings</item>
+		<item name="rbn_nav_ic_about">@style/IconButton.Light.Navigation.About</item>
+
+		<item name="rbn_post_user_title">@style/Post.Light.UserTitle</item>
+		<item name="rbn_post_user_sub_title">@style/Post.Light.UserSubTitle</item>
+		<item name="rbn_post_date">@style/Post.Light.Date</item>
+		<item name="rbn_post_text">@style/Post.Light.Text.Post</item>
+		<item name="rbn_post_text_thread">@style/Post.Light.Text.Thread</item>
+		<item name="rbn_text">@style/Post.Light.Text</item>
+		<item name="rbn_post_convo">@style/Post.Light.ConvoIndicator</item>
+		<item name="rbn_post_repost_count">@drawable/post_ic_repost_count_light</item>
+		<item name="rbn_post_star_count">@drawable/post_ic_star_count_light</item>
+		<item name="rbn_post_reposted_by">@drawable/post_ic_repost_count_light</item>
+		<item name="rbn_post_crosspost">@drawable/post_ic_crosspost_light</item>
+		<item name="rbn_post_checkin">@drawable/post_ic_location_light</item>
+
+		<item name="rbn_login_bg">@style/Post.Light.Login</item>
+		<item name="rbn_login_form">@style/Post.Light.Login.Form</item>
+		<item name="rbn_login_form_border">@style/Post.Light.Login.Border</item>
+		<item name="rbn_login_form_input">@style/Post.Light.Login.Input</item>
+		<item name="rbn_login_form_input_password">@style/Post.Light.Login.Input.Password</item>
+
+		<item name="rbn_channel_title">@style/Channel.Light.Title</item>
+		<item name="rbn_channel_date">@style/Channel.Light.Date</item>
+		<item name="rbn_channel_recent_text">@style/Channel.Light.Text</item>
+
+		<item name="rbn_empty_icon">@style/Post.Light.EmptyIcon</item>
+
+		<item name="rbn_divider">@style/Divider.Light</item>
+
+		<item name="rbn_settings_title">@style/Settings.Title</item>
+		<item name="rbn_settings_description">@style/Settings.Description</item>
+		<item name="rbn_settings_checkbox">@style/Settings.Checkbox</item>
+	</style>
+
+	<style name="Theme.Light.Dialog" parent="@android:style/Theme.Holo.Light.Dialog">
+		<item name="android:actionBarItemBackground">@drawable/selectable_background_light</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowBackground">@drawable/dialog_bg</item>
+
+		<item name="rbn_post_user_title">@style/Post.Light.UserTitle</item>
+		<item name="rbn_post_user_sub_title">@style/Post.Light.UserSubTitle</item>
+		<item name="rbn_post_date">@style/Post.Light.Date</item>
+		<item name="rbn_post_text">@style/Post.Light.Text.Post</item>
+		<item name="rbn_text">@style/Post.Light.Text</item>
+
+		<item name="rbn_dialog_ic_cancel">@style/IconButton.Light.Dialog.Cancel</item>
+		<item name="rbn_dialog_ic_send">@style/IconButton.Light.Dialog.Send</item>
+		<item name="rbn_dialog_ic_account">@style/IconButton.Light.Dialog.Account</item>
+		<item name="rbn_dialog_ic_photo">@style/IconButton.Light.Dialog.Photo</item>
+		<item name="rbn_dialog_ic_link">@style/IconButton.Light.Dialog.Link</item>
+		<item name="rbn_dialog_ic_location">@style/IconButton.Light.Dialog.Location</item>
+		<item name="rbn_dialog_ic_more">@style/IconButton.Light.Dialog.More</item>
+		<item name="rbn_dialog_title">@style/Dialog.Light.Title</item>
+		<item name="rbn_dialog_counter">@style/Dialog.Light.Counter</item>
+		<item name="rbn_dialog_input">@style/Dialog.Light.Input</item>
+	</style>
+</resources>

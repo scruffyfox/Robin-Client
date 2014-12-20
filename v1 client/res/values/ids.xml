@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<item name="post_mention_tag" type="id" />
+	<item name="post_media_image_downloading_tag" type="id" />
+	<item name="post_avatar_image_downloading_tag" type="id" />
+	
+	<item type="id" name="TAG_VIEW_HOLDER"/>
+	<item type="id" name="TAG_FONT_SIZE"/>
+	<item type="id" name="TAG_ORIGINAL_FONT_SIZE"/>
+	<item type="id" name="TAG_POST_ID"/>
+	<item type="id" name="TAG_POST_HIDDEN"/>
+	<item type="id" name="TAG_POST_POSITION"/>
+	<item type="id" name="TAG_USER_ID"/>
+	<item type="id" name="TAG_USER_FOLLOWING"/>
+	<item type="id" name="TAG_USER_NAME"/>
+	<item type="id" name="TAG_USER_POSITION"/>
+	<item type="id" name="TAG_IMAGE_URL"/>
+	<item type="id" name="TAG_ENTITY"/>
+	<item type="id" name="TAG_TYPE"/>
+	<item type="id" name="TAG_IS_LOADING"/>
+	<item type="id" name="TAG_STOP_STACK_OVERFLOW"/>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:layout_gravity="center_vertical"
+>
+	<in.lib.view.AvatarImageView
+		android:layout_width="@dimen/avatar_width"
+		android:layout_height="@dimen/avatar_height"
+		android:id="@+id/avatar"
+		android:layout_marginRight="8dp"
+		android:layout_gravity="center_vertical"
+		android:clickable="true"
+		android:longClickable="true"
+	/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_gravity="center_vertical"
+	>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/action_text"
+			android:singleLine="true"
+			style="?attr/rbn_post_user_title"
+		/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/username_title"
+			android:singleLine="true"
+			android:layout_marginLeft="4dp"
+			style="?attr/rbn_post_user_title"
+		/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/username_subtitle"
+			android:singleLine="true"
+			android:layout_marginLeft="6dp"
+			style="?attr/rbn_post_user_sub_title"
+		/>
+	</LinearLayout>
+</LinearLayout>

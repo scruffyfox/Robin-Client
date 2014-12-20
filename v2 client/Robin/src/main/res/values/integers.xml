@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<integer name="browser_grid_column_count">3</integer>
+
+	<array name="single_click_values">
+		<item>1</item>
+		<item>2</item>
+		<item>4</item>
+	</array>
+
+	<array name="show_hide_element_values">
+		<item>1</item>
+		<item>2</item>
+		<item>4</item>
+	</array>
+
+	<array name="in_app_viewer_values">
+		<item>1</item>
+		<item>2</item>
+		<item>4</item>
+	</array>
+
+	<array name="emphasis_values">
+		<item>1</item>
+		<item>2</item>
+		<item>4</item>
+	</array>
+</resources>

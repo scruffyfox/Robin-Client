@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@android:color/white"
+>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/title_container"
+	>
+		<in.lib.view.HintedImageButton
+			android:layout_width="@dimen/dialog_ab_ic_width"
+			android:layout_height="@dimen/dialog_ab_ic_height"
+			android:id="@+id/negative_button"
+			android:contentDescription="@string/cancel"
+			style="?attr/rbn_dialog_ic_cancel"
+		/>
+
+		<in.lib.view.HintedImageButton
+			android:layout_width="@dimen/dialog_ab_ic_width"
+			android:layout_height="@dimen/dialog_ab_ic_height"
+			android:id="@+id/positive_button"
+			android:layout_alignParentRight="true"
+			android:contentDescription="@string/send"
+			style="?attr/rbn_dialog_ic_send"
+		/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/title"
+			android:layout_centerVertical="true"
+			android:layout_toLeftOf="@id/positive_button"
+			android:layout_toRightOf="@id/negative_button"
+			android:text="New Post"
+			style="?attr/rbn_dialog_title"
+		/>
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/options_container"
+		android:layout_alignParentBottom="true"
+	>
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/counter_container"
+			android:orientation="horizontal"
+			android:layout_marginRight="4dp"
+		>
+			<in.lib.view.AvatarImageView
+				android:layout_width="@dimen/dialog_ic_width"
+				android:layout_height="@dimen/dialog_ic_height"
+				android:id="@+id/action_account"
+				android:visibility="gone"
+				android:contentDescription="@string/switch_accounts"
+				style="?attr/rbn_dialog_ic_account"
+			/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/counter"
+				android:text="256"
+				style="?attr/rbn_dialog_counter"
+			/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/counter_container"
+			android:gravity="right"
+		>
+			<in.lib.view.HintedImageButton
+				android:layout_width="@dimen/dialog_ic_width"
+				android:layout_height="@dimen/dialog_ic_height"
+				android:id="@+id/action_image"
+				android:contentDescription="@string/add_image"
+				style="?attr/rbn_dialog_ic_photo"
+			/>
+
+			<in.lib.view.HintedImageButton
+				android:layout_width="@dimen/dialog_ic_width"
+				android:layout_height="@dimen/dialog_ic_height"
+				android:id="@+id/action_link"
+				android:contentDescription="@string/add_link"
+				style="?attr/rbn_dialog_ic_link"
+			/>
+
+			<in.lib.view.HintedImageButton
+				android:layout_width="@dimen/dialog_ic_width"
+				android:layout_height="@dimen/dialog_ic_height"
+				android:id="@+id/action_location"
+				android:contentDescription="@string/add_location"
+				style="?attr/rbn_dialog_ic_location"
+			/>
+
+			<in.lib.view.HintedImageButton
+				android:layout_width="@dimen/dialog_ic_width"
+				android:layout_height="@dimen/dialog_ic_height"
+				android:id="@+id/action_more"
+				android:contentDescription="@string/more"
+				style="?attr/rbn_dialog_ic_more"
+			/>
+		</LinearLayout>
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/edit_container"
+		android:orientation="vertical"
+		android:layout_above="@id/options_container"
+		android:layout_below="@id/title_container"
+		android:paddingLeft="8dp"
+		android:paddingRight="8dp"
+	>
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1.5"
+		>
+			<in.lib.view.LinkedAutoCompleteTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/post_input"
+				android:inputType="textMultiLine|textCapSentences|textAutoCorrect"
+				android:imeOptions="actionDone"
+				android:textCursorDrawable="@null"
+				android:gravity="top"
+				style="?attr/rbn_dialog_input"
+			/>
+		</FrameLayout>
+
+		<HorizontalScrollView
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:id="@+id/image_container_scroller"
+			android:background="#fff0f0f0"
+			android:padding="4dp"
+			android:visibility="gone"
+			android:layout_weight="2.5"
+			android:layout_marginTop="4dp"
+		>
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:id="@+id/image_container"
+				android:orientation="horizontal"
+			/>
+		</HorizontalScrollView>
+	</LinearLayout>
+</RelativeLayout>

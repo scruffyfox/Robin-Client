@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="general_settings" 
+>
+	<Preference
+		android:defaultValue="6"
+		android:key="animations"
+	/>
+	<CheckBoxPreference
+		android:defaultValue="true"
+		android:key="notification"
+	/>
+	<CheckBoxPreference
+		android:defaultValue="true"
+		android:key="notification_sound"
+	/>
+	<CheckBoxPreference
+		android:defaultValue="false"
+		android:key="notification_following"
+	/>
+	<CheckBoxPreference
+		android:defaultValue="false"
+		android:key="show_long_date"
+	/>
+	
+	<CheckBoxPreference
+		android:defaultValue="true"
+		android:key="inline_images"
+	/>
+	<CheckBoxPreference
+		android:defaultValue="true"
+		android:key="\@_directed_posts_visible"
+	/>
+</PreferenceScreen>

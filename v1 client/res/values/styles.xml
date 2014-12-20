@@ -1,0 +1,473 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">	
+	<style name="SettingsTitlePageIndicator">
+		<item name="vi_footerColor">?attr/rbn_vi_footerColor</item>
+		<item name="vi_footerLineHeight">?attr/rbn_vi_footerLineHeight</item>
+		<item name="vi_footerIndicatorHeight">?attr/rbn_vi_footerIndicatorHeight</item>
+		<item name="vi_footerIndicatorStyle">underline</item>
+		<item name="android:textColor">?attr/rbn_vi_textColor</item>
+		<item name="vi_selectedColor">?attr/rbn_vi_selectedColor</item>
+		<item name="vi_selectedBold">?attr/rbn_vi_selectedBold</item>
+		<item name="android:background">?attr/rbn_list_view_bg</item>
+	</style>
+	
+	<style name="listSeparatorTextViewStyle">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">?attr/rbn_title_color</item>
+		<item name="android:textSize">14sp</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:paddingLeft">8dip</item>
+	</style>
+	
+	<style name="dark_listSeparatorTextViewStyle" parent="listSeparatorTextViewStyle">
+		<item name="android:background">@drawable/list_section_divider_holo_dark</item>
+	</style>
+	
+	<style name="light_listSeparatorTextViewStyle" parent="listSeparatorTextViewStyle">
+		<item name="android:background">@drawable/list_section_divider_holo_light</item>
+	</style>
+
+	<style name="DefaultLight.Dialog" parent="Theme.Default.Dialog">
+		<item name="rbn_title_color">@color/black</item>
+		<item name="rbn_sub_title">@color/dark_grey</item>
+		<item name="rbn_description_title">@color/grey</item>
+		
+		<item name="rbn_red_button">@drawable/red_button</item>
+		<item name="rbn_grey_button">@drawable/grey_button</item>
+	
+		<item name="rbn_dialog_bg_color">@color/light_dialog_bg_color</item>
+		<item name="rbn_dialog_title_color">@color/light_dialog_title_color</item>
+		<item name="rbn_dialog_text_color">@color/light_dialog_text_color</item>
+		<item name="rbn_dialog_post_text_color">@color/light_dialog_post_text_color</item>
+		<item name="rbn_dialog_text_color_alert">@color/light_dialog_text_color_alert</item>
+		<item name="rbn_dialog_about_bg">@color/light_dialog_about_bg</item>
+		<item name="rbn_dialog_about_text">@color/light_dialog_about_text</item>
+		<item name="rbn_list_item_bg">@drawable/light_list_item_background</item>
+		
+		<item name="rbn_icon_new_message">@drawable/ic_new_message</item>
+		<item name="rbn_icon_ok">@drawable/ic_ok</item>
+		<item name="rbn_icon_cancel">@drawable/ic_cancel</item>
+		<item name="rbn_icon_send">@drawable/ic_send</item>
+		
+		<item name="rbn_dialog_ic_photo">@drawable/dialog_ic_photo</item>
+		<item name="rbn_dialog_ic_at">@drawable/dialog_ic_at</item>
+		<item name="rbn_dialog_ic_hash">@drawable/dialog_ic_hash</item>
+		<item name="rbn_dialog_ic_link">@drawable/dialog_ic_link</item>
+		<item name="rbn_dialog_ic_location">@drawable/dialog_ic_location</item>
+		
+		<item name="rbn_select_background_drawable">@drawable/light_ab_item_background</item>
+		<item name="rbn_btn_bg">@color/light_btn_bg</item>
+		<item name="rbn_btn_bg_pressed">@color/light_btn_bg_pressed</item>
+		<item name="rbn_btn_bg_focused">@color/light_btn_bg_focused</item>
+		<item name="rbn_btn_text">@color/light_btn_text</item>
+		<item name="rbn_btn_bg_grey">@color/light_btn_bg_grey</item>
+		<item name="rbn_btn_bg_grey_pressed">@color/light_btn_bg_grey_pressed</item>
+		<item name="rbn_btn_bg_grey_focused">@color/light_btn_bg_grey_focused</item>
+		
+		<item name="rbn_profile_popup_bg_drawable">@drawable/light_profile_popup_bg_drawable</item>
+		<item name="rbn_profile_popup_bio_bg">#cccccc</item>
+		
+		<item name="rbn_popup_profile_icon_pm">@drawable/light_popup_profile_icon_pm</item>
+		<item name="rbn_popup_profile_icon_mentions">@drawable/light_popup_profile_icon_mentions</item>
+		<item name="rbn_popup_profile_icon_more">@drawable/light_popup_profile_icon_more</item>
+		<item name="rbn_popup_profile_icon_follow">@drawable/light_popup_profile_icon_follow</item>
+		<item name="rbn_popup_profile_icon_unfollow">@drawable/light_popup_profile_icon_unfollow</item>
+		<item name="rbn_popup_profile_icon_profile">@drawable/light_popup_profile_icon_profile</item>
+		
+		<item name="rbn_post_text_color">@color/light_post_text_color</item>
+		<item name="rbn_post_link_color">@color/light_post_link_color</item>
+		
+		<item name="rbn_profile_avatar_bg">@drawable/light_avatar_shadow</item>
+	</style>
+	
+	<style name="DefaultDark.Dialog" parent="Theme.DefaultDark.Dialog">
+		<item name="rbn_title_color">@color/dark_dialog_title_color</item>
+		<item name="rbn_sub_title">@color/dark_grey</item>
+		<item name="rbn_description_title">@color/grey</item>
+		
+		<item name="rbn_red_button">@drawable/red_button</item>
+		<item name="rbn_grey_button">@drawable/grey_button</item>
+	
+		<item name="rbn_dialog_bg_color">@color/dark_dialog_bg_color</item>
+		<item name="rbn_dialog_title_color">@color/dark_dialog_title_color</item>
+		<item name="rbn_dialog_text_color">@color/dark_dialog_text_color</item>
+		<item name="rbn_dialog_post_text_color">@color/dark_dialog_post_text_color</item>
+		<item name="rbn_dialog_text_color_alert">@color/dark_dialog_text_color_alert</item>
+		<item name="rbn_dialog_about_bg">@color/dark_dialog_about_bg</item>
+		<item name="rbn_dialog_about_text">@color/dark_dialog_about_text</item>
+		<item name="rbn_list_item_bg">@drawable/dark_post_item_bg_drawable</item>
+		
+		<item name="rbn_icon_new_message">@drawable/dark_ic_new_message</item>
+		<item name="rbn_icon_ok">@drawable/dark_ic_ok</item>
+		<item name="rbn_icon_cancel">@drawable/dark_ic_cancel</item>
+		<item name="rbn_icon_send">@drawable/dark_ic_send</item>
+		
+		<item name="rbn_dialog_ic_photo">@drawable/dialog_ic_photo</item>
+		<item name="rbn_dialog_ic_at">@drawable/dialog_ic_at</item>
+		<item name="rbn_dialog_ic_hash">@drawable/dialog_ic_hash</item>
+		<item name="rbn_dialog_ic_link">@drawable/dialog_ic_link</item>
+		<item name="rbn_dialog_ic_location">@drawable/dialog_ic_location</item>
+		
+		<item name="rbn_select_background_drawable">@drawable/dark_ab_item_background</item>
+		<item name="rbn_btn_bg">@color/light_btn_bg</item>
+		<item name="rbn_btn_bg_pressed">@color/light_btn_bg_pressed</item>
+		<item name="rbn_btn_bg_focused">@color/light_btn_bg_focused</item>
+		<item name="rbn_btn_text">@color/light_btn_text</item>
+		<item name="rbn_btn_bg_grey">@color/light_btn_bg_grey</item>
+		<item name="rbn_btn_bg_grey_pressed">@color/light_btn_bg_grey_pressed</item>
+		<item name="rbn_btn_bg_grey_focused">@color/light_btn_bg_grey_focused</item>
+		
+		<item name="rbn_profile_popup_bg_drawable">@drawable/dark_profile_popup_bg_drawable</item>
+		<item name="rbn_profile_popup_bio_bg">@color/dark_post_bg_color</item>
+		
+		<item name="rbn_popup_profile_icon_pm">@drawable/dark_popup_profile_icon_pm</item>
+		<item name="rbn_popup_profile_icon_mentions">@drawable/dark_popup_profile_icon_mentions</item>
+		<item name="rbn_popup_profile_icon_more">@drawable/dark_popup_profile_icon_more</item>
+		<item name="rbn_popup_profile_icon_follow">@drawable/dark_popup_profile_icon_follow</item>
+		<item name="rbn_popup_profile_icon_unfollow">@drawable/dark_popup_profile_icon_unfollow</item>
+		<item name="rbn_popup_profile_icon_profile">@drawable/dark_popup_profile_icon_profile</item>
+		
+		<item name="rbn_post_text_color">@color/dark_post_text_color</item>
+		<item name="rbn_post_link_color">@color/dark_post_link_color</item>
+		
+		<item name="rbn_profile_avatar_bg">@drawable/dark_avatar_shadow</item>
+	</style>
+
+	<style name="DefaultLight" parent="Theme.Default">
+		<item name="rbn_header_text">@style/light_listSeparatorTextViewStyle</item>
+
+		<item name="actionBarStyle">@style/Widget.Default.ActionBar</item>
+		<item name="android:actionBarStyle">@style/Widget.Default.ActionBar</item>
+
+		<item name="rbn_xmbg_labelStrokeColor" format="color">#FFD02D30</item>
+		<item name="rbn_xmbg_labelColor">#FFD02D30</item>
+		<item name="rbn_xmbg_strokeColor">#cccccc</item>
+		
+		<item name="rbn_vi_footerColor">#FFD02D30</item>
+		<item name="rbn_vi_footerLineHeight">1dp</item>
+		<item name="rbn_vi_footerIndicatorHeight">3dp</item>
+		<item name="rbn_vi_textColor">#80D02D30</item>
+		<item name="rbn_vi_selectedColor">#FFD02D30</item>
+		<item name="rbn_vi_selectedBold">true</item>
+	
+		<item name="rbn_red_button">@drawable/red_button</item>
+		<item name="rbn_grey_button">@drawable/grey_button</item>
+			
+		<item name="rbn_channel_padlock">@drawable/channel_padlock</item>
+		<item name="rbn_channel_new_bg_color">@color/light_channel_new_bg_color</item>
+		<item name="rbn_channel_new_bg_selected_color">@color/light_channel_new_bg_selected_color</item>
+		<item name="rbn_channel_item_bg">@drawable/light_channel_item_bg_drawable</item>
+		<item name="rbn_channel_new_item_bg">@drawable/light_channel_new_item_bg_drawable</item>
+
+		<item name="rbn_post_center_bg">@color/light_post_center_bg</item>
+		<item name="rbn_post_bg_color">@color/light_post_bg_color</item>
+		<item name="rbn_post_bg_selected_color">@color/light_post_bg_selected_color</item>
+		<item name="rbn_post_mention_bg_color">@color/light_post_mention_bg_color</item>
+		<item name="rbn_post_mention_bg_selected_color">@color/light_post_mention_bg_selected_color</item>
+		<item name="rbn_quick_options_bg_color">@color/light_quick_options_bg_color</item>
+		<item name="rbn_list_divider_bg_color">@color/light_list_divider_bg_color</item>
+		<item name="rbn_post_text_color">@color/light_post_text_color</item>
+		<item name="rbn_post_link_color">@color/light_post_link_color</item>
+		<item name="rbn_post_center_text_color">@color/light_post_center_text_color</item>
+
+		<!-- Action bar -->
+		<item name="rbn_action_bar_text_color">@color/light_action_bar_text_color</item>
+		<item name="rbn_action_bar_line_color">@color/light_action_bar_line_color</item>
+		<item name="rbn_action_bar_color">@color/light_action_bar_color</item>
+		<item name="rbn_action_bar_tab_underline">@color/light_action_bar_tab_underline</item>
+		<item name="rbn_navigation_bg_color">@color/light_navigation_bg_color</item>
+		<item name="rbn_login_bg_color">@color/light_login_bg_color</item>
+		<item name="rbn_login_input_border">@color/light_login_input_border</item>
+		<item name="rbn_login_input_bg">@color/light_login_input_bg</item>
+		<item name="rbn_login_text">@color/light_login_text</item>
+		<item name="rbn_login_hint">@color/light_login_hint</item>
+		<item name="rbn_login_hint_error">@color/light_login_hint_error</item>
+		<item name="rbn_login_text_error">@color/light_login_text_error</item>
+		<item name="rbn_btn_bg">@color/light_btn_bg</item>
+		<item name="rbn_btn_bg_pressed">@color/light_btn_bg_pressed</item>
+		<item name="rbn_btn_bg_focused">@color/light_btn_bg_focused</item>
+		<item name="rbn_btn_text">@color/light_btn_text</item>
+		<item name="rbn_btn_bg_grey">@color/light_btn_bg_grey</item>
+		<item name="rbn_btn_bg_grey_pressed">@color/light_btn_bg_grey_pressed</item>
+		<item name="rbn_btn_bg_grey_focused">@color/light_btn_bg_grey_focused</item>
+
+		<item name="rbn_load_more_bg">#ffffff</item>
+		<item name="rbn_list_view_bg">#ffffff</item>
+		<item name="rbn_list_item_bg">@drawable/light_list_item_background</item>
+
+		<item name="rbn_select_background_drawable">@drawable/light_ab_item_background</item>
+		<item name="rbn_channel_new_item_bg">@drawable/light_channel_new_item_bg_drawable</item>
+		<item name="rbn_bordered_block">@drawable/bordered_block</item>
+		<item name="rbn_post_big_text_bg">@drawable/light_post_big_text_bg</item>
+		<item name="rbn_post_big_gallery_background">@drawable/light_post_big_gallery_background</item>
+		<item name="rbn_post_mention_item_bg_drawable">@drawable/light_post_mention_item_bg_drawable</item>
+		<item name="rbn_inline_mention_image_arrow">@drawable/inline_mention_image_arrow</item>
+		<item name="rbn_inline_image_arrow">@drawable/inline_image_arrow</item>
+		<item name="rbn_nav_bg">@drawable/nav_bg</item>
+		<item name="rbn_profile_nav_bg">@drawable/profile_nav_bg</item>
+		<item name="rbn_post_break_bottom_drawable">@drawable/light_post_break_bottom_drawable</item>
+		<item name="rbn_post_break_top_drawable">@drawable/light_post_break_top_drawable</item>
+		<item name="rbn_missing_posts_bg_drawable">@drawable/light_missing_posts_bg_drawable</item>
+		<item name="rbn_empty_list">@drawable/empty_list</item> 
+		<item name="rbn_post_item_bg_drawable">@drawable/light_post_item_bg_drawable</item>
+
+		<item name="rbn_title_color">@color/black</item>
+		<item name="rbn_sub_title">@color/dark_grey</item> 
+		<item name="rbn_description_title">#666666</item>
+		<item name="rbn_divider_color">@color/light_grey</item>
+
+		<item name="rbn_post_icon_reposted">@drawable/post_icon_reposted</item>
+		<item name="rbn_post_icon_crosspost">@drawable/post_icon_crosspost</item>
+		<item name="rbn_post_icon_starred">@drawable/post_icon_starred</item>
+		<item name="rbn_icon_action_search">@drawable/ic_action_search</item>
+		<item name="rbn_icon_cancel">@drawable/ic_cancel</item>
+		<item name="rbn_icon_chevron">@drawable/ic_chevron</item>
+		<item name="rbn_icon_convo">@drawable/ic_convo</item>
+		<item name="rbn_icon_delete">@drawable/ic_delete</item>
+		<item name="rbn_icon_menu">@drawable/ic_menu</item>
+		<item name="rbn_icon_more">@drawable/ic_more</item>
+		<item name="rbn_icon_new_message">@drawable/ic_new_message</item>
+		<item name="rbn_icon_ok">@drawable/ic_ok</item>
+		<item name="rbn_icon_plus">@drawable/ic_plus</item>
+		<item name="rbn_icon_reply">@drawable/ic_reply</item>
+		<item name="rbn_icon_reply_all">@drawable/ic_reply_all</item>
+		<item name="rbn_icon_repost">@drawable/ic_repost</item>
+		<item name="rbn_icon_search">@drawable/ic_search</item>
+		<item name="rbn_icon_share">@drawable/ic_share</item>
+		<item name="rbn_icon_starred">@drawable/ic_starred</item>
+		<item name="rbn_icon_unstarred">@drawable/ic_unstarred</item>
+		<item name="rbn_icon_send">@drawable/ic_send</item>
+		<item name="rbn_icon_edit">@drawable/ic_edit</item>
+		<item name="rbn_icon_duplicate">@drawable/ic_duplicate</item>
+		<item name="rbn_icon_stream_marker">@drawable/ic_stream_marker</item>
+
+		<item name="rbn_nav_icon_about">@drawable/nav_icon_about</item>
+		<item name="rbn_nav_icon_follow">@drawable/nav_icon_follow</item>
+		<item name="rbn_nav_icon_followers">@drawable/nav_icon_followers</item>
+		<item name="rbn_nav_icon_global">@drawable/nav_icon_global</item>
+		<item name="rbn_nav_icon_mentions">@drawable/nav_icon_mentions</item>
+		<item name="rbn_nav_icon_mute">@drawable/nav_icon_mute</item>
+		<item name="rbn_nav_icon_muted">@drawable/nav_icon_muted</item>
+		<item name="rbn_nav_icon_pm">@drawable/nav_icon_pm</item>
+		<item name="rbn_nav_icon_profile">@drawable/nav_icon_profile</item>
+		<item name="rbn_nav_icon_search">@drawable/nav_icon_search</item>
+		<item name="rbn_nav_icon_settings">@drawable/nav_icon_settings</item>
+		<item name="rbn_nav_icon_starred">@drawable/nav_icon_starred</item>
+		<item name="rbn_nav_icon_timeline">@drawable/nav_icon_timeline</item>
+		<item name="rbn_nav_icon_unfollow">@drawable/nav_icon_unfollow</item>
+		<item name="rbn_nav_icon_unmute">@drawable/nav_icon_unmute</item>
+		<item name="rbn_nav_icon_update">@drawable/nav_icon_update</item>
+		<item name="rbn_nav_icon_block">@drawable/nav_icon_block</item>
+		<item name="rbn_nav_icon_unblock">@drawable/nav_icon_unblock</item>
+		<item name="rbn_nav_icon_drafts">@drawable/nav_icon_drafts</item>
+		
+		<!-- dialog icons -->
+		<item name="rbn_dialog_icon_hashtag">@drawable/light_dlg_ic_hashtag</item>
+		<item name="rbn_dialog_icon_link">@drawable/light_dlg_ic_link</item>
+		<item name="rbn_dialog_icon_profile">@drawable/light_dlg_ic_profile</item>
+		<item name="rbn_dialog_icon_channel">@drawable/light_dlg_ic_channel</item>
+		<item name="rbn_dialog_icon_misc">@drawable/light_dlg_ic_misc</item>
+		
+		<item name="android:editTextStyle">@style/EditTextAppTheme</item>
+		<item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewAppTheme</item>
+		<item name="android:checkboxStyle">@style/CheckBoxAppTheme</item>
+		<item name="android:seekBarStyle">@style/SeekBarAppTheme</item>
+		<item name="android:listViewStyle">@style/ListViewAppTheme</item>
+		<item name="android:listSelector">@drawable/list_selector_holo_light</item>
+		<item name="android:listViewWhiteStyle">@style/ListViewAppTheme.White</item>
+		
+		<item name="rbn_refresh_drawable">@style/RefreshProgressThemeLight</item>
+		<item name="rbn_refresh_text_color">@color/light_action_bar_text_color</item>
+		<item name="rbn_refresh_indeterminate_drawable">@style/RefreshProgressInderterminateThemeLight</item>
+		
+		<item name="rbn_profile_avatar_bg">@drawable/light_avatar_shadow</item>
+		<item name="rbn_profile_avatar_fade">@drawable/profile_avatar_fade</item>
+	</style>
+
+	<style name="DefaultDark" parent="Theme.DefaultDark">
+		<item name="rbn_header_text">@style/dark_listSeparatorTextViewStyle</item>
+		
+		<item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+
+		<item name="actionBarStyle">@style/Widget.ActionBar.Dark</item>
+		<item name="android:actionBarStyle">@style/Widget.ActionBar.Dark</item>
+		<item name="rbn_action_bar_text_color">@color/dark_action_bar_text_color</item>
+		<item name="rbn_action_bar_line_color">@color/dark_action_bar_line_color</item>
+		<item name="rbn_action_bar_color">@color/dark_action_bar_color</item>
+		<item name="rbn_action_bar_tab_underline">@color/dark_action_bar_tab_underline</item>
+		<item name="rbn_action_bar_background">@color/dark_action_bar_color</item>
+		
+		<item name="rbn_select_background_drawable">@drawable/dark_ab_item_background</item>
+		
+		<item name="rbn_xmbg_labelStrokeColor" format="color">@color/dark_post_link_color</item>
+		<item name="rbn_xmbg_labelColor">@color/dark_post_link_color</item>
+		<item name="rbn_xmbg_strokeColor">@color/dark_list_divider_bg_color</item>
+		
+		<item name="rbn_vi_footerLineHeight">1dp</item>
+		<item name="rbn_vi_footerIndicatorHeight">3dp</item>
+		<item name="rbn_vi_selectedBold">true</item>
+		<item name="rbn_vi_footerColor">@color/dark_action_bar_line_color</item>
+		<item name="rbn_vi_textColor">@color/dark_action_bar_text_color</item>
+		<item name="rbn_vi_selectedColor">@color/dark_action_bar_line_color</item>
+		<item name="rbn_list_item_bg">@drawable/dark_post_item_bg_drawable</item>
+		
+		<item name="rbn_channel_new_bg_color">@color/dark_channel_new_bg_color</item>
+		<item name="rbn_channel_new_bg_selected_color">@color/dark_channel_new_bg_selected_color</item>
+		<item name="rbn_channel_padlock">@drawable/dark_channel_padlock</item>
+		<item name="rbn_channel_item_bg">@drawable/dark_channel_item_bg_drawable</item>
+		<item name="rbn_channel_new_item_bg">@drawable/dark_channel_new_item_bg_drawable</item>
+
+		<item name="rbn_post_center_bg">@color/dark_post_center_bg</item>
+		<item name="rbn_post_item_bg_drawable">@drawable/dark_post_item_bg_drawable</item>
+		<item name="rbn_post_mention_item_bg_drawable">@drawable/dark_post_mention_item_bg_drawable</item>
+		<item name="rbn_post_bg_color">@color/dark_post_bg_color</item>
+		<item name="rbn_post_bg_selected_color">@color/dark_post_bg_selected_color</item>
+		<item name="rbn_post_mention_bg_color">@color/dark_post_mention_bg_color</item>
+		<item name="rbn_post_mention_bg_selected_color">@color/dark_post_mention_bg_selected_color</item>
+		<item name="rbn_quick_options_bg_color">@color/dark_quick_options_bg_color</item>
+		<item name="rbn_post_text_color">@color/dark_post_text_color</item>
+		<item name="rbn_post_link_color">@color/dark_post_link_color</item>
+		<item name="rbn_post_center_text_color">@color/dark_post_center_text_color</item>
+		<item name="rbn_list_divider_bg_color">@color/dark_list_divider_bg_color</item>
+
+		<item name="rbn_bordered_block">@drawable/dark_post_big_gallery_background</item>
+		
+		<item name="rbn_login_bg_color">@color/dark_post_center_bg</item>
+		<item name="rbn_login_input_border">@color/dark_list_divider_bg_color</item>
+		<item name="rbn_login_input_bg">@color/dark_post_center_bg</item>
+		<item name="rbn_login_text">@color/dark_post_center_text_color</item>
+		<item name="rbn_login_hint">#7fffffff</item>
+		<item name="rbn_login_hint_error">@color/dark_post_link_color</item>
+		<item name="rbn_login_text_error">@color/dark_post_link_color</item>
+
+		<item name="rbn_load_more_bg">@color/dark_post_center_bg</item>
+		<item name="rbn_list_view_bg">@color/dark_post_center_bg</item>
+		
+		<item name="rbn_post_big_text_bg">@drawable/dark_post_big_text_bg</item>
+		<item name="rbn_post_big_gallery_background">@drawable/dark_post_big_gallery_background</item>
+		<item name="rbn_inline_mention_image_arrow">@drawable/dark_inline_mention_image_arrow</item>
+		<item name="rbn_inline_image_arrow">@drawable/dark_inline_image_arrow</item>
+		<item name="rbn_nav_bg">@drawable/dark_nav_bg</item>
+		<item name="rbn_profile_nav_bg">@drawable/dark_profile_nav_bg</item>
+		<item name="rbn_post_break_bottom_drawable">@drawable/dark_post_break_bottom_drawable</item>
+		<item name="rbn_post_break_top_drawable">@drawable/dark_post_break_top_drawable</item>
+		<item name="rbn_missing_posts_bg_drawable">@drawable/dark_missing_posts_bg_drawable</item>
+		<item name="rbn_empty_list">@drawable/dark_empty_list</item>
+
+		<item name="rbn_title_color">@color/white</item>
+		<item name="rbn_sub_title">@color/dark_sub_title_color</item>
+		<item name="rbn_description_title">#bbbbbb</item>
+		<item name="rbn_divider_color">@color/dark_list_divider_bg_color</item>
+		
+		<item name="rbn_post_icon_reposted">@drawable/dark_post_icon_reposted</item>
+		<item name="rbn_post_icon_crosspost">@drawable/dark_post_icon_crosspost</item>
+		<item name="rbn_post_icon_starred">@drawable/dark_post_icon_starred</item>
+		<item name="rbn_icon_action_search">@drawable/dark_ic_action_search</item>
+		<item name="rbn_icon_cancel">@drawable/dark_ic_cancel</item>
+		<item name="rbn_icon_chevron">@drawable/dark_ic_chevron</item>
+		<item name="rbn_icon_delete">@drawable/dark_ic_delete</item>
+		<item name="rbn_icon_menu">@drawable/dark_ic_menu</item>
+		<item name="rbn_icon_more">@drawable/dark_ic_more</item>
+		<item name="rbn_icon_new_message">@drawable/dark_ic_new_message</item>
+		<item name="rbn_icon_ok">@drawable/dark_ic_ok</item>
+		<item name="rbn_icon_plus">@drawable/dark_ic_plus</item>
+		<item name="rbn_icon_reply">@drawable/dark_ic_reply</item>
+		<item name="rbn_icon_reply_all">@drawable/dark_ic_reply_all</item>
+		<item name="rbn_icon_repost">@drawable/dark_ic_repost</item>
+		<item name="rbn_icon_search">@drawable/dark_ic_search</item>
+		<item name="rbn_icon_share">@drawable/dark_ic_share</item>
+		<item name="rbn_icon_starred">@drawable/dark_ic_starred</item>
+		<item name="rbn_icon_unstarred">@drawable/dark_ic_unstarred</item>
+		<item name="rbn_icon_send">@drawable/dark_ic_send</item>
+		<item name="rbn_icon_edit">@drawable/dark_ic_edit</item>
+		<item name="rbn_icon_duplicate">@drawable/dark_ic_duplicate</item>
+		<item name="rbn_icon_stream_marker">@drawable/ic_stream_marker</item>
+		
+		<item name="rbn_nav_icon_block">@drawable/nav_icon_block</item>
+		<item name="rbn_nav_icon_unblock">@drawable/nav_icon_unblock</item>
+		<item name="rbn_nav_icon_drafts">@drawable/nav_icon_drafts</item>
+		
+		<!-- dialog icons -->
+		<item name="rbn_dialog_icon_hashtag">@drawable/dark_dlg_ic_hashtag</item>
+		<item name="rbn_dialog_icon_link">@drawable/dark_dlg_ic_link</item>
+		<item name="rbn_dialog_icon_profile">@drawable/dark_dlg_ic_profile</item>
+		<item name="rbn_dialog_icon_channel">@drawable/dark_dlg_ic_channel</item>
+		<item name="rbn_dialog_icon_misc">@drawable/dark_dlg_ic_misc</item>
+		
+		<item name="android:editTextStyle">@style/EditTextAppTheme</item>
+		<item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewAppTheme</item>
+		<item name="android:seekBarStyle">@style/SeekBarAppTheme</item>
+		<item name="android:checkboxStyle">@style/CheckBoxAppTheme.Dark</item>
+		<item name="android:listViewStyle">@style/ListViewAppTheme</item>
+		<item name="android:listViewWhiteStyle">@style/ListViewAppTheme.White</item>
+		
+		<item name="rbn_refresh_drawable">@style/RefreshProgressThemeDark</item>
+		<item name="rbn_refresh_text_color">@color/dark_action_bar_text_color</item>
+		<item name="rbn_refresh_indeterminate_drawable">@style/RefreshProgressInderterminateThemeDark</item>
+		
+		<item name="rbn_profile_avatar_bg">@drawable/dark_avatar_shadow</item>
+		<item name="rbn_profile_avatar_fade">@drawable/dark_profile_avatar_fade</item>
+	</style>
+
+	<style name="EditTextAppTheme" parent="android:Widget.EditText">
+		<item name="android:background">@drawable/edit_text_holo_light</item>
+		<item name="android:textColor">#000000</item>
+	</style>
+	
+	<style name="AutoCompleteTextViewAppTheme" parent="android:Widget.AutoCompleteTextView">
+		<item name="android:dropDownSelector">@drawable/list_selector_holo_light</item>
+		<item name="android:background">@drawable/edit_text_holo_light</item>
+		<item name="android:textColor">#000000</item>
+	</style>
+	
+	<style name="CheckBoxAppTheme" parent="android:Widget.CompoundButton.CheckBox">
+		<item name="android:button">@drawable/btn_check_holo_light</item>
+	</style>
+	
+	<style name="SeekBarAppTheme" parent="android:Widget.SeekBar">
+		<item name="android:progressDrawable">@drawable/scrubber_progress_horizontal_holo_light</item>
+		<item name="android:indeterminateDrawable">@drawable/scrubber_progress_horizontal_holo_light</item>
+		<item name="android:minHeight">13dip</item>
+		<item name="android:maxHeight">13dip</item>
+		<item name="android:thumb">@drawable/scrubber_control_selector_holo_light</item>
+		<item name="android:thumbOffset">16dip</item>
+		<item name="android:paddingLeft">16dip</item>
+		<item name="android:paddingRight">16dip</item>
+	</style>
+	<style name="CheckBoxAppTheme.Dark" parent="android:Widget.CompoundButton.CheckBox">
+		<item name="android:button">@drawable/btn_check_holo_dark</item>
+	</style>
+	
+	<style name="ListViewAppTheme" parent="android:Widget.ListView">
+		<item name="android:listSelector">@drawable/list_selector_holo_light</item>
+	</style>
+	
+	<style name="ListViewAppTheme.White" parent="android:Widget.ListView.White">
+		<item name="android:listSelector">@drawable/list_selector_holo_light</item>
+	</style>
+	
+	<style name="RefreshProgressThemeLight" parent="android:Widget.Holo.ProgressBar.Horizontal">
+		<item name="android:indeterminateOnly">false</item>
+		<item name="android:progressDrawable">@drawable/overscroll_progress_center_light</item>
+	</style>
+	
+	<style name="RefreshProgressThemeDark" parent="android:Widget.Holo.ProgressBar.Horizontal">
+		<item name="android:indeterminateOnly">false</item>
+		<item name="android:progressDrawable">@drawable/overscroll_progress_center_dark</item>
+	</style>
+	
+	<style name="RefreshProgressInderterminateThemeLight" parent="android:Widget.ProgressBar.Horizontal">
+		<item name="android:indeterminateDrawable">@drawable/progress_indeterminate_horizontal_holo_light</item>
+		<item name="android:minHeight">3dip</item>
+		<item name="android:maxHeight">3dip</item>
+		<item name="android:indeterminateOnly">true</item>
+	</style>
+	
+	<style name="RefreshProgressInderterminateThemeDark" parent="android:Widget.ProgressBar.Horizontal">
+		<item name="android:indeterminateDrawable">@drawable/progress_indeterminate_horizontal_holo_dark</item>
+		<item name="android:minHeight">3dip</item>
+		<item name="android:maxHeight">3dip</item>
+		<item name="android:indeterminateOnly">true</item>
+	</style>
+</resources>

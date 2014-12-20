@@ -1,0 +1,7 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<ListPreference
+		android:key="dash_user_id"
+		android:title="Select preferred account"
+		android:selectAllOnFocus="true"
+	/>
+</PreferenceScreen>

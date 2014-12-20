@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="?attr/rbn_load_more_bg"
+>
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="?attr/rbn_post_mention_bg_color"
+	/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	>
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:layout_weight="1.0"
+			android:padding="15dp"
+			android:id="@+id/followers_button"
+		>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="?attr/rbn_post_link_color"
+				android:text="@string/followers"
+				android:id="@+id/followers_text"
+				android:layout_centerInParent="true"
+			/>
+		</RelativeLayout>
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:id="@+id/mode_switch"
+			android:src="@drawable/switch_left"
+			android:adjustViewBounds="true"
+			android:scaleType="centerInside"
+			android:layout_weight="0.5"
+		/>
+
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="1.0"
+			android:padding="15dp"
+			android:layout_gravity="center"
+			android:id="@+id/following_button"
+		>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/following"
+				android:textColor="?attr/rbn_description_title"
+				android:id="@+id/following_text"
+				android:layout_centerInParent="true"
+			/>
+		</RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

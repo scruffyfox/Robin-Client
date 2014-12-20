@@ -1,0 +1,27 @@
+<resources>
+	<style name="Theme.PullRefreshDefaults" parent="android:Theme">
+		<item name="ptr_text_style">@style/RefreshProgressText</item>
+		<item name="ptr_progress_style">@style/RefreshProgressThemeLight</item>
+		<item name="ptr_progress_indeterminate_style">@style/RefreshProgressIndeterminateThemeLight</item>
+	</style>
+
+	<style name="RefreshProgressIndeterminateThemeLight" parent="android:Widget.ProgressBar.Horizontal">
+		<item name="android:indeterminateDrawable">@drawable/progress_indeterminate_horizontal_holo_light</item>
+		<item name="android:minHeight">4dip</item>
+		<item name="android:maxHeight">4dip</item>
+		<item name="android:indeterminateOnly">true</item>
+	</style>
+	
+	<style name="RefreshProgressThemeLight" parent="android:Widget.Holo.ProgressBar.Horizontal">
+		<item name="android:indeterminateOnly">false</item>
+		<item name="android:progressDrawable">@drawable/overscroll_progress_center</item>
+	</style>
+	
+	<style name="RefreshProgressText">
+		<item name="android:textColor">#ffffffff</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:ellipsize">end</item>
+		<item name="android:textSize">20sp</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+</resources>

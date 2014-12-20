@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<in.lib.view.AvatarImageView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="@dimen/avatar_width"
+	android:layout_height="@dimen/avatar_height"
+	android:id="@+id/avatar"
+	android:adjustViewBounds="true"
+	android:clickable="true"
+	android:longClickable="true"
+/>

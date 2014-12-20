@@ -1,0 +1,24 @@
+/project
+|-- in
+|   `-- rob
+|       |-- client
+|       |   |-- fragments
+|       |       `-- base
+|       |   |-- MainActivity.java
+|       |   |-- MainApplication.java
+|       |   `-- SplashActivity.java
+|       |-- controller
+|       |   |-- adapter
+|       |   `-- handler
+|       |-- lib
+|       |   |-- helper
+|       |   |-- manager
+|       |   |-- util
+|       |   |-- view
+|       |   `-- Constants.java
+|       |-- model
+|       |   |-- annotation
+|       |   `-- entity
+|       `-- view
+|           |-- delegate
+|           `-- holder

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- Standard color def -->    
+	<color name="alice_blue">#f0f8ff</color>
+	<color name="antique_white">#faebd7</color>
+	<color name="aqua">#00ffff</color>
+	<color name="aqua_marine">#7fffd4</color>
+	<color name="azure">#f0ffff</color>
+	<color name="beige">#f5f5dc</color>
+	<color name="bisque">#ffe4c4</color>
+	<color name="black">#000000</color>
+	<color name="blanched_almond">#ffebcd</color>
+	<color name="blue">#0000ff</color>
+	<color name="blue_violet">#8a2be2</color>
+	<color name="brown">#a52a2a</color>
+	<color name="burly_wood">#deb887</color>
+	<color name="cadet_blue">#5f9ea0</color>
+	<color name="chartreuse">#7fff00</color>
+	<color name="chocolate">#d2691e</color>
+	<color name="coral">#ff7f50</color>
+	<color name="cornflower_blue">#6495ed</color>
+	<color name="cornsilk">#fff8dc</color>
+	<color name="crimson">#dc143c</color>
+	<color name="cyan">#00ffff</color>
+	<color name="dark_blue">#00008b</color>
+	<color name="dark_cyan">#008b8b</color>
+	<color name="dark_golden_rod">#b8860b</color>
+	<color name="dark_grey">#808080</color>
+	<color name="dark_gray">#808080</color>	
+	<color name="dark_green">#006400</color>
+	<color name="dark_khaki">#bdb76b</color>
+	<color name="dark_magenta">#8b008b</color>
+	<color name="dark_olive_green">#556b2f</color>
+	<color name="dark_orange">#ff8c00</color>
+	<color name="dark_orchid">#9932cc</color>
+	<color name="dark_red">#8b0000</color>
+	<color name="dark_salmon">#e9967a</color>
+	<color name="dark_sea_green">#8fbc8f</color>
+	<color name="dark_slate_blue">#483d8b</color>
+	<color name="dark_slate_gray">#2f4f4f</color>
+	<color name="dark_slate_grey">#2f4f4f</color>
+	<color name="dark_turquoise">#00ced1</color>
+	<color name="dark_violet">#9400d3</color>
+	<color name="deep_pink">#ff1493</color>
+	<color name="deep_sky_blue">#00bfff</color>
+	<color name="dim_gray">#696969</color>
+	<color name="dim_grey">#696969</color>
+	<color name="dodger_blue">#1e90ff</color>
+	<color name="fire_brick">#b22222</color>
+	<color name="floral_white">#fffaf0</color>
+	<color name="forest_green">#228b22</color>
+	<color name="fuchsia">#ff00ff</color>
+	<color name="gainsboro">#dcdcdc</color>
+	<color name="ghost_white">#f8f8ff</color>
+	<color name="gold">#ffd700</color>
+	<color name="golden_rod">#daa520</color>
+	<color name="gray">#a9a9a9</color>
+	<color name="grey">#a9a9a9</color>
+	<color name="green">#008000</color>
+	<color name="green_yellow">#adff2f</color>
+	<color name="honey_dew">#f0fff0</color>
+	<color name="hot_pink">#ff69b4</color>
+	<color name="indian_red">#cd5c5c</color>
+	<color name="indigo">#4b0082</color>
+	<color name="ivory">#fffff0</color>
+	<color name="khaki">#f0e68c</color>
+	<color name="lavender">#e6e6fa</color>
+	<color name="lavender_blush">#fff0f5</color>
+	<color name="lawn_green">#7cfc00</color>
+	<color name="lemon_chiffon">#fffacd</color>
+	<color name="light_blue">#add8e6</color>
+	<color name="light_coral">#f08080</color>
+	<color name="light_cyan">#e0ffff</color>
+	<color name="light_golden_rod_yellow">#fafad2</color>
+	<color name="light_gray">#d3d3d3</color>
+	<color name="light_grey">#d3d3d3</color>
+	<color name="light_green">#90ee90</color>
+	<color name="light_pink">#ffb6c1</color>
+	<color name="light_salmon">#ffa07a</color>
+	<color name="light_sea_green">#20b2aa</color>
+	<color name="light_sky_blue">#87cefa</color>
+	<color name="light_slate_gray">#778899</color>
+	<color name="light_slate_grey">#778899</color>
+	<color name="light_steel_blue">#b0c4de</color>
+	<color name="light_yellow">#ffffe0</color>
+	<color name="lime">#00ff00</color>
+	<color name="lime_green">#32cd32</color>
+	<color name="linen">#faf0e6</color>
+	<color name="magenta">#ff00ff</color>
+	<color name="maroon">#800000</color>
+	<color name="medium_aqua_marine">#66cdaa</color>
+	<color name="medium_blue">#0000cd</color>
+	<color name="medium_orchid">#ba55d3</color>
+	<color name="medium_purple">#9370d8</color>
+	<color name="medium_sea_green">#3cb371</color>
+	<color name="medium_slate_blue">#7b68ee</color>
+	<color name="medium_spring_green">#00fa9a</color>
+	<color name="medium_turquoise">#48d1cc</color>
+	<color name="medium_violet_red">#c71585</color>
+	<color name="midnight_blue">#191970</color>
+	<color name="mint_cream">#f5fffa</color>
+	<color name="misty_rose">#ffe4e1</color>
+	<color name="moccasin">#ffe4b5</color>
+	<color name="navajo_white">#ffdead</color>
+	<color name="navy">#000080</color>
+	<color name="old_lace">#fdf5e6</color>
+	<color name="olive">#808000</color>
+	<color name="olive_drab">#6b8e23</color>
+	<color name="orange">#ffa500</color>
+	<color name="orange_red">#ff4500</color>
+	<color name="orchid">#da70d6</color>
+	<color name="pale_golden_rod">#eee8aa</color>
+	<color name="pale_green">#98fb98</color>
+	<color name="pale_turquoise">#afeeee</color> 
+	<color name="pale_violet_red">#d87093</color>
+	<color name="papaya_whip">#ffefd5</color>
+	<color name="peach_puff">#ffdab9</color>
+	<color name="peru">#cd853f</color>
+	<color name="pink">#ffc0cb</color>
+	<color name="plum">#dda0dd</color>
+	<color name="powder_blue">#b0e0e6</color>
+	<color name="purple">#800080</color>
+	<color name="red">#ff0000</color>
+	<color name="rosy_brown">#bc8f8f</color>
+	<color name="royal_blue">#4169e1</color>
+	<color name="saddle_brown">#8b4513</color>
+	<color name="salmon">#fa8072</color>
+	<color name="sandy_brown">#f4a460</color>
+	<color name="sea_green">#2e8b57</color>
+	<color name="seas_hell">#fff5ee</color>
+	<color name="sienna">#a0522d</color>
+	<color name="silver">#c0c0c0</color>
+	<color name="sky_blue">#87ceeb</color>
+	<color name="slate_blue">#6a5acd</color>
+	<color name="slate_gray">#708090</color>
+	<color name="slate_grey">#708090</color>
+	<color name="snow">#fffafa</color>
+	<color name="spring_green">#00ff7f</color>
+	<color name="steel_blue">#4682b4</color>
+	<color name="tan">#d2b48c</color>
+	<color name="teal">#008080</color>
+	<color name="thistle">#d8bfd8</color>
+	<color name="tomato">#ff6347</color>
+	<color name="turquoise">#40e0d0</color>
+	<color name="violet">#ee82ee</color>
+	<color name="wheat">#f5deb3</color>
+	<color name="white">#ffffff</color>
+	<color name="white_smoke">#f5f5f5</color>
+	<color name="yellow">#ffff00</color>
+	<color name="yellow_green">#9acd32</color>
+	
+	<!-- 
+	###############################################
+		LIGHT THEME COLOURS
+	###############################################
+	-->
+	<item name="light_channel_new_bg_color" type="color">#DFEAE4</item>
+	<item name="light_channel_new_bg_selected_color" type="color">#CADFD3</item>
+	<item name="light_post_bg_color" type="color">#f6f6f6</item>
+	<item name="light_post_center_bg" type="color">#ffffff</item>
+	<item name="light_post_bg_selected_color" type="color">#e6e6e6</item>
+	<item name="light_post_mention_bg_color" type="color">#e6e6e6</item>
+	<item name="light_post_mention_bg_selected_color" type="color">#d2d2d2</item>
+	<item name="light_quick_options_bg_color" type="color">#e1e1e1</item>
+	<item name="light_list_divider_bg_color" type="color">#cfcfcf</item>
+	<item name="light_post_text_color" type="color">#333333</item>
+	<item name="light_post_link_color" type="color">#cc0000</item>
+	<item name="light_post_center_text_color" type="color">#333333</item>
+	
+	<!-- Action bar -->
+	<item name="light_action_bar_text_color" type="color">#cc0000</item>
+	<item name="light_action_bar_line_color" type="color">#959595</item>
+	<item name="light_action_bar_color" type="color">#d2d2d2</item>
+	<item name="light_action_bar_tab_underline" type="color">#cc0000</item>
+	
+	<!-- Dialogs -->
+	<item name="light_dialog_bg_color" type="color">#ffffff</item>
+	<item name="light_dialog_title_color" type="color">#cc0000</item>
+	<item name="light_dialog_text_color" type="color">#ffffff</item>
+	<item name="light_dialog_post_text_color" type="color">#858585</item>
+	<item name="light_dialog_text_color_alert" type="color">#cc0000</item>
+	<item name="light_dialog_about_bg" type="color">#f6f6f6</item>
+	<item name="light_dialog_about_text" type="color">#858585</item>
+	
+	<item name="light_navigation_bg_color" type="color">#666666</item>
+	
+	<!-- Login screen -->	
+	<item name="light_login_bg_color" type="color">#f6f6f6</item>
+	<item name="light_login_input_border" type="color">#dfdfdf</item>
+	<item name="light_login_input_bg" type="color">#ffffff</item>
+	<item name="light_login_text" type="color">#757575</item>
+	<item name="light_login_hint" type="color">#aaaaaa</item>
+	<item name="light_login_hint_error" type="color">#bb0000</item>
+	<item name="light_login_text_error" type="color">#aa0000</item>
+	
+	<!-- Button -->
+	<item name="light_btn_bg" type="color">#cc0c0c</item>
+	<item name="light_btn_bg_pressed" type="color">#992d2d</item>
+	<item name="light_btn_bg_focused" type="color">#850404</item>
+	<item name="light_btn_text" type="color">#ffffff</item>
+	
+	<item name="light_btn_bg_grey" type="color">#666666</item>
+	<item name="light_btn_bg_grey_pressed" type="color">#505050</item>
+	<item name="light_btn_bg_grey_focused" type="color">#5f5f5f</item>
+	
+	<!-- 
+	###############################################
+		DARK THEME COLOURS
+	###############################################
+	-->
+	<item name="dark_channel_new_bg_color" type="color">#354C45</item>
+	<item name="dark_channel_new_bg_selected_color" type="color">#2B3B36</item>
+	<item name="dark_post_center_bg" type="color">#333333</item>
+	<item name="dark_post_center_text_color" type="color">#FCFCFC</item>
+	<item name="dark_quick_options_bg_color" type="color">#262626</item>
+	<item name="dark_post_bg_color" type="color">#3B3B3B</item>
+	<item name="dark_post_bg_selected_color" type="color">#2c2c2c</item>
+	<item name="dark_post_mention_bg_color" type="color">@color/dark_post_bg_selected_color</item>
+	<item name="dark_post_mention_bg_selected_color" type="color">#1d1d1d</item>
+	<item name="dark_post_text_color" type="color">#DFDFDF</item>
+	<item name="dark_post_link_color" type="color">#F13D4D</item>
+	<item name="dark_list_divider_bg_color" type="color">#4F4F4F</item>
+	
+	<!-- Action bar -->
+	<item name="dark_action_bar_text_color" type="color">#A6A6A6</item>
+	<item name="dark_action_bar_line_color" type="color">#A6A6A6</item>
+	<item name="dark_action_bar_color" type="color">#252525</item>
+	<item name="dark_action_bar_tab_underline" type="color">#cb0000</item>
+	
+	<!-- Dialogs -->
+	<item name="dark_dialog_bg_color" type="color">#333333</item>
+	<item name="dark_dialog_title_color" type="color">@color/dark_action_bar_text_color</item>
+	<item name="dark_dialog_text_color" type="color">@color/dark_action_bar_text_color</item>
+	<item name="dark_dialog_post_text_color" type="color">@color/dark_action_bar_text_color</item>
+	<item name="dark_dialog_text_color_alert" type="color">@color/dark_action_bar_tab_underline</item>
+	<item name="dark_dialog_about_bg" type="color">@color/dark_dialog_bg_color</item>
+	<item name="dark_dialog_about_text" type="color">@color/dark_action_bar_text_color</item>
+	
+	<item name="dark_navigation_bg_color" type="color">#666666</item>
+	
+	<!-- Login screen -->	
+	<item name="dark_login_bg_color" type="color">#f6f6f6</item>
+	<item name="dark_login_input_border" type="color">#dfdfdf</item>
+	<item name="dark_login_input_bg" type="color">#ffffff</item>
+	<item name="dark_login_text" type="color">#757575</item>
+	<item name="dark_login_hint" type="color">#aaaaaa</item>
+	<item name="dark_login_hint_error" type="color">#bb0000</item>
+	<item name="dark_login_text_error" type="color">#aa0000</item>
+	
+	<!-- Button -->
+	<item name="dark_btn_bg" type="color">#cc0c0c</item>
+	<item name="dark_btn_bg_pressed" type="color">#992d2d</item>
+	<item name="dark_btn_bg_focused" type="color">#850404</item>
+	<item name="dark_btn_text" type="color">#ffffff</item>
+	
+	<item name="dark_btn_bg_grey" type="color">#666666</item>
+	<item name="dark_btn_bg_grey_pressed" type="color">#505050</item>
+	<item name="dark_btn_bg_grey_focused" type="color">#5f5f5f</item>
+	
+	<item name="dark_sub_title_color" type="color">#cccccc</item>
+</resources>

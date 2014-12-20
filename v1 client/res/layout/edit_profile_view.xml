@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:robin="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fadingEdge="none"
+	android:fadingEdgeLength="0px"
+>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+	>
+		<in.lib.view.AspectRatioImageView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/cover_image"
+			android:scaleType="fitXY"
+			android:src="@drawable/default_cover"
+		/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:padding="15dp"
+		>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+			>
+				<ImageView
+					android:id="@+id/avatar"
+					android:layout_width="85dp"
+					android:layout_height="85dp"
+					android:background="?attr/rbn_profile_avatar_bg"
+					android:scaleType="fitXY"
+					android:src="@drawable/default_avatar"
+				/>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:layout_marginLeft="10dp"
+				>
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/display_name"
+						android:textColor="?attr/rbn_post_text_color"
+					/>
+
+					<EditText
+						android:id="@+id/username"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:hint="@string/write_your_name"
+						android:textColorHint="?attr/rbn_login_hint"
+						android:textColor="?attr/rbn_login_text"
+						android:background="?attr/rbn_bordered_block"
+						android:padding="13dp"
+						android:paddingTop="20dp"
+						android:paddingBottom="20dp"
+						android:singleLine="true"
+						android:layout_marginTop="15dp"
+						android:layout_marginBottom="15dp"
+						android:maxLength="@integer/post_max_chars"
+						android:textCursorDrawable="@null"
+					/>
+				</LinearLayout>
+			</LinearLayout>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/bio"
+				android:textColor="?attr/rbn_post_text_color"
+			/>
+
+			<EditText
+				android:id="@+id/bio"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/write_your_bio"
+				android:textColorHint="?attr/rbn_login_hint"
+				android:textColor="?attr/rbn_login_text"
+				android:background="?attr/rbn_bordered_block"
+				android:gravity="top"
+				android:padding="13dp"
+				android:paddingTop="20dp"
+				android:paddingBottom="20dp"
+				android:singleLine="false"
+				android:maxLines="15"
+				android:layout_marginTop="15dp"
+				android:layout_marginBottom="15dp"
+				android:textCursorDrawable="@null"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/language"
+				android:textColor="?attr/rbn_post_text_color"
+			/>
+
+			<Spinner
+				android:id="@+id/languages"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="?attr/rbn_bordered_block"
+				android:layout_marginTop="15dp"
+				android:layout_marginBottom="15dp"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/timezone"
+				android:textColor="?attr/rbn_post_text_color"
+			/>
+
+			<Spinner
+				android:id="@+id/timezones"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="?attr/rbn_bordered_block"
+				android:layout_marginTop="15dp"
+				android:layout_marginBottom="15dp"
+			/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="right"
+			>
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/save"
+					android:textColor="?attr/rbn_btn_text"
+					android:background="?attr/rbn_red_button"
+					android:id="@+id/edit_profile_button"
+				/>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

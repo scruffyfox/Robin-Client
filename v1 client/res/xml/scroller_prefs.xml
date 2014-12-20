@@ -1,0 +1,19 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<ListPreference
+		android:key="scroller_user_id"
+		android:title="Select preferred account"
+		android:selectAllOnFocus="true"
+	/>
+	
+	<ListPreference
+		android:key="scroller_stream_id"
+		android:title="Select stream"
+		android:selectAllOnFocus="true"
+	/>
+	
+	<ListPreference
+		android:key="scroller_theme"
+		android:title="Select theme"
+		android:selectAllOnFocus="true"
+	/>
+</PreferenceScreen>

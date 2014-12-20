@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/menu_new_message"
+		android:title="@string/new_message"
+		android:icon="?attr/rbn_action_bar_icon_new_message"
+		android:showAsAction="always"
+	/>
+
+	<item
+		android:id="@+id/menu_subscribers"
+		android:title="@string/subscribers"
+		android:showAsAction="never"
+	/>
+
+	<item
+		android:id="@+id/menu_subscribe"
+		android:title="@string/subscribe"
+		android:showAsAction="never"
+	/>
+</menu>

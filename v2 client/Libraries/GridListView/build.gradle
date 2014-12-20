@@ -1,0 +1,38 @@
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath 'com.android.tools.build:gradle:0.9.+'
+	}
+}
+apply plugin: 'android-library'
+
+repositories {
+	mavenCentral()
+}
+
+android {
+	compileSdkVersion 19
+	buildToolsVersion "19.0.1"
+
+	defaultConfig {
+		minSdkVersion 9
+		targetSdkVersion 19
+	}
+	sourceSets {
+		main {
+			manifest.srcFile 'library/src/main/AndroidManifest.xml'
+			java.srcDirs = ['library/src/main/java']
+			resources.srcDirs = ['library/src/main/java']
+			aidl.srcDirs = ['library/src/main/java']
+			renderscript.srcDirs = ['library/src/main/jav']
+			res.srcDirs = ['library/src/main/res']
+			assets.srcDirs = ['library/src/main/assets']
+		}
+	}
+}
+
+dependencies {
+	compile 'com.android.support:support-v4:19.0.+'
+}

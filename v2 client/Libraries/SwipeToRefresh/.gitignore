@@ -1,0 +1,9 @@
+/.project
+*.launch
+.metadata
+/gen
+/bin
+/assets
+.idea
+build
+*.iml

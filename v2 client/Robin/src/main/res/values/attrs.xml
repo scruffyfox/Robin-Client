@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<attr name="rbn_post_ic_reply" format="reference" />
+	<attr name="rbn_post_ic_reply_all" format="reference" />
+	<attr name="rbn_post_ic_repost" format="reference" />
+	<attr name="rbn_post_ic_star" format="reference" />
+	<attr name="rbn_post_ic_unstar" format="reference" />
+	<attr name="rbn_post_ic_share" format="reference" />
+	<attr name="rbn_post_ic_more" format="reference" />
+	<attr name="rbn_post_ic_send" format="reference" />
+	<attr name="rbn_post_ic_edit" format="reference" />
+	<attr name="rbn_post_ic_duplicate" format="reference" />
+	<attr name="rbn_post_ic_delete" format="reference" />
+
+	<attr name="rbn_dialog_ic_send" format="reference" />
+	<attr name="rbn_dialog_ic_cancel" format="reference" />
+	<attr name="rbn_dialog_ic_account" format="reference" />
+	<attr name="rbn_dialog_ic_photo" format="reference" />
+	<attr name="rbn_dialog_ic_link" format="reference" />
+	<attr name="rbn_dialog_ic_location" format="reference" />
+	<attr name="rbn_dialog_ic_at" format="reference" />
+	<attr name="rbn_dialog_ic_more" format="reference" />
+
+	<attr name="rbn_dialog_title" format="reference" />
+	<attr name="rbn_dialog_counter" format="reference" />
+	<attr name="rbn_dialog_input" format="reference" />
+
+	<attr name="rbn_post_user_title" format="reference" />
+	<attr name="rbn_post_user_sub_title" format="reference" />
+	<attr name="rbn_post_date" format="reference" />
+	<attr name="rbn_post_text" format="reference" />
+	<attr name="rbn_post_text_thread" format="reference" />
+	<attr name="rbn_text" format="reference" />
+	<attr name="rbn_post_convo" format="reference" />
+	<attr name="rbn_post_repost_count" format="reference" />
+	<attr name="rbn_post_star_count" format="reference" />
+	<attr name="rbn_post_reposted_by" format="reference" />
+	<attr name="rbn_post_crosspost" format="reference" />
+	<attr name="rbn_post_checkin" format="reference" />
+
+	<attr name="rbn_channel_title" format="reference" />
+	<attr name="rbn_channel_date" format="reference" />
+	<attr name="rbn_channel_recent_text" format="reference" />
+
+	<attr name="rbn_action_bar_icon_new_post" format="reference" />
+	<attr name="rbn_action_bar_icon_new_message" format="reference" />
+	<attr name="rbn_action_bar_icon_search" format="reference" />
+	<attr name="rbn_action_bar_title" format="reference" />
+	<attr name="rbn_action_bar_indicator" format="reference" />
+	<attr name="rbn_action_bar_indicator_tab" format="reference" />
+
+	<attr name="rbn_nav_ic_timeline" format="reference" />
+	<attr name="rbn_nav_ic_mentions" format="reference" />
+	<attr name="rbn_nav_ic_channels" format="reference" />
+	<attr name="rbn_nav_ic_drafts" format="reference" />
+	<attr name="rbn_nav_ic_profile" format="reference" />
+	<attr name="rbn_nav_ic_starred" format="reference" />
+	<attr name="rbn_nav_ic_search" format="reference" />
+	<attr name="rbn_nav_ic_settings" format="reference" />
+	<attr name="rbn_nav_ic_about" format="reference" />
+
+	<attr name="rbn_login_bg" format="reference" />
+	<attr name="rbn_login_form" format="reference" />
+	<attr name="rbn_login_form_border" format="reference" />
+	<attr name="rbn_login_form_input" format="reference" />
+	<attr name="rbn_login_form_input_password" format="reference" />
+
+	<attr name="rbn_empty_icon" format="reference" />
+
+	<attr name="rbn_divider" format="reference" />
+
+	<attr name="rbn_settings_title" format="reference" />
+	<attr name="rbn_settings_description" format="reference" />
+	<attr name="rbn_settings_checkbox" format="reference" />
+
+	<declare-styleable name="FlowLayout">
+		<attr name="horizontalSpacing" format="dimension"/>
+		<attr name="verticalSpacing" format="dimension"/>
+		<attr name="orientation" format="enum">
+			<enum name="horizontal" value="0"/>
+			<enum name="vertical" value="1"/>
+		</attr>
+		<attr name="debugDraw" format="boolean" />
+	</declare-styleable>
+
+	<declare-styleable name="FlowLayout_LayoutParams">
+		<attr name="layout_newLine" format="boolean"/>
+		<attr name="layout_horizontalSpacing" format="dimension"/>
+		<attr name="layout_verticalSpacing" format="dimension"/>
+	</declare-styleable>
+</resources>

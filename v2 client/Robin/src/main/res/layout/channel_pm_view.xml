@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:id="@+id/root_view"
+	android:descendantFocusability="blocksDescendants"
+	android:orientation="vertical"
+	android:padding="8dp"
+>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	>
+		<in.lib.view.TextChronometer
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/date"
+			android:layout_alignParentRight="true"
+			android:layout_marginLeft="8dp"
+			android:gravity="right"
+			style="?attr/rbn_channel_date"
+		/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/title"
+			android:layout_toLeftOf="@id/date"
+			android:text="@string/private_messaging"
+			style="?attr/rbn_channel_title"
+		/>
+	</RelativeLayout>
+
+	<in.lib.view.FlowLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/avatar_container"
+		android:layout_marginTop="12dp"
+		app:orientation="horizontal"
+		app:horizontalSpacing="4dp"
+		app:verticalSpacing="4dp"
+	/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/recent_message"
+		android:layout_marginTop="12dp"
+		android:layout_marginBottom="4dp"
+	>
+		<in.lib.view.AvatarImageView
+			android:layout_width="@dimen/avatar_width"
+			android:layout_height="@dimen/avatar_height"
+			android:id="@+id/avatar"
+			android:layout_marginRight="8dp"
+			android:clickable="true"
+			android:longClickable="true"
+		/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/avatar"
+		>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/username_title"
+				android:singleLine="true"
+				style="?attr/rbn_post_user_title"
+			/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/username_subtitle"
+				android:singleLine="true"
+				android:layout_toRightOf="@id/username_title"
+				android:layout_marginLeft="6dp"
+				android:layout_alignBaseline="@id/username_title"
+				style="?attr/rbn_post_user_sub_title"
+			/>
+
+			<in.lib.view.LinkedTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/post_text"
+				android:layout_below="@id/username_title"
+				style="?attr/rbn_post_text"
+			/>
+		</RelativeLayout>
+	</RelativeLayout>
+</LinearLayout>

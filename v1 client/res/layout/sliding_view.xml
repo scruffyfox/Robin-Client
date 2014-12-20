@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+>
+	<LinearLayout
+		android:layout_height="3dp"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_alignParentTop="true"
+		android:id="@+id/indicator"
+		android:background="?attr/rbn_action_bar_line_color"
+	/>
+	
+	<com.viewpagerindicator.TitlePageIndicator
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:id="@+id/titles"
+		android:layout_below="@id/indicator"
+		android:visibility="gone"
+		style="@style/SettingsTitlePageIndicator"
+	/>
+	
+	<in.lib.view.JazzyViewPager
+		android:id="@+id/pager"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/titles"
+	/>
+</RelativeLayout>

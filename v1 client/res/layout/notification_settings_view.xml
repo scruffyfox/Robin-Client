@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:robin="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fadingEdge="none"
+	android:fadingEdgeLength="0px"
+>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:padding="10dp"
+	>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="?attr/rbn_header_text"
+			android:text="@string/notification_header"
+		/>
+		
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:id="@+id/notifications"
+			android:background="?attr/rbn_select_background_drawable"
+		>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:layout_centerVertical="true"
+			>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:text="@string/notifications_enabled"
+					android:textColor="?attr/rbn_post_text_color"
+					android:textStyle="bold"
+				/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/notifications_desc"
+					android:layout_marginTop="5dp"
+					android:textColor="?attr/rbn_description_title"
+				/>
+			</LinearLayout>
+		</in.lib.view.SettingContainerView>
+		
+		<ImageView android:layout_width="match_parent" android:layout_height="1px" android:background="?attr/rbn_divider_color"/>
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:background="?attr/rbn_select_background_drawable"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				android:id="@+id/notification_vibrate"
+				android:checked="true"
+				android:padding="0dp"
+				android:layout_marginLeft="10dp"
+				android:clickable="false"
+			/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:layout_toLeftOf="@id/notification_vibrate"
+				android:layout_centerVertical="true"
+			>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:text="@string/notification_vibrate"
+					android:textColor="?attr/rbn_post_text_color"
+					android:textStyle="bold"
+				/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/notification_vibrate_desc"
+					android:layout_marginTop="5dp"
+					android:textColor="?attr/rbn_description_title"
+				/>
+			</LinearLayout>
+		</in.lib.view.SettingContainerView>
+
+		<ImageView android:layout_width="match_parent" android:layout_height="1px" android:background="?attr/rbn_divider_color"/>
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:background="?attr/rbn_select_background_drawable"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				android:id="@+id/notification_sound"
+				android:checked="true"
+				android:padding="0dp"
+				android:layout_marginLeft="10dp"
+				android:clickable="false"
+			/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:layout_toLeftOf="@id/notification_sound"
+				android:layout_centerVertical="true"
+			>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/notifications_sound_enabled"
+					android:textColor="?attr/rbn_post_text_color"
+					android:textStyle="bold"
+				/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/notification_sound_enabled_desc"
+					android:layout_marginTop="5dp"
+					android:textColor="?attr/rbn_description_title"
+				/>
+			</LinearLayout>
+		</in.lib.view.SettingContainerView>
+
+		<ImageView android:layout_width="match_parent" android:layout_height="1px" android:background="?attr/rbn_divider_color"/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:id="@+id/notification_sound_tone_container"
+			android:background="?attr/rbn_select_background_drawable"
+		>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				android:id="@+id/notification_sound_tone"
+				android:padding="0dp"
+				android:textColor="?attr/rbn_post_link_color"
+				android:layout_marginLeft="10dp"
+			/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:layout_toLeftOf="@id/notification_sound_tone"
+				android:layout_centerVertical="true"
+			>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/notification_sound"
+					android:textColor="?attr/rbn_post_text_color"
+					android:textStyle="bold"
+				/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/notification_sound_desc"
+					android:layout_marginTop="5dp"
+					android:textColor="?attr/rbn_description_title"
+				/>
+			</LinearLayout>
+		</RelativeLayout>
+
+		<ImageView android:layout_width="match_parent" android:layout_height="1px" android:background="?attr/rbn_divider_color"/>
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:background="?attr/rbn_select_background_drawable"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				android:id="@+id/notifications_following"
+				android:checked="true"
+				android:padding="0dp"
+				android:layout_marginLeft="10dp"
+				android:clickable="false"
+			/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:layout_toLeftOf="@id/notifications_following"
+				android:layout_centerVertical="true"
+			>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/notifications_following"
+					android:textColor="?attr/rbn_post_text_color"
+					android:textStyle="bold"
+				/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/notifications_following_desc"
+					android:layout_marginTop="5dp"
+					android:textColor="?attr/rbn_description_title"
+				/>
+			</LinearLayout>
+		</in.lib.view.SettingContainerView>
+		
+		<ImageView android:layout_width="match_parent" android:layout_height="1px" android:background="?attr/rbn_divider_color"/>
+		
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:background="?attr/rbn_select_background_drawable"
+			android:id="@+id/swarm_protection"
+		>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:layout_centerVertical="true"
+			>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/swarm_protection_title"
+					android:textColor="?attr/rbn_post_text_color"
+					android:textStyle="bold"
+				/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/swarm_protection_desc"
+					android:layout_marginTop="5dp"
+					android:textColor="?attr/rbn_description_title"
+				/>
+			</LinearLayout>
+		</in.lib.view.SettingContainerView>
+		
+		<ImageView android:layout_width="match_parent" android:layout_height="1px" android:background="?attr/rbn_divider_color"/>
+
+		<in.lib.view.SettingContainerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:background="?attr/rbn_select_background_drawable"
+		>
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				android:id="@+id/notifications_led"
+				android:checked="true"
+				android:padding="0dp"
+				android:layout_marginLeft="10dp"
+				android:clickable="false"
+			/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:layout_toLeftOf="@id/notifications_led"
+				android:layout_centerVertical="true"
+			>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:text="@string/notifications_led"
+					android:textColor="?attr/rbn_post_text_color"
+					android:textStyle="bold"
+				/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/notifications_led_desc"
+					android:layout_marginTop="5dp"
+					android:textColor="?attr/rbn_description_title"
+				/>
+			</LinearLayout>
+		</in.lib.view.SettingContainerView>
+	</LinearLayout>
+</ScrollView>

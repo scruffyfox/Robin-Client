@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:id="@+id/root_view"
+	android:orientation="vertical"
+	android:descendantFocusability="blocksDescendants"
+>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+	>
+		<in.lib.view.AvatarImageView
+			android:layout_width="@dimen/avatar_width"
+			android:layout_height="@dimen/avatar_height"
+			android:id="@+id/avatar"
+			android:layout_marginRight="8dp"
+		/>
+
+		<include
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/avatar"
+			layout="@layout/post_text_stub"
+		/>
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/options_container_height"
+		android:id="@+id/options_container"
+		android:orientation="horizontal"
+		android:layout_marginTop="4dp"
+	>
+		<ImageButton
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/send"
+			android:layout_weight="1.0"
+			style="?attr/rbn_post_ic_send"
+		/>
+
+		<ImageButton
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/edit"
+			android:layout_weight="1.0"
+			style="?attr/rbn_post_ic_edit"
+		/>
+
+		<ImageButton
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/duplicate"
+			android:layout_weight="1.0"
+			style="?attr/rbn_post_ic_duplicate"
+		/>
+
+		<ImageButton
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/delete"
+			android:layout_weight="1.0"
+			style="?attr/rbn_post_ic_delete"
+		/>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/action_bar_default_height"
+		android:id="@+id/widget_header"
+		android:background="@drawable/actionbar_background_light"
+	>
+		<ImageView
+			android:layout_width="56dp"
+			android:layout_height="56dp"
+			android:id="@+id/widget_logo"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:padding="4dp"
+			android:contentDescription="@string/app_name"
+			android:scaleType="centerInside"
+			android:src="@drawable/ic_launcher"
+		/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:id="@+id/title"
+			android:layout_toLeftOf="@+id/widget_new_post"
+			android:layout_toRightOf="@+id/widget_logo"
+			android:gravity="center_vertical"
+			android:paddingLeft="10dp"
+			style="@style/ActionBar.Light.Title"
+		/>
+		
+		<ImageButton
+			android:layout_width="@dimen/action_bar_default_height"
+			android:layout_height="match_parent"
+			android:id="@+id/widget_refresh"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentTop="true"
+			android:layout_toLeftOf="@+id/widget_new_post"
+			android:layout_centerVertical="true"
+			android:contentDescription="@string/refresh"
+			android:scaleType="center"
+			android:src="@drawable/ab_ic_new_post_light"
+			android:background="@drawable/selectable_background_light"
+		/>
+
+		<ImageButton
+			android:layout_width="@dimen/action_bar_default_height"
+			android:layout_height="match_parent"
+			android:id="@+id/widget_new_post"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentTop="true"
+			android:layout_centerVertical="true"
+			android:contentDescription="@string/new_post"
+			android:scaleType="center"
+			android:src="@drawable/ab_ic_new_post_light"
+			android:background="@drawable/selectable_background_light"
+		/>
+	</RelativeLayout>
+
+	<ListView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/widget_post_feed_view"
+		android:background="#FFF4F4F4"
+	/>
+</LinearLayout>

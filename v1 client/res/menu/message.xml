@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+>
+	<item 
+		android:id="@+id/menu_new_message"
+		android:icon="?attr/rbn_icon_new_message"
+		android:title="@string/new_message"
+		app:showAsAction="ifRoom" 
+	/>
+	
+	<item
+		android:id="@+id/menu_subscribed"
+		android:title="@string/subscribers"
+		app:showAsAction="never"
+	/>
+	
+	<item
+		android:id="@+id/menu_unsubscribe"
+		android:title="@string/subscribe"
+		app:showAsAction="never"
+	/>
+	
+	<!-- <item
+		android:id="@+id/menu_pin"
+		android:title="Pin to home"
+		android:showAsAction="collapseActionView"
+	/> -->
+</menu>

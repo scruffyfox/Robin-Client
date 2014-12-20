@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<style name="SplashTheme" parent="Theme.AppCompat.Light">
+		
+	</style>
+	<style name="Theme.Default" parent="Theme.AppCompat.Light">
+		<item name="android:dropDownListViewStyle">@style/Widget.Default.DropDown</item>
+		<item name="dropDownListViewStyle">@style/Widget.Default.DropDown</item>
+		<item name="android:actionBarItemBackground">?attr/rbn_select_background_drawable</item>
+		<item name="android:windowBackground">@color/light_post_bg_color</item>
+		<item name="homeAsUpIndicator">@null</item>
+		<item name="android:homeAsUpIndicator">@null</item>
+	</style>
+	
+	<style name="Theme.DefaultDark" parent="Theme.AppCompat.Light.DarkActionBar">
+		<item name="android:dropDownListViewStyle">@style/Widget.Default.DropDown</item>
+		<item name="dropDownListViewStyle">@style/Widget.Default.DropDown</item>
+		<item name="android:actionBarItemBackground">?attr/rbn_select_background_drawable</item>
+		<item name="android:windowBackground">@color/dark_post_bg_color</item>
+		<item name="homeAsUpIndicator">@null</item>
+		<item name="android:homeAsUpIndicator">@null</item>
+	</style>
+	
+	<style name="Widget.Default.ActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid">
+		<item name="android:background">@drawable/light_actionbar_bg</item>
+		<item name="background">@drawable/light_actionbar_bg</item>
+	</style>
+	
+	<style name="Widget.ActionBar.Dark" parent="Widget.AppCompat.ActionBar.Solid">
+		<item name="android:background">@drawable/dark_actionbar_bg</item>
+		<item name="background">@drawable/dark_actionbar_bg</item>
+	</style>
+
+	<style name="OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+		<item name="android:src">?attr/rbn_icon_more</item>
+	</style>
+	
+	<style name="Widget.Default.DropDown" parent="Widget.AppCompat.Light.ListView.DropDown">
+		<item name="android:listSelector">?attr/rbn_select_background_drawable</item>
+	</style>
+	
+	<style name="Theme.NoTitle" parent="Theme.AppCompat.Light">
+		<item name="android:windowBackground">@null</item>
+		<item name="android:windowNoTitle">true</item>
+		<!-- <item name="android:windowFrame">@null</item> -->
+	</style>
+	
+	<style name="Theme.Default.Dialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowNoTitle">true</item>
+	</style>
+	
+	<style name="Theme.DefaultDark.Dialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowNoTitle">true</item>
+	</style>
+	
+	<style name="Theme.Default.Dialog.Widget" parent="@android:style/Theme.Dialog">
+		<!-- <item name="android:windowBackground">@null</item> -->
+		<item name="android:windowNoTitle">true</item>
+	</style>
+	
+		<style name="Theme.DefaultDark.Dialog.Widget" parent="@android:style/Theme.Dialog">
+		<!-- <item name="android:windowBackground">@null</item> -->
+		<item name="android:windowNoTitle">true</item>
+	</style>	
+</resources>

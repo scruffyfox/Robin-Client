@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="ActionBar" />
+	<style name="SwipeToRefresh" />
+	<style name="Dialog" />
+	<style name="Post" />
+	<style name="Channel" />
+	<style name="Divider" />
+	<style name="Settings" />
+	<style name="IconButton">
+		<item name="android:adjustViewBounds">true</item>
+		<item name="android:duplicateParentState">false</item>
+		<item name="android:focusable">false</item>
+		<item name="android:focusableInTouchMode">false</item>
+		<item name="android:scaleType">centerInside</item>
+	</style>
+</resources>

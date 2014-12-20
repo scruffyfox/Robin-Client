@@ -1,0 +1,82 @@
+<!--
+  Copyright 2012 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<resources>
+    <!-- Advanced widget preferences -->
+    <string name="pref_clock_shortcut_title">Skratka pre hodiny</string>
+    <string name="pref_homescreen_background_opacity_title">Pozadie widgetu na domov. obrazovke</string>
+    <string-array name="pref_homescreen_background_opacity_display_names">
+        <item>Plne transparentné</item>
+        <item>25% čierne</item>
+        <item>50% čierne</item>
+        <item>75% čierne</item>
+        <item>100% čierne</item>
+    </string-array>
+    <string name="pref_aggressive_centering_title">Vždy centrovať</string>
+    <string name="pref_aggressive_centering_description">Môže mať za následok skákanie hodín okolo rôznych widgetov</string>
+    <string name="pref_hide_settings_title">Skryť nastav. tlačidlo</string>
+    <string name="pref_hide_settings_description">Skryť nastav. tlačidlo ak je widget zvislo rozšírený (skratka na domov. obrazovku "Nastaviť DashClock" je dostupná ako alternatíva)</string>
+
+    <!-- Universal settings preferences -->
+    <string name="pref_shortcut_title">Skratka</string>
+    <string name="pref_shortcut_default">(Predvolené)</string>
+
+    <!-- Weather -->
+    <string name="pref_weather_units_title">Jednotka teploty</string>
+    <string-array name="pref_weather_units_display_names">
+        <item>°F</item>
+        <item>°C</item>
+    </string-array>
+
+    <!-- Gmail -->
+    <string name="pref_gmail_label_title">Zobraziť počet neprečít. e-mailov na štítku</string>
+    <string-array name="pref_gmail_label_display_names">
+        <item>Doručená pošta</item>
+        <item>Prioritná pošta</item>
+    </string-array>
+
+    <string name="pref_gmail_accounts_title">Zobraziť počet neprečít. e-mailov pre účty</string>
+    <plurals name="pref_gmail_accounts_summary_template">
+        <item quantity="one">vybraný %1$d účet z %2$d</item>
+        <item quantity="few">vybrané %1$d účty z %2$d</item>
+        <item quantity="other">vybraných %1$d účtov z %2$d</item>
+    </plurals>
+
+    <!-- Calendar -->
+    <string name="pref_calendar_look_ahead_hours_title">Zobraziť schôdzky v nasledujúcich/com</string>
+    <string-array name="pref_calendar_look_ahead_hours_display_names">
+        <item>3 hodinách</item>
+        <item>6 hodinách</item>
+        <item>12 hodinách</item>
+        <item>24 hodinách</item>
+        <item>2 dňoch</item>
+        <item>týždni</item>
+    </string-array>
+    <string name="pref_calendar_selected_title">Zobraziť kalendár</string>
+    <plurals name="pref_calendar_selected_summary_template">
+        <item quantity="one">vybraný %1$d kalendár z %2$d</item>
+        <item quantity="few">vybrané %1$d kalendáre z %2$d</item>
+        <item quantity="other">vybraných %1$d kalendárov z %2$d</item>
+    </plurals>
+    <string name="pref_calendar_custom_visibility_title">Vlastná viditeľnosť kalendára</string>
+    <string name="pref_calendar_custom_visibility_description">Ak nie je označené, zobrazí všetky viditeľné kalendáre v aplikácii Kalendár</string>
+    <string name="pref_calendar_show_all_day_title">Zobraziť celodenné udalosti</string>
+    <string name="pref_calendar_show_all_day_description">Zahrnúť všetky celodenné udalosti (napr. narodeniny)</string>
+
+    <!-- Daydream preferences -->
+    <!--<string name="pref_daydream_color_title">Foreground color</string>-->
+    <!--<string name="pref_daydream_system_settings_title">System Daydream settings</string>-->
+</resources>

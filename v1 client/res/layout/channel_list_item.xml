@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="?attr/rbn_channel_item_bg"
+	android:orientation="vertical"
+>
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	>
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="?attr/rbn_channel_padlock"
+			android:layout_gravity="right|center_vertical"
+			android:adjustViewBounds="true"
+			android:id="@+id/padlock"
+		/>
+
+		<LinearLayout
+			android:id="@+id/post_container"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:orientation="vertical"
+			android:descendantFocusability="blocksDescendants"
+		>
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+			>
+				<TextView
+					android:id="@+id/time"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_marginLeft="10dp"
+					android:gravity="right"
+					android:textSize="14sp"
+					android:textColor="?attr/rbn_title_color"
+					android:fontFamily="sans-serif-light"
+				/>
+
+				<in.lib.view.ResizableTextView
+					android:id="@+id/title"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:singleLine="true"
+					android:textColor="?attr/rbn_title_color"
+					android:layout_toLeftOf="@id/time"
+					android:textStyle="bold"
+					android:fontFamily="sans-serif-light"
+					app:textSize="16sp"
+				/>
+			</RelativeLayout>
+
+			<HorizontalScrollView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:scrollbars="none"
+			>
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/avatar_container"
+					android:orientation="horizontal"
+				/>
+			</HorizontalScrollView>
+
+			<in.lib.view.LinkifiedTextView
+				android:id="@+id/text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:textColor="?attr/rbn_post_text_color"
+				android:textColorLink="?attr/rbn_post_link_color"
+				app:textSize="14sp"
+			/>
+		</LinearLayout>
+	</FrameLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:background="?attr/rbn_list_divider_bg_color"
+	/>
+</LinearLayout>

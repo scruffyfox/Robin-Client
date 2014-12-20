@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/menu_nest"
+		android:title="@string/thread_show_nested"
+		android:showAsAction="never"
+		android:visible="false"
+	/>
+
+	<item
+		android:id="@+id/menu_denest"
+		android:title="@string/thread_show_denested"
+		android:showAsAction="never"
+		android:visible="false"
+	/>
+
+	<item
+		android:id="@+id/menu_reply_all"
+		android:title="@string/reply_thread"
+		android:showAsAction="never"
+	/>
+
+	<item
+		android:id="@+id/menu_refresh"
+		android:title="@string/refresh"
+		android:showAsAction="never"
+	/>
+
+	<item
+		android:id="@+id/menu_collapse"
+		android:title="@string/collapse_thread"
+		android:showAsAction="never"
+	/>
+
+	<item
+		android:id="@+id/menu_mute"
+		android:title="@string/mute_thread"
+		android:showAsAction="never"
+	/>
+</menu>

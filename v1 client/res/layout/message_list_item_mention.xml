@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/post"
+	android:background="?attr/rbn_post_mention_item_bg_drawable"
+	android:orientation="vertical"
+	android:descendantFocusability="blocksDescendants"
+>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:id="@+id/post_container"
+		android:padding="10dp"
+	>
+		<in.lib.view.AvatarView
+			android:id="@+id/avatar"
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:scaleType="fitXY"
+			android:layout_alignParentRight="true"
+			android:layout_marginLeft="10dp"
+			android:background="?attr/rbn_profile_avatar_bg"
+		/>
+
+		<include
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_toLeftOf="@id/avatar"
+			layout="@layout/post_list_item_stub_text"
+		/>
+	</RelativeLayout>
+
+	<FrameLayout
+		android:id="@+id/media_container"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:visibility="gone"
+	>
+		<ProgressBar
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:id="@+id/progress"
+			style="@android:style/Widget.Holo.Light.ProgressBar.Small"
+		/>
+
+		<in.lib.view.ScrollableImageView
+			android:id="@+id/media_image"
+			android:layout_width="match_parent"
+			android:layout_height="120dp"
+			android:adjustViewBounds="true"
+			android:maxHeight="120dp"
+			android:scaleType="centerCrop"
+		/>
+
+		<ImageView
+			android:id="@+id/video_play_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:adjustViewBounds="true"
+			android:src="@drawable/video_play_button"
+			android:visibility="gone"
+		/>
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@drawable/fade_overlay"
+		/>
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="?attr/rbn_inline_mention_image_arrow"
+			android:layout_marginRight="25dp"
+			android:layout_gravity="right"
+		/>
+	</FrameLayout>
+
+	<LinearLayout
+		android:id="@+id/options_container"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:orientation="horizontal"
+		android:visibility="gone"
+		android:background="?attr/rbn_post_bg_color"
+	>
+<!-- 		<ImageView -->
+<!-- 			android:layout_width="match_parent" -->
+<!-- 			android:layout_height="1px" -->
+<!-- 			android:background="@color/list_divider_bg_color" -->
+<!-- 		/> -->
+
+		<include layout="@layout/message_list_item_stub_options"/>
+	</LinearLayout>
+
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="?attr/rbn_list_divider_bg_color"
+	/>
+</LinearLayout>

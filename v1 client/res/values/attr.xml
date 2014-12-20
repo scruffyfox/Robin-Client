@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="ResizableTextView">
+		<attr name="textSize" format="dimension"/>
+		<attr name="adjustment" format="float"/>
+	</declare-styleable>
+	
+	<attr name="rbn_xmbg_labelStrokeColor" format="color">#FFD02D30</attr>
+	<attr name="rbn_xmbg_labelColor">#FFD02D30</attr>
+	<attr name="rbn_xmbg_strokeColor">#cccccc</attr>
+	
+	<attr name="rbn_vi_footerColor" format="color">#FFD02D30</attr>
+	<attr name="rbn_vi_footerLineHeight" format="dimension">1dp</attr>
+	<attr name="rbn_vi_footerIndicatorHeight" format="dimension">3dp</attr>
+	<attr name="rbn_vi_footerIndicatorStyle" format="reference">underline</attr>
+	<attr name="rbn_vi_textColor" format="color">#80D02D30</attr>
+	<attr name="rbn_vi_selectedColor" format="color">#FFD02D30</attr>
+	<attr name="rbn_vi_selectedBold" format="boolean">true</attr>
+	
+	<attr name="rbn_red_button" format="reference"/>
+	<attr name="rbn_grey_button" format="reference"/>
+	
+	<attr name="rbn_action_bar_background" format="reference"/>
+	<attr name="rbn_action_bar_button_background" format="reference"/>
+
+	<!-- COLOUR ATTRIBUTES -->
+	<attr name="rbn_channel_new_bg_color" format="color"/>
+	<attr name="rbn_channel_new_bg_selected_color" format="color"/>
+	<attr name="rbn_post_bg_color" format="color"/>
+	<attr name="rbn_post_bg_selected_color" format="color"/>
+	<attr name="rbn_post_mention_bg_color" format="color"/>
+	<attr name="rbn_post_mention_bg_selected_color" format="color"/>
+	<attr name="rbn_quick_options_bg_color" format="color"/>
+	<attr name="rbn_list_divider_bg_color" format="color"/>
+	<attr name="rbn_post_text_color" format="color"/>
+	<attr name="rbn_post_link_color" format="color"/>
+	<attr name="rbn_post_center_text_color" format="color"/>
+
+	<attr name="rbn_action_bar_text_color" format="color"/>
+	<attr name="rbn_action_bar_line_color" format="color"/>
+	<attr name="rbn_action_bar_color" format="color"/>
+	<attr name="rbn_action_bar_tab_underline" format="color"/>
+
+	<attr name="rbn_dialog_bg_color" format="color"/>
+	<attr name="rbn_dialog_title_color" format="color"/>
+	<attr name="rbn_dialog_text_color" format="color"/>
+	<attr name="rbn_dialog_post_text_color" format="color"/>
+	<attr name="rbn_dialog_text_color_alert" format="color"/>
+	<attr name="rbn_dialog_about_bg" format="color"/>
+	<attr name="rbn_dialog_about_text" format="color"/>
+	<attr name="rbn_list_item_bg" format="color|reference"/>
+	
+	<attr name="rbn_navigation_bg_color" format="color"/>
+	
+	<attr name="rbn_login_bg_color" format="color"/>
+	<attr name="rbn_login_input_border" format="color"/>
+	<attr name="rbn_login_input_bg" format="color"/>
+	<attr name="rbn_login_text" format="color"/>
+	<attr name="rbn_login_hint" format="color"/>
+	<attr name="rbn_login_hint_error" format="color"/>
+	<attr name="rbn_login_text_error" format="color"/>
+	
+	<attr name="rbn_btn_bg" format="color"/>
+	<attr name="rbn_btn_bg_pressed" format="color"/>
+	<attr name="rbn_btn_bg_focused" format="color"/>
+	<attr name="rbn_btn_text" format="color"/>
+	
+	<attr name="rbn_btn_bg_grey" format="color"/>
+	<attr name="rbn_btn_bg_grey_pressed" format="color"/>
+	<attr name="rbn_btn_bg_grey_focused" format="color"/>
+	
+	<!-- colours -->
+	<attr name="rbn_title_color" format="reference|color"/>
+	<attr name="rbn_divider_color" format="color"/>
+	<attr name="rbn_sub_title" format="color"/>
+	<attr name="rbn_description_title" format="color"/>
+	<attr name="rbn_load_more_bg" format="color"/>
+	<attr name="rbn_post_center_bg" format="color"/>
+	<attr name="rbn_list_view_bg" format="color"/>
+	
+	<!-- drawables -->
+	<attr name="rbn_empty_list" format="reference"/>
+	<attr name="rbn_post_item_bg_drawable" format="reference|color"/>
+	<attr name="rbn_select_background_drawable" format="reference|color"/>
+	<attr name="rbn_channel_padlock" format="reference|color"/>
+	<attr name="rbn_channel_item_bg" format="reference|color"/>
+	<attr name="rbn_channel_new_item_bg" format="reference|color"/>
+	<attr name="rbn_bordered_block" format="reference|color"/>
+	<attr name="rbn_post_big_text_bg" format="reference|color"/>
+	<attr name="rbn_post_big_gallery_background" format="reference|color"/>
+	<attr name="rbn_post_mention_item_bg_drawable" format="reference|color"/>
+	<attr name="rbn_inline_mention_image_arrow" format="reference"/>
+	<attr name="rbn_inline_image_arrow" format="reference"/>
+	<attr name="rbn_nav_bg" format="reference|color"/>
+	<attr name="rbn_profile_nav_bg" format="reference|color"/>
+	<attr name="rbn_post_break_bottom_drawable" format="reference"/>
+	<attr name="rbn_post_break_top_drawable" format="reference"/>
+	<attr name="rbn_missing_posts_bg_drawable" format="reference"/>
+	
+	<!-- icons -->
+	<attr name="rbn_dialog_ic_photo" format="reference"/>
+	<attr name="rbn_dialog_ic_at" format="reference"/>
+	<attr name="rbn_dialog_ic_hash" format="reference"/>
+	<attr name="rbn_dialog_ic_link" format="reference"/>
+	<attr name="rbn_dialog_ic_location" format="reference"/>
+	<attr name="rbn_post_icon_reposted" format="reference|color"/>
+	<attr name="rbn_post_icon_crosspost" format="reference|color"/>
+	<attr name="rbn_post_icon_starred" format="reference|color"/>
+	<attr name="rbn_icon_action_search" format="reference|color"/>
+	<attr name="rbn_icon_cancel" format="reference|color"/>
+	<attr name="rbn_icon_chevron" format="reference|color"/>
+	<attr name="rbn_icon_collapse" format="reference|color"/>
+	<attr name="rbn_icon_convo" format="reference|color"/>
+	<attr name="rbn_icon_delete" format="reference|color"/>
+	<attr name="rbn_icon_expand" format="reference|color"/>
+	<attr name="rbn_icon_menu" format="reference|color"/>
+	<attr name="rbn_icon_more" format="reference|color"/>
+	<attr name="rbn_icon_new_message" format="reference|color"/>
+	<attr name="rbn_icon_ok" format="reference|color"/>
+	<attr name="rbn_icon_plus" format="reference|color"/>
+	<attr name="rbn_icon_reply" format="reference|color"/>
+	<attr name="rbn_icon_reply_all" format="reference|color"/>
+	<attr name="rbn_icon_repost" format="reference|color"/>
+	<attr name="rbn_icon_search" format="reference|color"/>
+	<attr name="rbn_icon_send" format="reference|color"/>
+	<attr name="rbn_icon_share" format="reference|color"/>
+	<attr name="rbn_icon_starred" format="reference|color"/>
+	<attr name="rbn_icon_unstarred" format="reference|color"/>
+	<attr name="rbn_icon_edit" format="reference|color"/>
+	<attr name="rbn_icon_duplicate" format="reference|color"/>
+	<attr name="rbn_icon_stream_marker" format="reference|color"/>
+	
+	<!-- Dialog icons -->
+	<attr name="rbn_dialog_icon_hashtag" format="reference"/>
+	<attr name="rbn_dialog_icon_link" format="reference"/>
+	<attr name="rbn_dialog_icon_channel" format="reference"/>
+	<attr name="rbn_dialog_icon_profile" format="reference"/>
+	<attr name="rbn_dialog_icon_misc" format="reference"/>
+	
+	<attr name="rbn_nav_icon_about" format="reference|color"/>
+	<attr name="rbn_nav_icon_follow" format="reference|color"/>
+	<attr name="rbn_nav_icon_followers" format="reference|color"/>
+	<attr name="rbn_nav_icon_global" format="reference|color"/>
+	<attr name="rbn_nav_icon_mentions" format="reference|color"/>
+	<attr name="rbn_nav_icon_mute" format="reference|color"/>
+	<attr name="rbn_nav_icon_muted" format="reference|color"/>
+	<attr name="rbn_nav_icon_pm" format="reference|color"/>
+	<attr name="rbn_nav_icon_profile" format="reference|color"/>
+	<attr name="rbn_nav_icon_search" format="reference|color"/>
+	<attr name="rbn_nav_icon_settings" format="reference|color"/>
+	<attr name="rbn_nav_icon_starred" format="reference|color"/>
+	<attr name="rbn_nav_icon_timeline" format="reference|color"/>
+	<attr name="rbn_nav_icon_unfollow" format="reference|color"/>
+	<attr name="rbn_nav_icon_unmute" format="reference|color"/>
+	<attr name="rbn_nav_icon_block" format="reference|color"/>
+	<attr name="rbn_nav_icon_unblock" format="reference|color"/>
+	<attr name="rbn_nav_icon_update" format="reference|color"/>
+	<attr name="rbn_nav_icon_drafts" format="reference|color"/>
+	
+	<attr name="rbn_refresh_drawable" format="reference|color"/>
+	<attr name="rbn_refresh_indeterminate_drawable" format="reference|color"/>
+	<attr name="rbn_refresh_text_color" format="reference|color"/>
+	
+	<attr name="rbn_popup_profile_icon_pm" format="reference|color"/>
+	<attr name="rbn_popup_profile_icon_mentions" format="reference|color"/>
+	<attr name="rbn_popup_profile_icon_more" format="reference|color"/>
+	<attr name="rbn_popup_profile_icon_follow" format="reference|color"/>
+	<attr name="rbn_popup_profile_icon_unfollow" format="reference|color"/>
+	<attr name="rbn_popup_profile_icon_profile" format="reference|color"/>
+	
+	<attr name="rbn_profile_popup_bg_drawable" format="reference|color" />
+	<attr name="rbn_profile_popup_bio_bg" format="reference|color" />
+	<attr name="rbn_profile_avatar_bg" format="reference|color" />
+	<attr name="rbn_profile_avatar_fade" format="reference|color" />
+	
+	<attr name="rbn_header_text" format="reference" />
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:id="@+id/root_view"
+	android:orientation="vertical"
+	android:descendantFocusability="blocksDescendants"
+>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+	>
+		<in.lib.view.AvatarImageView
+			android:layout_width="@dimen/avatar_width"
+			android:layout_height="@dimen/avatar_height"
+			android:id="@+id/avatar"
+			android:layout_marginLeft="8dp"
+			android:layout_alignParentRight="true"
+			android:clickable="true"
+			android:longClickable="true"
+		/>
+
+		<include
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_toLeftOf="@id/avatar"
+			layout="@layout/post_text_stub"
+		/>
+	</RelativeLayout>
+
+	<include layout="@layout/post_media_stub" />
+
+	<include layout="@layout/post_options_stub" />
+</LinearLayout>
