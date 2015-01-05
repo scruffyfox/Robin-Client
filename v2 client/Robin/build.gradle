@@ -1,30 +1,20 @@
 import java.util.regex.Pattern
 
-buildscript {
-	repositories {
-		mavenCentral()
-	}
-
-	dependencies {
-		classpath 'com.android.tools.build:gradle:0.9.+'
-	}
-}
-
-apply plugin: 'android'
+apply plugin: 'com.android.application'
 
 repositories {
 	mavenCentral()
 }
 
 android {
-	compileSdkVersion 19
-	buildToolsVersion "19"
+	compileSdkVersion 21
+	buildToolsVersion "21.1.1"
 
 	defaultConfig {
 		minSdkVersion 14
-		targetSdkVersion 19
+		targetSdkVersion 21
 
-		testPackageName "in.rob.client.test"
+		testApplicationId "in.rob.client.test"
 		testInstrumentationRunner "in.rob.client.test.Runner"
 		testHandleProfiling true
 		testFunctionalTest true
@@ -54,10 +44,10 @@ android {
 
 	buildTypes {
 		debug {
-			packageNameSuffix ".alpha"
+			applicationIdSuffix ".alpha"
 		}
 		alpha {
-			packageNameSuffix ".alpha"
+			applicationIdSuffix ".alpha"
 			signingConfig signingConfigs.release
 		}
 	}
@@ -77,7 +67,7 @@ android {
 }
 
 dependencies {
-	compile "com.android.support:support-v13:19.0.+"
+	compile "com.android.support:support-v13:21.0.+"
 	compile 'org.projectlombok:lombok:1.12.+'
 	compile 'com.google.code.gson:gson:2.1'
 	compile 'com.squareup:otto:1.3.+'
