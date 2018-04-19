@@ -1,4 +1,4 @@
-#Robin - Android Client
+# Robin - Android Client
 
 This is the main Android client (Robin) for the App.net service. It was originally created by [Callum Taylor](http://callumtaylor.net) and [Romain Piel](http://romainpiel.com/), with [Damian Gribben](https://twitter.com/simpleline) as designer. Romain left development in the end of 2012 and Callum and Damian continued development until its shutdown in mid 2014.
 
@@ -12,11 +12,11 @@ Version 1 of the app is only compatibile with Eclipse, where as version 2 was bu
 
 You **may not** fork the project, rename and sell it as-is. Please don't do this, I put nearly 2 years worth of work into it, at least improve on it, and if you do wish to sell an app based on this code, please think of me and maybe give me something in return.
 
-##Disclaimer
+## Disclaimer
 
 I do not claim for any of this work to be good, or useful, simply open sourcing it in case other people wish to make use of it.
 
-##License
+## License
 Copyright (C) 2012-2014 Callum Taylor, Romain Piel
 
 This program is free software: you can redistribute it and/or modify
@@ -38,6 +38,6 @@ As with the GPL, you may use the code for commercial use, but dont just fork the
 
 If we meet some day, and you find this stuff is worth it, you can buy me a beer in return.
 
-##Warrenty
+## Warrenty
 
 The code is provided as-is without warrenty. Use and execute at your own risk, please do not contact me about problems.
