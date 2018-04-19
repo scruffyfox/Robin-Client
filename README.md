@@ -12,6 +12,10 @@ Version 1 of the app is only compatibile with Eclipse, where as version 2 was bu
 
 You **may not** fork the project, rename and sell it as-is. Please don't do this, I put nearly 2 years worth of work into it, at least improve on it, and if you do wish to sell an app based on this code, please think of me and maybe give me something in return.
 
+## Screenshots
+
+[Link to screenshots](https://imgur.com/a/3O5mA)
+
 ## Disclaimer
 
 I do not claim for any of this work to be good, or useful, simply open sourcing it in case other people wish to make use of it.
